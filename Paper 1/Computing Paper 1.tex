@@ -1,0 +1,122 @@
+\documentclass[a4paper]{article}
+\makeatletter
+\usepackage[voffset=0in, textheight=10in]{geometry}
+%[voffset=0in, textheight=10in, footskip=0]
+%[margin=2cm, heightrounded, marginparwidth=3cm, marginparsep=1cm]
+\usepackage{listings}
+\usepackage{subfiles}
+\usepackage{multicol}
+\usepackage{pgfmath}
+\usepackage{marginnote}
+\usepackage{color}
+\usepackage{tikz-qtree}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{array}
+\usepackage{caption}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\usetikzlibrary{shapes.geometric, arrows,calc, positioning, intersections}
+\makeatother
+\definecolor{comment}{rgb}{0.27,0.28,0.25}
+\definecolor{number}{rgb}{0.5,0.5,0.5}
+\definecolor{string}{rgb}{0.90,0.86,0.45}
+\definecolor{keyword}{rgb}{0.98,0.15,0.48}
+\definecolor{backcolour}{rgb}{0.15,0.16,0.13}
+\definecolor{empha}{rgb}{0.24,0.64,0.94}
+\definecolor{empha2}{rgb}{0.68,0.51,1}
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black]
+\lstdefinestyle{mystyle}{
+	language=python,
+	backgroundcolor=\color{backcolour},
+	commentstyle=\color{comment},
+	deletekeywords={
+		range,
+		def,
+		open,
+		int,
+		input,
+		str,
+		file
+	},
+	otherkeywords={+, -, \%, =, <, >},
+	keywordstyle=\color{keyword},
+	numberstyle=\tiny\color{number},
+	stringstyle=\color{string},
+	basicstyle=\footnotesize\color{white},
+	breakatwhitespace=false,
+	breaklines=true,
+	captionpos=b,
+	keepspaces=true,
+	numbers=left,
+	numbersep=5pt,
+	showspaces=false,
+	showstringspaces=false,
+	showtabs=false,
+	tabsize=4,
+	emph = {[3]
+		range,
+		def,
+		open,
+		int,
+		input,
+		str,
+		end,
+		func,
+		array
+	},
+	emph = {[2]True, False, swap},
+	emphstyle ={[3] \color{empha}},
+	emphstyle = {[2]\color{empha2}},
+	literate=%
+		{0}{{{\color{empha2}0}}}1
+		{1}{{{\color{empha2}1}}}1
+		{2}{{{\color{empha2}2}}}1
+		{3}{{{\color{empha2}3}}}1
+		{4}{{{\color{empha2}4}}}1
+		{5}{{{\color{empha2}5}}}1
+		{6}{{{\color{empha2}6}}}1
+		{7}{{{\color{empha2}7}}}1
+		{8}{{{\color{empha2}8}}}1
+		{9}{{{\color{empha2}9}}}1
+}
+\reversemarginpar
+\lstnewenvironment{python}
+{\lstset{style=mystyle}}
+{}
+\lstnewenvironment{csv}
+{\lstset{
+		backgroundcolor=\color{backcolour},
+		numberstyle=\tiny\color{number},
+		stringstyle=\color{string},
+		basicstyle=\footnotesize\color{white},
+		breakatwhitespace=false,
+		breaklines=true,
+		captionpos=b,
+		keepspaces=true,
+		numbers=left,
+		numbersep=5pt,
+		showspaces=false,
+		showstringspaces=false,
+		showtabs=false,
+		tabsize=4
+		}}
+{}
+\tikzset{edge from parent/.style=
+	{draw, edge from parent path={(\tikzparentnode.south)
+			-- +(0,-10pt)
+			-| (\tikzchildnode)}},
+	blank/.style={draw=none}}
+\setlength{\parindent}{0pt}
+\begin{document}
+	\marginnote{Specification Section}[0cm]
+	\section{Fundamentals of Programming}
+		\subfile{sections/1.tex}
+	\section{Fundamentals of Data Structure}
+		\subfile{sections/2.tex}
+	\section{Fundamentals of Algorithms}
+		\subfile{sections/3.tex}
+	\section{Theory of Computation}
+		\subfile{sections/4.tex}
+\end{document}

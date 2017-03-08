@@ -1,0 +1,115 @@
+\subsection{Communication}
+  \noindent
+  \marginnote{4.9.1.1}There are several forms of transmission:
+  \begin{itemize}
+    \setlength{\itemsep}{0em}
+    \item Serial Transmission
+      \subitem Data is transmitted one bit at a time down a single wire.
+    \item Parallel Transmission
+      \subitem Data is transmitted several bits at a time using multiple wires.
+    \item Synchronous Transmission
+      \subitem Data is transmitted where the pulse of the clock of the sending and receiving device are in time with each other. The devices may share a common clock.
+    \item Asynchronous Transmission
+      \subitem Data is transmitted between two devices that do not share a common signal.
+  \end{itemize}
+  Serial transmission has 3 main advantages over parallel transmission:
+  \begin{itemize}
+    \setlength{\itemsep}{0em}
+    \item It requires less wires so it is cheaper
+    \item It degrades less over distance compared to parallel transmission (due to the fact that the multiple wires cause interference between them)
+    \item Serial transmission doesn't need to be synchronised whereas parallel transmission does.
+  \end{itemize}
+  \marginnote{4.9.1.2}Here are some keywords to do with communication:
+  \begin{itemize}
+    \setlength{\itemsep}{0em}
+    \item Bit Rate
+      \subitem The rate at which data is transmitted across a digital network in bits per second
+    \item Baud Rate
+      \subitem The number of electrical state (symbol) changes per second, The baud rate can be different than the bit rate if more than one bit is encoded into each symbol change.
+    \item Bandwidth
+      \subitem Bandwidth is the difference between the upper and lower frequency of a range of frequencies, it is typically measured in hertz (Hz). The bit rate is directly proportional to the bandwidth of the network.
+    \item Latency
+      \subitem The time delay that occurs when transmitting data between devices.
+    \item Protocol
+      \subitem Rules and conventions for communication between network devices.
+  \end{itemize}
+\subsection{Networking}
+  \noindent
+  \marginnote{4.9.2.1}A physical star topology is a when a network of devices is connected in such a way that each workstation has a dedicated cable to a central computer or switch.
+  \begin{table}[H]
+    \centering
+    \begin{tabular}{| L{7cm} | L{7cm} |} \hline
+      \textbf{Advantages of Star topology} & \textbf{Disadvantages of star topology} \\ \hline
+      Fast connection speed as each client has a dedicated cable & Expensive to set up due to increasing cabling costs \\ \hline
+      Will not slow down as much as other network topologies when many users are online. & If the cable fails then that client may not be able to receive data \\ \hline
+      Fault- finding is simper as individual faults are easier to trace & Difficult to install as multiple cables are needed. The problem is exaggerated where the LAN is spread over multiple buildings \\ \hline
+      Relatively secure as the connection from client to server is unique & the server can get congested as all communications must pass through it \\ \hline
+      New clients can be added without affecting the other clients & \multicolumn{1}{|c}{}\\ \cline{1-1}
+      If one cable or client fails, then only that client is affected & \multicolumn{1}{|c}{} \\ \cline{1-1}
+    \end{tabular}
+  \end{table} \noindent
+  A logical bus network topology is the concept of a network layout that uses one main data cable as a backbone to transmit data.
+  \begin{table}[H]
+    \centering
+    \begin{tabular}{| L{7cm} | L{7cm} |} \hline
+      \textbf{Advantages of Bus topology} & \textbf{Disadvantages of Bus topology} \\ \hline
+      Cheaper to install than a star topology as only one main cable is required & Less secure than a star topology as all data are transmitted down one main cable \\ \hline
+      Easier to install than a star topology & Transmission times get slower when more users are on the network \\ \hline
+      Easy to add new clients by branching them off the main cable & If main cable fails, then all clients are affected \\ \hline
+      \multicolumn{1}{c|}{} & Less reliable than a star network due to reliance on the main cable \\ \cline{2-2}
+      \multicolumn{1}{c|}{} & More difficult to find faults \\ \cline{2-2}
+    \end{tabular}
+  \end{table} \noindent
+  the difference between a physical and logical topology is that a physical topology is how a network is laid out in the real world, and the logical topology is the conceptual way in which data is transmitted around a network. It is possible for a certain physical topology to act as a different logical topology, for example a physical switch topology that uses a switch could be made to emulate a logical bus topology by switching the switch for a hub and making sure all the workstations can follow bus network protocols.\\
+  \marginnote{4.9.2.2}Peer-to-peer networks are networks where all the devices in the network share resources rather than having a dedicated server (each workstation can act as a client or a server), it is mainly used in homes to allow all computers access to the printer and the internet. Client-server networks are networks where one computer has the main processing power and storage and the other computers act as clients requesting services from the server, such as access to files, the internet, printer, emails, and applications, it is mainly used in LANs with a large number of users.\\
+  \marginnote{4.9.2.3}WIFI enables us to create a wireless local area network that is based on international standards (IEEE 802.11), and is used to enable devices to connect to a network wirelessly. To be able to connect to a wireless network, you will need two components, a wireless network adapter and a wireless access point. There are many ways to secure wireless networks:
+  \begin{itemize}
+    \item Strong encryption of transmitted data
+      \subitem This can be done using WPA (WiFi Protected Access)/ WPA2
+    \item SSID broadcast disabled
+      \subitem The SSID (Service Set Identifier) is the way in which a machine identifies a certain network, so by disabling broadcast, only computers that know the SSID can access the network.
+    \item MAC address white list
+      \subitem The MAC (Media Access Control) address is unique for each device that is connected to a network and is used set when the manufacturer makes the NIC (network interface card). Due to the fact that each MAC address is unique, you can use this to allow only certain people with a specific MAC address to use the network.
+  \end{itemize}
+  There is one protocol which you need to know about, which is the Carrier Sense Multiple Access with Collision Avoidance (CSMA/CA). The basic premise of the protocol is that a device checks with the transmission medium to see whether if it is idle or if it is busy, if it's busy it will wait a random amount of time before checking again (as this reduces the chances of two devices asking at the same time). If it's idle, then the computer will try to send data along the transmission medium and wait for a response to say that all the data got there, if it doesn't get this response, it waits a random amount of time before trying again. An extension to this protocol is RTS/CTS (Request to Send/ Clear to Send) in which the device first sends out a RTS to the receiving device/ node and if a CTS message is received from the receiving node then the data is sent to the receiving node, which in turn sends back acknowledgement of receiving the data.
+
+\subsection{The Internet}
+  \noindent
+  \marginnote{4.9.3.1}The internet and how it works
+  
+  \noindent
+  \marginnote{4.9.3.2}Internet Security
+  
+\subsection{The Transmission Control Protocol/ Internet Protocol (TCP/IP) protocol}
+  \noindent
+  \marginnote{4.9.3.1}TCP/IP
+  
+  \noindent
+  \marginnote{4.9.3.1}Standard application layer protocols
+  
+  \noindent
+  \marginnote{4.9.3.1}IP address structure
+  
+  \noindent
+  \marginnote{4.9.3.1}Subnet masking
+  
+  \noindent
+  \marginnote{4.9.3.1}IP standards
+  
+  \noindent
+  \marginnote{4.9.3.1}Public and Private IP addresses
+  
+  \noindent
+  \marginnote{4.9.3.1}Dynamic Host Configuration Protocol (DHCP)
+  
+  \noindent
+  \marginnote{4.9.3.1}Network Address Translation (NAT)
+  
+  \noindent
+  \marginnote{4.9.3.1}Port Forwarding
+  
+  \noindent
+  \marginnote{4.9.3.1}Client Server Model
+  
+  \noindent
+  \marginnote{4.9.3.1}Thin versus Thick-client computing

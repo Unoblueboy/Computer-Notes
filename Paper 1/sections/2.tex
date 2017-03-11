@@ -116,19 +116,217 @@ file.close()	\end{python}
   	\end{tabular}
   \end{table}
   
+  A priority queue acts like other queues but removal is now based on priority as well as position. Elements with a higher priority are removed first and if two elements have the same priority, whichever element was added first is removed first (keeping the FIFO aspect of a queue). The priority of an object is often shown via subscript and assumes that 1 is the highest priority. For example, in the following priority queue:
+  
+  \begin{table}[H]
+  	\begin{tabular}{C{1.5cm} C{1.5cm} C{1.5cm} C{1.5cm} C{1.5cm} C{1.5cm}}
+  		Front Pointer & & & Rear Pointer & & \\\hline
+  		 \multicolumn{1}{|c|}{``Nathan''$_1$} & \multicolumn{1}{|c|}{``Giorgia''$_2$} & \multicolumn{1}{|c|}{``Ryan''$_1$} & \multicolumn{1}{|c|}{``Helen''$_3$} & \multicolumn{1}{|c|}{}& \multicolumn{1}{|c|}{} \\\hline
+  	\end{tabular}
+  \end{table}
+  
+  The order of deletion would be:
+  \begin{enumerate}
+  	\item Nathan
+  	\item Ryan
+  	\item Giorgia
+  	\item Helen
+  \end{enumerate}
+  
+  There are two main ways to set up a priority queue:
+	 \begin{itemize}
+	 	\item Add new elements at the end of the queue (after the rear pointer)
+		 	\subitem This makes addition of new elements easier as all it has to do is increment the rear pointer and place the data to where the rear pointer points however, removal becomes more difficult as a search through the data structure must be done to find the first element with the highest priority in the list.
+	 	\item Add elements in position dependant on their assigned priority, this would mean our example priority queue would be set up as:
+	 	\begin{table}[H]
+	 		\begin{tabular}{C{1.5cm} C{1.5cm} C{1.5cm} C{1.5cm} C{1.5cm} C{1.5cm}}
+	 			Front Pointer & & & Rear Pointer & & \\\hline
+	 			\multicolumn{1}{|c|}{``Nathan''$_1$} & \multicolumn{1}{|c|}{``Ryan''$_1$} & \multicolumn{1}{|c|}{``Giorgia''$_2$} & \multicolumn{1}{|c|}{``Helen''$_3$} & \multicolumn{1}{|c|}{}& \multicolumn{1}{|c|}{} \\\hline
+	 		\end{tabular}
+	 	\end{table}
+		 	\subitem This makes removal easy as all it has to do is remove the data at the front pointer and increment the front pointer however, addition becomes more complicated as a search of the data structure must be done to be able to insert the data into the correct location. 	
+	 \end{itemize}
+  
   
 \subsection{Stacks}
   
-  \marginnote{4.2.3.1}Stacks
+  \marginnote{4.2.3.1}Stacks are Last In First Out (LIFO) data structures, they are often implemented using an array and use a stack pointer to point to the top element of the stack. There are 3 main methods that are used on a stack:
+  \begin{enumerate}
+  	\item Push
+	  	\subitem This adds a data value to the top of the stack
+  	\item Pop
+	  	\subitem This removes the top data value from the stack and return this data value
+  	\item Peek/ Top
+	  	\subitem This returns the top data value without removing it from the queue.
+  \end{enumerate}
+  
+  Let's show an example of how these methods would look like on an example stack:
+  
+  \begin{table}[H]
+  	\begin{tabular}{C{1.5cm} | C{1.5cm} |}
+  		 & \multicolumn{1}{|c|}{}\\
+  		 & \multicolumn{1}{|c|}{}\\
+  		Stack Pointer & \multicolumn{1}{|c|}{``Walle''}\\
+  		 & \multicolumn{1}{|c|}{``Cisco''}\\
+  		 & \multicolumn{1}{|c|}{``Barry''} \\\cline{2-2}
+  	\end{tabular}
+  \end{table}
+  
+  Now if we were to pop a value from the stack, it would become:
+  
+  \begin{table}[H]
+  	\begin{tabular}{C{1.5cm} | C{1.5cm} |}
+  		 & \multicolumn{1}{|c|}{}\\
+  		 & \multicolumn{1}{|c|}{}\\
+  		 & \multicolumn{1}{|c|}{}\\
+  		Stack Pointer & \multicolumn{1}{|c|}{``Cisco''}\\
+  		 & \multicolumn{1}{|c|}{``Barry''} \\\cline{2-2}
+  	\end{tabular}
+  \end{table}
+  
+  And the value ``Walle'' would be returned, next we're gonna push the name ``Jesse'' onto the stack it would become:
+  
+  \begin{table}[H]
+  	\begin{tabular}{C{1.5cm} | C{1.5cm} |}
+  		 & \multicolumn{1}{|c|}{}\\
+  		 & \multicolumn{1}{|c|}{}\\
+  		Stack Pointer & \multicolumn{1}{|c|}{``Jesse''}\\
+  		 & \multicolumn{1}{|c|}{``Cisco''}\\
+  		 & \multicolumn{1}{|c|}{``Barry''} \\\cline{2-2}
+  	\end{tabular}
+  \end{table}
+  
+  And now if we were to perform Peek/ Top on the stack, the value ``Jesse'' Would be returned, and the stack would remain the same.
+  
+  There are two main errors which may occur when dealing with stacks, stack overflow and stack underflow. Stack-overflow occurs when you try and add more data to a stack which is already full, whereas stack underflow occurs then you try and remove data from an empty stack.
+  
 \subsection{Graphs}
   
-  \marginnote{4.2.4.1}Graphs
+  \marginnote{4.2.4.1}Graphs are a data structure which is used to represent more complex relationships.
+  
+  There are many uses of a graph, such as:
+  \begin{itemize}
+  	\item Human Networks
+	  	\subitem Showing the relationship between different people
+  	\item Transport Networks
+	  	\subitem For example train maps, which allows for organisation of staff and timetabling
+  	\item The internet and web
+	  	\subitem Internet: the devices and connections between them
+	  	\subitem Web: Sites and links between them
+  	\item Computer Science
+	  	\subitem Find shortest path between two processor components to minimise latency
+  	\item Medical research
+	  	\subitem Can be used to investigate the spread of viruses
+  	\item Project Management
+	  	\subitem Can be modelled using the task a nodes and the dependencies between them as nodes
+  	\item Game theory
+	  	\subitem Nodes represent actions and the edges are the outcomes.
+  \end{itemize}
+  
+  Key Terms:
+  \begin{itemize}
+  	\item Graph
+	  	\subitem A mathematical structure that models the relationship between pairs of objects
+  	\item Weighted Graph
+	  	\subitem A graph that has a data value labelled on each edge
+  	\item Vertex/ Node
+	  	\subitem An object in a graph
+  	\item Edge/ Arc
+	  	\subitem A join or relationship between two nodes
+  	\item Undirected Graph
+	  	\subitem A graph where the relationship between vertices is two-way
+  	\item Directed Graph
+	  	\subitem A graph where the relationship between vertices is one-way
+  \end{itemize}
+  
+  There are 2 ways of representing a graph so that it can be processed by a computer
+  \begin{itemize}
+  	\item Adjacency Matrix
+  	\item Adjacency List
+  \end{itemize}
+  
+  A graph can be represented using a two-dimensional matrix; this is called an adjacency matrix. Visually, this is like a table which records information about which vertices have an edge connecting them i.e which vertices are adjacent. Each vertex has a row in the table and each vertex has a column in the table. A ``1'' is placed in the intersection if a vertex's row with another vertex's column, if there is an edge between them. A ``0'' is placed in all of the other cells to denote that there is no edge connecting the two vertices.
+  \begin{table}[h]
+  	\caption{Undirected Graph}
+  	\begin{tabular}{c | c c c c c}
+  		Vertex	&	1	&	2	&	3	&	4	&	5 	\\ \hline
+  		1		&	0	&	1	&	1	&	1	&	0	\\
+  		2		&	1	&	0	&	1	&	0	&	0	\\
+  		3		&	1	&	1	&	0	&	1	&	1	\\
+  		4		&	1	&	0	&	1	&	0	&	1	\\
+  		5		&	0	&	0	&	1	&	1	&	0	\\
+  	\end{tabular}
+  \end{table}
+
+
+  An Alternative to an adjacency matrix is an adjacency list, which can be used to indicate which vertices are next to each other
+  \begin{table}[h]
+  	\caption{Undirected Graph}
+  	\begin{tabular}{cc}
+  		Vertex	&	Adjacent Vertices \\
+  		1		&	2,3,4	\\
+  		2		&	1,3	\\
+  		3		&	1,2,4,5	\\
+  		4		&	1,3,5	\\
+  		5		&	3,4	\\
+  	\end{tabular}
+  \end{table}
+
+
+  Directed graphs can also be represented as an adjacency matrix or list. The method is very similar to that fr an undirected graph, there are slight differences so that the matrix/ list reflect the direction of each stage.
+  \begin{table}[h]
+  	\caption{Directed Graph}
+  	\begin{tabular}{c | c c c c c}
+  		Vertex	&	1	&	2	&	3	&	4	&	5 	\\ \hline
+  		1		&	0	&	1	&	1	&	0	&	0	\\
+  		2		&	0	&	0	&	1	&	0	&	0	\\
+  		3		&	0	&	0	&	0	&	1	&	1	\\
+  		4		&	1	&	0	&	1	&	0	&	1	\\
+  		5		&	0	&	0	&	0	&	0	&	0	\\
+  	\end{tabular}
+  \end{table}
+  \begin{table}[h]
+  	\caption{Directed Graph}
+  	\begin{tabular}{cc}
+  		Vertex	&	Adjacent Vertices \\
+  		1		&	2,3	\\
+  		2		&	3	\\
+  		3		&	4,5	\\
+  		4		&	1,3,5	\\
+  		5		&		\\
+  	\end{tabular}
+  \end{table}
+
+
+  It is quicker to find out if there is an edge between 2 vertices using an adjacency matrix (you only have to look at one item, in an list you may have to look at all items in a vertex's list to see if there is an edge to another vertex)
+  
+  However, an adjacency list can require significantly less space as there is no wastage - it only stores information about which edges do exist in the graph, an adjacency matrix stores information about each possible edge (whether it exists or not).
+  
+  For large graphs which have many vertices but few edges an adjacency list is normally preferable, if a graph has many edges an adjacency matrix is normally the best way of representing the graph.
+  
+  
 \subsection{Trees}
   
-  \marginnote{4.2.5.1}Trees
+  \marginnote{4.2.5.1}Trees are a connected, undirected graph with no cycles, it is called the tree because of the fact that this type of data structure can easily be visualised as a hierarchical structure with branches. A rooted tree is a tree in which one of the nodes are designated from the roots, and all other edges are branching away from the root node. A binary tree is a rooted tree in which each of the node has at most two children nodes. A common use for a binary tree is as a binary search tree, a structure used to store data input in a random order in such a way that it is already sorted. It follows the following algorithm:
+  
+  Store First data item in root node
+  While not in empty branch
+	  If the value of the new data item is less than the value in the current node, branch left
+	  else branch right
+  Put value in node at end of branch
+  
 \subsection{Hash Tables}
   
-  \marginnote{4.2.6.1}Hash Tables
+  \marginnote{4.2.6.1}Hash Tables are a data structure that stores key/value pairs based on an index calculated from an algorithm. It is made up of two parts, the data and the keys. A hashing algorithm is used on the key which generates the index into which the data will be stored, this hashing algorithm will always produce the same output for a given input. Whenever you want to search for a certain key, you can perform the hashing algorithm on the key to find the index the data should be held in and thus retrieve the data in one step. Hashing algorithms are used in: Databases, Memory Addresses, Operating Systems, Encryption, Checksums, Programming.
+  
+  There are a few factors to be considered when choosing a hashing algorithm:
+  \begin{itemize}
+  	\item A numeric value must be produced from this hashing algorithm
+  	\item It must generate unique indices
+  	\item It needs to create a uniform spread of indices
+  	\item There must be enough space to store the data volumes
+  	\item Has to balance speed and complexity
+  \end{itemize}
 \subsection{Dictionaries}
   
   \marginnote{4.2.7.1}Dictionaries

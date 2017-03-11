@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.5.16)  8 MAR 2017 17:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.5.16)  10 MAR 2017 13:10
 entering extended mode
 **"Computing Paper 1.tex"
 ("Computing Paper 1.tex"
@@ -204,9 +204,29 @@ hmetics.code.tex")))
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfloat.code.tex"
 \c@pgfmathroundto@lastzeros=\count112
 )))
+("C:\Program Files\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty"
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen135
+\lightrulewidth=\dimen136
+\cmidrulewidth=\dimen137
+\belowrulesep=\dimen138
+\belowbottomsep=\dimen139
+\aboverulesep=\dimen140
+\abovetopsep=\dimen141
+\cmidrulesep=\dimen142
+\cmidrulekern=\dimen143
+\defaultaddspace=\dimen144
+\@cmidla=\count113
+\@cmidlb=\count114
+\@aboverulesep=\dimen145
+\@belowrulesep=\dimen146
+\@thisruleclass=\count115
+\@lastruleclass=\count116
+\@thisrulewidth=\dimen147
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\marginnote\marginnote.sty"
 Package: marginnote 2012/03/29 v1.1i non floating margin notes for LaTeX
-\c@mn@abspage=\count113
+\c@mn@abspage=\count117
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
 Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
@@ -225,7 +245,7 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count114
+\Gread@gobject=\count118
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tikz-qtree\tikz-qtree.sty"
 ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\frontendlayer\tikz.sty"
@@ -247,28 +267,28 @@ File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 )
-\Gin@req@height=\dimen135
-\Gin@req@width=\dimen136
+\Gin@req@height=\dimen148
+\Gin@req@width=\dimen149
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\systemlayer\pgfsys.sty"
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys.code.tex"
 Package: pgfsys 2013/11/30 v3.0.0 (rcs-revision 1.47)
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex")
-\pgf@x=\dimen137
-\pgf@y=\dimen138
-\pgf@xa=\dimen139
-\pgf@ya=\dimen140
-\pgf@xb=\dimen141
-\pgf@yb=\dimen142
-\pgf@xc=\dimen143
-\pgf@yc=\dimen144
+\pgf@x=\dimen150
+\pgf@y=\dimen151
+\pgf@xa=\dimen152
+\pgf@ya=\dimen153
+\pgf@xb=\dimen154
+\pgf@yb=\dimen155
+\pgf@xc=\dimen156
+\pgf@yc=\dimen157
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count115
-\c@pgf@countb=\count116
-\c@pgf@countc=\count117
-\c@pgf@countd=\count118
+\c@pgf@counta=\count119
+\c@pgf@countb=\count120
+\c@pgf@countc=\count121
+\c@pgf@countd=\count122
 \t@pgf@toka=\toks26
 \t@pgf@tokb=\toks27
 \t@pgf@tokc=\toks28
@@ -288,8 +308,8 @@ File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.t
 ex"
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count119
-\pgfsyssoftpath@bigbuffer@items=\count120
+\pgfsyssoftpath@smallbuffer@items=\count123
+\pgfsyssoftpath@bigbuffer@items=\count124
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsysprotocol.code.t
 ex"
@@ -319,32 +339,32 @@ Package: pgfcore 2010/04/11 v3.0.0 (rcs-revision 1.7)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepoints.code.tex
 "
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen145
-\pgf@picmaxx=\dimen146
-\pgf@picminy=\dimen147
-\pgf@picmaxy=\dimen148
-\pgf@pathminx=\dimen149
-\pgf@pathmaxx=\dimen150
-\pgf@pathminy=\dimen151
-\pgf@pathmaxy=\dimen152
-\pgf@xx=\dimen153
-\pgf@xy=\dimen154
-\pgf@yx=\dimen155
-\pgf@yy=\dimen156
-\pgf@zx=\dimen157
-\pgf@zy=\dimen158
+\pgf@picminx=\dimen158
+\pgf@picmaxx=\dimen159
+\pgf@picminy=\dimen160
+\pgf@picmaxy=\dimen161
+\pgf@pathminx=\dimen162
+\pgf@pathmaxx=\dimen163
+\pgf@pathminy=\dimen164
+\pgf@pathmaxy=\dimen165
+\pgf@xx=\dimen166
+\pgf@xy=\dimen167
+\pgf@yx=\dimen168
+\pgf@yy=\dimen169
+\pgf@zx=\dimen170
+\pgf@zy=\dimen171
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathconstruct.c
 ode.tex"
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen159
-\pgf@path@lasty=\dimen160
+\pgf@path@lastx=\dimen172
+\pgf@path@lasty=\dimen173
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathusage.code.
 tex"
 File: pgfcorepathusage.code.tex 2013/12/13  (rcs-revision 1.23)
-\pgf@shorten@end@additional=\dimen161
-\pgf@shorten@start@additional=\dimen162
+\pgf@shorten@end@additional=\dimen174
+\pgf@shorten@start@additional=\dimen175
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorescopes.code.tex
 "
@@ -352,19 +372,19 @@ File: pgfcorescopes.code.tex 2013/10/09  (rcs-revision 1.44)
 \pgfpic=\box56
 \pgf@hbox=\box57
 \pgf@layerbox@main=\box58
-\pgf@picture@serial@count=\count121
+\pgf@picture@serial@count=\count125
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoregraphicstate.co
 de.tex"
 File: pgfcoregraphicstate.code.tex 2013/09/19  (rcs-revision 1.11)
-\pgflinewidth=\dimen163
+\pgflinewidth=\dimen176
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransformations
 .code.tex"
 File: pgfcoretransformations.code.tex 2013/10/10  (rcs-revision 1.17)
-\pgf@pt@x=\dimen164
-\pgf@pt@y=\dimen165
-\pgf@pt@temp=\dimen166
+\pgf@pt@x=\dimen177
+\pgf@pt@y=\dimen178
+\pgf@pt@temp=\dimen179
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorequick.code.tex"
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
@@ -380,12 +400,12 @@ File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorearrows.code.tex
 "
 File: pgfcorearrows.code.tex 2013/11/07  (rcs-revision 1.40)
-\pgfarrowsep=\dimen167
+\pgfarrowsep=\dimen180
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreshade.code.tex"
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen168
-\pgf@sys@shading@range@num=\count122
+\pgf@max=\dimen181
+\pgf@sys@shading@range@num=\count126
 ) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreimage.code.te
 x"
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
@@ -416,8 +436,8 @@ File: pgfmoduleplot.code.tex 2013/07/31  (rcs-revision 1.12)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version-0-65.
 sty"
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.0 (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen169
-\pgf@nodesepend=\dimen170
+\pgf@nodesepstart=\dimen182
+\pgf@nodesepend=\dimen183
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version-1-18.
 sty"
@@ -427,8 +447,8 @@ Package: pgfcomp-version-1-18 2007/07/23 v3.0.0 (rcs-revision 1.1)
 Package: pgffor 2013/12/13 v3.0.0 (rcs-revision 1.25)
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex")
-\pgffor@iter=\dimen171
-\pgffor@skip=\dimen172
+\pgffor@iter=\dimen184
+\pgffor@skip=\dimen185
 \pgffor@stack=\toks29
 \pgffor@toks=\toks30
 ))
@@ -438,31 +458,31 @@ Package: tikz 2013/12/13 v3.0.0 (rcs-revision 1.142)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryplothandlers.
 code.tex"
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
-\pgf@plot@mark@count=\count123
-\pgfplotmarksize=\dimen173
+\pgf@plot@mark@count=\count127
+\pgfplotmarksize=\dimen186
 )
-\tikz@lastx=\dimen174
-\tikz@lasty=\dimen175
-\tikz@lastxsaved=\dimen176
-\tikz@lastysaved=\dimen177
-\tikzleveldistance=\dimen178
-\tikzsiblingdistance=\dimen179
+\tikz@lastx=\dimen187
+\tikz@lasty=\dimen188
+\tikz@lastxsaved=\dimen189
+\tikz@lastysaved=\dimen190
+\tikzleveldistance=\dimen191
+\tikzsiblingdistance=\dimen192
 \tikz@figbox=\box61
 \tikz@figbox@bg=\box62
 \tikz@tempbox=\box63
 \tikz@tempbox@bg=\box64
-\tikztreelevel=\count124
-\tikznumberofchildren=\count125
-\tikznumberofcurrentchild=\count126
-\tikz@fig@count=\count127
+\tikztreelevel=\count128
+\tikznumberofchildren=\count129
+\tikznumberofcurrentchild=\count130
+\tikz@fig@count=\count131
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmodulematrix.code.tex"
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count128
-\pgfmatrixcurrentcolumn=\count129
-\pgf@matrix@numberofcolumns=\count130
+\pgfmatrixcurrentrow=\count132
+\pgfmatrixcurrentcolumn=\count133
+\pgf@matrix@numberofcolumns=\count134
 )
-\tikz@expandcount=\count131
+\tikz@expandcount=\count135
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
 librarytopaths.code.tex"
@@ -471,33 +491,33 @@ File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.0 (rcs-revision 1.2)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tikz-qtree\pgftree.sty"
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tikz-qtree\pgfsubpic.sty"
 ("C:\Program Files\MiKTeX 2.9\tex\generic\tikz-qtree\pgfsubpic.tex"
-\pgf@subpicminx=\dimen180
-\pgf@subpicminy=\dimen181
-\pgf@subpicmaxx=\dimen182
-\pgf@subpicmaxy=\dimen183
+\pgf@subpicminx=\dimen193
+\pgf@subpicminy=\dimen194
+\pgf@subpicmaxx=\dimen195
+\pgf@subpicmaxy=\dimen196
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\generic\tikz-qtree\pgftree.tex"
-\levelsep=\dimen184
-\subtreesep=\dimen185
-\smuggle@levelsep=\dimen186
-\smuggle@subtreesep=\dimen187
-\this@levelsep=\dimen188
-\this@subtreesep=\dimen189
-\pgftree@childx=\dimen190
-\pgftree@savechildx=\dimen191
-\pgftree@childy=\dimen192
-\pgftree@savechildy=\dimen193
-\pgftree@childi=\count132
-\pgftree@savechildi=\count133
-\pgftree@level=\count134
-\pgftree@depth=\dimen194
+\levelsep=\dimen197
+\subtreesep=\dimen198
+\smuggle@levelsep=\dimen199
+\smuggle@subtreesep=\dimen200
+\this@levelsep=\dimen201
+\this@subtreesep=\dimen202
+\pgftree@childx=\dimen203
+\pgftree@savechildx=\dimen204
+\pgftree@childy=\dimen205
+\pgftree@savechildy=\dimen206
+\pgftree@childi=\count136
+\pgftree@savechildi=\count137
+\pgftree@level=\count138
+\pgftree@depth=\dimen207
 \pgf@subpic@hbox@children=\box65
-\pgf@subpic@minx@children=\dimen195
-\pgf@subpic@miny@children=\dimen196
-\pgf@subpic@maxx@children=\dimen197
-\pgf@subpic@maxy@children=\dimen198
-\pgftree@lastchildx=\dimen199
-\pgftree@lastchildy=\dimen200
+\pgf@subpic@minx@children=\dimen208
+\pgf@subpic@miny@children=\dimen209
+\pgf@subpic@maxx@children=\dimen210
+\pgf@subpic@maxy@children=\dimen211
+\pgftree@lastchildx=\dimen212
+\pgftree@lastchildy=\dimen213
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\generic\tikz-qtree\tikz-qtree.tex"
 \@result=\toks31
@@ -506,7 +526,7 @@ File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.0 (rcs-revision 1.2)
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count135
+\c@float@type=\count139
 \float@exts=\toks34
 \float@box=\box66
 \@float@everytoks=\toks35
@@ -514,8 +534,8 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen201
-\extrarowheight=\dimen202
+\col@sep=\dimen214
+\extrarowheight=\dimen215
 \NC@list=\toks36
 \extratabsurround=\skip45
 \backup@length=\skip46
@@ -526,15 +546,15 @@ Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty"
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
-\captionmargin=\dimen203
-\captionmargin@=\dimen204
-\captionwidth=\dimen205
-\caption@tempdima=\dimen206
-\caption@indent=\dimen207
-\caption@parindent=\dimen208
-\caption@hangindent=\dimen209
+\captionmargin=\dimen216
+\captionmargin@=\dimen217
+\captionwidth=\dimen218
+\caption@tempdima=\dimen219
+\caption@indent=\dimen220
+\caption@parindent=\dimen221
+\caption@hangindent=\dimen222
 )
-\c@ContinuedFloat=\count136
+\c@ContinuedFloat=\count140
 Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 )
@@ -554,7 +574,7 @@ File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryarrows.code.t
 ex"
 File: pgflibraryarrows.code.tex 2013/09/23 v3.0.0 (rcs-revision 1.16)
-\arrowsize=\dimen210
+\arrowsize=\dimen223
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
 librarycalc.code.tex"
@@ -568,20 +588,20 @@ File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.0 (rcs-revision 1.7)
 libraryintersections.code.tex"
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryintersections
 .code.tex"
-\pgf@intersect@solutions=\count137
+\pgf@intersect@solutions=\count141
 )) ("Computing Paper 1.aux")
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -617,33 +637,33 @@ LaTeX Font Info:    ... okay on input line 112.
 * \@reversemargintrue
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count138
+\c@lstlisting=\count142
 ABD: EveryShipout initializing macros
 Package marginnote Info: \pdfoutput not 0 and \pdflastxpos available.
 (marginnote)             Extended position detection mode activated.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count139
-\scratchdimen=\dimen211
+\scratchcounter=\count143
+\scratchdimen=\dimen224
 \scratchbox=\box68
-\nofMPsegments=\count140
-\nofMParguments=\count141
+\nofMPsegments=\count144
+\nofMParguments=\count145
 \everyMPshowfont=\toks37
-\MPscratchCnt=\count142
-\MPscratchDim=\dimen212
-\MPnumerator=\count143
-\makeMPintoPDFobject=\count144
+\MPscratchCnt=\count146
+\MPscratchDim=\dimen225
+\MPnumerator=\count147
+\makeMPintoPDFobject=\count148
 \everyMPtoPDFconversion=\toks38
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 Package marginnote Info: Margin note 1.1 is on absolute page 1
-(marginnote)              on input line 113.
-Package marginnote Info: right page because not two side mode on input line 113
+(marginnote)              on input line 114.
+Package marginnote Info: right page because not two side mode on input line 114
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 113.
+(marginnote)             \marginnoteleftadjust ignored on input line 114.
  (sections/1.tex
 Package marginnote Info: Margin note 1.2 is on absolute page 1
 (marginnote)              on input line 3.
@@ -837,102 +857,114 @@ Package marginnote Info: right page because not two side mode on input line 63.
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 63.
 [7]
-Package marginnote Info: Margin note 8.1 is on absolute page 8
-(marginnote)              on input line 122.
-Package marginnote Info: right page because not two side mode on input line 122
+Package marginnote Info: Margin note 8.1 is on absolute page 9
+(marginnote)              on input line 153.
+Package marginnote Info: right page because not two side mode on input line 153
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 122.
-Package marginnote Info: Margin note 8.2 is on absolute page 8
-(marginnote)              on input line 125.
-Package marginnote Info: right page because not two side mode on input line 125
+(marginnote)             \marginnoteleftadjust ignored on input line 153.
+ [8]
+Package marginnote Info: Margin note 9.1 is on absolute page 9
+(marginnote)              on input line 205.
+Package marginnote Info: right page because not two side mode on input line 205
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 125.
-Package marginnote Info: Margin note 8.3 is on absolute page 8
-(marginnote)              on input line 128.
-Package marginnote Info: right page because not two side mode on input line 128
+(marginnote)             \marginnoteleftadjust ignored on input line 205.
+ [9]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[10]
+Package marginnote Info: Margin note 11.1 is on absolute page 11
+(marginnote)              on input line 310.
+Package marginnote Info: right page because not two side mode on input line 310
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 128.
-Package marginnote Info: Margin note 8.4 is on absolute page 8
-(marginnote)              on input line 131.
-Package marginnote Info: right page because not two side mode on input line 131
+(marginnote)             \marginnoteleftadjust ignored on input line 310.
+Package marginnote Info: Margin note 11.2 is on absolute page 11
+(marginnote)              on input line 313.
+Package marginnote Info: right page because not two side mode on input line 313
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 131.
-Package marginnote Info: Margin note 8.5 is on absolute page 8
-(marginnote)              on input line 134.
-Package marginnote Info: right page because not two side mode on input line 134
+(marginnote)             \marginnoteleftadjust ignored on input line 313.
+Package marginnote Info: Margin note 11.3 is on absolute page 11
+(marginnote)              on input line 316.
+Package marginnote Info: right page because not two side mode on input line 316
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 134.
-Package marginnote Info: Margin note 8.6 is on absolute page 8
-(marginnote)              on input line 137.
-Package marginnote Info: right page because not two side mode on input line 137
+(marginnote)             \marginnoteleftadjust ignored on input line 316.
+Package marginnote Info: Margin note 11.4 is on absolute page 11
+(marginnote)              on input line 319.
+Package marginnote Info: right page because not two side mode on input line 319
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 137.
+(marginnote)             \marginnoteleftadjust ignored on input line 319.
 ) (sections/3.tex
-Package marginnote Info: Margin note 8.7 is on absolute page 8
+Package marginnote Info: Margin note 11.5 is on absolute page 11
 (marginnote)              on input line 3.
 Package marginnote Info: right page because not two side mode on input line 3.
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 3.
-Package marginnote Info: Margin note 8.8 is on absolute page 8
+Package marginnote Info: Margin note 11.6 is on absolute page 11
 (marginnote)              on input line 6.
 Package marginnote Info: right page because not two side mode on input line 6.
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 6.
-Package marginnote Info: Margin note 8.9 is on absolute page 9
+Package marginnote Info: Margin note 11.7 is on absolute page 11
 (marginnote)              on input line 9.
 Package marginnote Info: right page because not two side mode on input line 9.
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 9.
-Package marginnote Info: Margin note 8.10 is on absolute page 9
+Package marginnote Info: Margin note 11.8 is on absolute page 12
 (marginnote)              on input line 12.
 Package marginnote Info: right page because not two side mode on input line 12.
 
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 12.
- [8]
-Package marginnote Info: Margin note 9.1 is on absolute page 9
+ [11]
+Package marginnote Info: Margin note 12.1 is on absolute page 12
 (marginnote)              on input line 15.
 Package marginnote Info: right page because not two side mode on input line 15.
 
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 15.
-Package marginnote Info: Margin note 9.2 is on absolute page 9
+Package marginnote Info: Margin note 12.2 is on absolute page 12
 (marginnote)              on input line 18.
 Package marginnote Info: right page because not two side mode on input line 18.
 
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 18.
-Package marginnote Info: Margin note 9.3 is on absolute page 9
+Package marginnote Info: Margin note 12.3 is on absolute page 12
 (marginnote)              on input line 21.
 Package marginnote Info: right page because not two side mode on input line 21.
 
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 21.
-Package marginnote Info: Margin note 9.4 is on absolute page 9
+Package marginnote Info: Margin note 12.4 is on absolute page 12
 (marginnote)              on input line 24.
 Package marginnote Info: right page because not two side mode on input line 24.
 
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 24.
-Package marginnote Info: Margin note 9.5 is on absolute page 9
+Package marginnote Info: Margin note 12.5 is on absolute page 12
 (marginnote)              on input line 27.
 Package marginnote Info: right page because not two side mode on input line 27.
 
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 27.
 ) (sections/4.tex
-Package marginnote Info: Margin note 9.6 is on absolute page 9
+Package marginnote Info: Margin note 12.6 is on absolute page 12
 (marginnote)              on input line 3.
 Package marginnote Info: right page because not two side mode on input line 3.
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 3.
-Package marginnote Info: Margin note 9.7 is on absolute page 9
+Package marginnote Info: Margin note 12.7 is on absolute page 12
 (marginnote)              on input line 4.
 Package marginnote Info: right page because not two side mode on input line 4.
 Package marginnote Info: xpos seems to be 89.62709pt,
@@ -941,63 +973,63 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 8.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 8.
-Package marginnote Info: Margin note 9.8 is on absolute page 9
+Package marginnote Info: Margin note 12.8 is on absolute page 12
 (marginnote)              on input line 44.
 Package marginnote Info: right page because not two side mode on input line 44.
 
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 44.
- [9]
-Package marginnote Info: Margin note 10.1 is on absolute page 10
+ [12]
+Package marginnote Info: Margin note 13.1 is on absolute page 13
 (marginnote)              on input line 75.
 Package marginnote Info: right page because not two side mode on input line 75.
 
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 75.
-Package marginnote Info: Margin note 10.2 is on absolute page 10
+Package marginnote Info: Margin note 13.2 is on absolute page 13
 (marginnote)              on input line 79.
 Package marginnote Info: right page because not two side mode on input line 79.
 
 Package marginnote Info: xpos seems to be 114.62712pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 79.
-Package marginnote Info: Margin note 10.3 is on absolute page 10
+Package marginnote Info: Margin note 13.3 is on absolute page 13
 (marginnote)              on input line 81.
 Package marginnote Info: right page because not two side mode on input line 81.
 
 Package marginnote Info: xpos seems to be 114.62712pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 81.
-Package marginnote Info: Margin note 10.4 is on absolute page 10
+Package marginnote Info: Margin note 13.4 is on absolute page 13
 (marginnote)              on input line 83.
 Package marginnote Info: right page because not two side mode on input line 83.
 
 Package marginnote Info: xpos seems to be 114.62712pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 83.
-Package marginnote Info: Margin note 10.5 is on absolute page 10
+Package marginnote Info: Margin note 13.5 is on absolute page 13
 (marginnote)              on input line 85.
 Package marginnote Info: right page because not two side mode on input line 85.
 
 Package marginnote Info: xpos seems to be 114.62712pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 85.
-Package marginnote Info: Margin note 10.6 is on absolute page 10
+Package marginnote Info: Margin note 13.6 is on absolute page 13
 (marginnote)              on input line 88.
 Package marginnote Info: right page because not two side mode on input line 88.
 
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 88.
-Package marginnote Info: Margin note 10.7 is on absolute page 10
+Package marginnote Info: Margin note 13.7 is on absolute page 13
 (marginnote)              on input line 89.
 Package marginnote Info: right page because not two side mode on input line 89.
 
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 89.
- [10]
-Package marginnote Info: Margin note 11.1 is on absolute page 11
+ [13]
+Package marginnote Info: Margin note 14.1 is on absolute page 14
 (marginnote)              on input line 124.
 Package marginnote Info: right page because not two side mode on input line 124
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 124.
-Package marginnote Info: Margin note 11.2 is on absolute page 11
+Package marginnote Info: Margin note 14.2 is on absolute page 14
 (marginnote)              on input line 135.
 Package marginnote Info: right page because not two side mode on input line 135
 .
@@ -1009,85 +1041,85 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--156
 
  []
 
-[11]
-Package marginnote Info: Margin note 12.1 is on absolute page 12
+[14]
+Package marginnote Info: Margin note 15.1 is on absolute page 15
 (marginnote)              on input line 176.
 Package marginnote Info: right page because not two side mode on input line 176
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 176.
-Package marginnote Info: Margin note 12.2 is on absolute page 12
+Package marginnote Info: Margin note 15.2 is on absolute page 15
 (marginnote)              on input line 179.
 Package marginnote Info: right page because not two side mode on input line 179
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 179.
-Package marginnote Info: Margin note 12.3 is on absolute page 12
+Package marginnote Info: Margin note 15.3 is on absolute page 15
 (marginnote)              on input line 182.
 Package marginnote Info: right page because not two side mode on input line 182
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 182.
-Package marginnote Info: Margin note 12.4 is on absolute page 12
+Package marginnote Info: Margin note 15.4 is on absolute page 15
 (marginnote)              on input line 187.
 Package marginnote Info: right page because not two side mode on input line 187
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 187.
-Package marginnote Info: Margin note 12.5 is on absolute page 12
+Package marginnote Info: Margin note 15.5 is on absolute page 15
 (marginnote)              on input line 192.
 Package marginnote Info: right page because not two side mode on input line 192
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 192.
-Package marginnote Info: Margin note 12.6 is on absolute page 12
+Package marginnote Info: Margin note 15.6 is on absolute page 15
 (marginnote)              on input line 195.
 Package marginnote Info: right page because not two side mode on input line 195
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 195.
-Package marginnote Info: Margin note 12.7 is on absolute page 12
+Package marginnote Info: Margin note 15.7 is on absolute page 15
 (marginnote)              on input line 198.
 Package marginnote Info: right page because not two side mode on input line 198
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 198.
-Package marginnote Info: Margin note 12.8 is on absolute page 12
+Package marginnote Info: Margin note 15.8 is on absolute page 15
 (marginnote)              on input line 201.
 Package marginnote Info: right page because not two side mode on input line 201
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 201.
-Package marginnote Info: Margin note 12.9 is on absolute page 12
+Package marginnote Info: Margin note 15.9 is on absolute page 15
 (marginnote)              on input line 204.
 Package marginnote Info: right page because not two side mode on input line 204
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 204.
-Package marginnote Info: Margin note 12.10 is on absolute page 12
+Package marginnote Info: Margin note 15.10 is on absolute page 15
 (marginnote)              on input line 207.
 Package marginnote Info: right page because not two side mode on input line 207
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 207.
-Package marginnote Info: Margin note 12.11 is on absolute page 12
+Package marginnote Info: Margin note 15.11 is on absolute page 15
 (marginnote)              on input line 210.
 Package marginnote Info: right page because not two side mode on input line 210
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 210.
-Package marginnote Info: Margin note 12.12 is on absolute page 12
+Package marginnote Info: Margin note 15.12 is on absolute page 15
 (marginnote)              on input line 214.
 Package marginnote Info: right page because not two side mode on input line 214
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 214.
-) [12] ("Computing Paper 1.aux") ) 
+) [15] ("Computing Paper 1.aux") ) 
 Here is how much of TeX's memory you used:
- 16312 strings out of 493698
- 321173 string characters out of 3144400
- 458285 words of memory out of 3000000
- 19349 multiletter control sequences out of 15000+200000
+ 16371 strings out of 493698
+ 321966 string characters out of 3144400
+ 459024 words of memory out of 3000000
+ 19404 multiletter control sequences out of 15000+200000
  7495 words of font info for 27 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  61i,12n,75p,855b,1666s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1102,9 +1134,9 @@ onts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 /amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmtt10.pfb>
-Output written on "Computing Paper 1.pdf" (12 pages, 188390 bytes).
+Output written on "Computing Paper 1.pdf" (15 pages, 196435 bytes).
 PDF statistics:
- 88 PDF objects out of 1000 (max. 8388607)
+ 98 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

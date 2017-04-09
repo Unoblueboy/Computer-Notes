@@ -327,6 +327,13 @@ file.close()	\end{python}
   	\item There must be enough space to store the data volumes
   	\item Has to balance speed and complexity
   \end{itemize}
+  
+  The reason why we have to chose a suitable hashing algorithm is so that we can avoid collisions, this occurs when a hashing algorithm produces the same output (index) for multiple different inputs (keys). Whenever a collision occurs, there must be some sort of way to assign this key a unique index. Two main methods are used for this:
+  \begin{itemize}
+  	\item Chaining
+	  	\subitem If this scenario occurs, the key/value pair is added to a list at the corresponding index. If a unique address is found, the key/ value pair is simply added to that index.
+  	\item Rehashing/ Probing
+  \end{itemize}
 \subsection{Dictionaries}
   
   \marginnote{4.2.7.1}Dictionaries

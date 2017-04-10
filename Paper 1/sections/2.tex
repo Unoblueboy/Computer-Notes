@@ -333,10 +333,53 @@ file.close()	\end{python}
   	\item Chaining
 	  	\subitem If this scenario occurs, the key/value pair is added to a list at the corresponding index. If a unique address is found, the key/ value pair is simply added to that index.
   	\item Rehashing/ Probing
+	  	\subitem If a collision occurs one of two things is done: another hashing algorithm is used, or it looks for the next empty space and puts the data into this space.
   \end{itemize}
 \subsection{Dictionaries}
   
-  \marginnote{4.2.7.1}Dictionaries
+  \marginnote{4.2.7.1}A dictionary is a data structure that is used to associate keys with values, similar to a hash table. It can also be called an associative array as it associates two sets of data.
+  
+  Dictionaries can be useful for information retrieval (the tracing and recovery of specific information from stored data) for example, the sentence ``To be, or not to be: that is the question:'' could be represented as the following \{'the': 1, 'or': 1, 'that': 1, 'question': 1, 'is': 1, 'not': 1, 'be': 2, 'to': 2\}
+  
+  The main python dictionary methods
+  
+  \textbf{instantiation}
+  
+ \begin{python}
+ dict = {}
+ \end{python}
+  
+  \textbf{insertion}
+
+\begin{python}
+dict["a"] = 1
+dict["b"] = 2
+dict["c"] = 3
+# dict = {"a"=1,"b"=2,"c"=3}
+\end{python}
+  
+  \textbf{retrieval}
+
+\begin{python}
+dict["a"]
+# return 1
+\end{python}
+
+  \textbf{modification}
+  
+\begin{python}
+dict["a"] = 4
+# dict = {"a"=4,"b"=2,"c"=3}
+\end{python}
+
+  \textbf{deletion}
+  
+\begin{python}
+del dict["a"]
+# dict = {"b"=2,"c"=3}
+\end{python}
+  
+  
 \subsection{Vectors}
   
   \marginnote{4.2.8.1}Vectors

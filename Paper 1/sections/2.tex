@@ -246,21 +246,24 @@ file.close()	\end{python}
   \end{itemize}
   
   A graph can be represented using a two-dimensional matrix; this is called an adjacency matrix. Visually, this is like a table which records information about which vertices have an edge connecting them i.e which vertices are adjacent. Each vertex has a row in the table and each vertex has a column in the table. A ``1'' is placed in the intersection if a vertex's row with another vertex's column, if there is an edge between them. A ``0'' is placed in all of the other cells to denote that there is no edge connecting the two vertices.
-  \begin{table}[h]
+  
+  \includegraphics[scale=0.4]{Undirected-Graph}
+  
+  \begin{table}[H]
+	  	\begin{tabular}{c | c c c c c}
+	  		Vertex	&	1	&	2	&	3	&	4	&	5 	\\ \hline
+	  		1		&	0	&	1	&	3	&	1	&	0	\\
+	  		2		&	1	&	0	&	6	&	0	&	0	\\
+	  		3		&	3	&	6	&	0	&	2	&	4	\\
+	  		4		&	1	&	0	&	2	&	0	&	5	\\
+	  		5		&	0	&	0	&	4	&	5	&	0	\\
+	  	\end{tabular}
   	\caption{Undirected Graph}
-  	\begin{tabular}{c | c c c c c}
-  		Vertex	&	1	&	2	&	3	&	4	&	5 	\\ \hline
-  		1		&	0	&	1	&	1	&	1	&	0	\\
-  		2		&	1	&	0	&	1	&	0	&	0	\\
-  		3		&	1	&	1	&	0	&	1	&	1	\\
-  		4		&	1	&	0	&	1	&	0	&	1	\\
-  		5		&	0	&	0	&	1	&	1	&	0	\\
-  	\end{tabular}
   \end{table}
 
 
   An Alternative to an adjacency matrix is an adjacency list, which can be used to indicate which vertices are next to each other
-  \begin{table}[h]
+  \begin{table}[H]
   	\caption{Undirected Graph}
   	\begin{tabular}{cc}
   		Vertex	&	Adjacent Vertices \\
@@ -274,7 +277,10 @@ file.close()	\end{python}
 
 
   Directed graphs can also be represented as an adjacency matrix or list. The method is very similar to that fr an undirected graph, there are slight differences so that the matrix/ list reflect the direction of each stage.
-  \begin{table}[h]
+  
+  \includegraphics[scale=0.4]{Directed-Graph}
+  
+  \begin{table}[H]
   	\caption{Directed Graph}
   	\begin{tabular}{c | c c c c c}
   		Vertex	&	1	&	2	&	3	&	4	&	5 	\\ \hline
@@ -285,7 +291,7 @@ file.close()	\end{python}
   		5		&	0	&	0	&	0	&	0	&	0	\\
   	\end{tabular}
   \end{table}
-  \begin{table}[h]
+  \begin{table}[H]
   	\caption{Directed Graph}
   	\begin{tabular}{cc}
   		Vertex	&	Adjacent Vertices \\
@@ -382,4 +388,53 @@ del dict["a"]
   
 \subsection{Vectors}
   
-  \marginnote{4.2.8.1}Vectors
+  \marginnote{4.2.8.1}In mathematics, a vector is generally defined as a quantity with direction and magnitude. There are many ways which a vector can be represented:
+  \begin{itemize}
+  	\item a List/ 1D array
+	  	\subitem [1,-3,2]
+  	\item a Dictionary
+	  	\subitem \{0:1,1:-3,2:2\}
+  	\item a function
+	  	\subitem $f:0\mapsto1$
+	  	\subitem $f:1\mapsto-3$
+	  	\subitem $f:2\mapsto2$ 
+  	\item an arrow
+	  	\begin{figure}[H]
+		  	\includegraphics[scale=0.4]{Arrow-Vector2}
+	  	\end{figure}
+  \end{itemize}
+  Each of the different parts that make up a vector are called its components, so for the examples above, they would have components 1,3, and 2. In maths notation these vectors can be written as $ \left( \begin{smallmatrix} 1 \\ -3 \\ 2\end{smallmatrix}\right)  $ or $i - 3j + 2k$. From the arrow representation, you can see that you can calculate magnitude (size) of the vector using Pythagoras's Theorem so the magnitude of $i + 3j + 2k$ (which can be represented as $|i - 3j + 2k|$) $ = \sqrt{1^2+(-3)^2+2^2} = \sqrt{14}$
+  
+  There are 3 simple operations that you need to be able to do with vectors:
+  \begin{itemize}
+  	\item Vector Addition
+	  	\subitem $\textbf{a} = \left( \begin{smallmatrix} a_1 \\ a_2 \\ \vdots \\ a_n \end{smallmatrix}\right)$
+	  	\subitem $\textbf{b} = \left( \begin{smallmatrix} b_1 \\ b_2 \\ \vdots \\ b_n\end{smallmatrix}\right)$ 
+	  	\subitem $\textbf{a} + \textbf{b} = \left( \begin{smallmatrix} a_1+b_1 \\ a_2+b_2 \\ \vdots \\ a_n+b_n\end{smallmatrix}\right)$
+  	\item Vector scalar multiplication
+	  	\subitem $\textbf{a} = \left( \begin{smallmatrix} a_1 \\ a_2 \\ \vdots \\ a_n \end{smallmatrix}\right)$
+	  	\subitem $x \times \textbf{a} = \left( \begin{smallmatrix} x \times a_1 \\ x \times a_2 \\ \vdots \\ x \times a_n\end{smallmatrix}\right)$
+  	\item Dot/ Scalar Product
+	  	\subitem $\textbf{a} = \left( \begin{smallmatrix} a_1 \\ a_2 \\ \vdots \\ a_n \end{smallmatrix}\right)$
+	  	\subitem $\textbf{b} = \left( \begin{smallmatrix} b_1 \\ b_2 \\ \vdots \\ b_n\end{smallmatrix}\right)$ 
+	  	\subitem $\textbf{a} \bullet \textbf{b} = \left( \begin{smallmatrix} a_1 \times b_1 \\ a_2 \times b_2 \\ \vdots \\ a_n \times b_n\end{smallmatrix}\right)$
+  \end{itemize}
+  
+  Another concept you need to be aware of is the convex combination, This can most easily be thought of as the space between two vectors. It can be more rigorously defined on the following way. Given 2 vectors $\textbf{a}$ and $\textbf{b}$ and two scalars (AKA real numbers) $\alpha$ and $\beta$, the convex combinations is the set of vectors in the form $ \alpha\textbf{a} + \beta\textbf{b} $ given $\alpha \geq 0$, $\beta \geq 0$, and $\alpha + \beta = 1$.
+  
+  The parity bit can be generated given two vectors over GF(2)\footnote{to briefly go into this, a Galois field of two elements, GF(2), is simply a system where only the numbers 1 and two are used, this is useful as it makes it easier to represent bitwise operations as arithmetic operations instead, XOR is addition/subtraction, AND is multiplication, there tables would be as follows
+  	\begin{table}[H]
+  		\begin{tabular}{c c}
+	  		\begin{tabular}{c | c | c}
+	  			$\times$ & 0 & 1 \\\hline
+	  			0 & 0 & 0 \\\hline
+	  			1 & 0 & 1 \\
+	  		\end{tabular}
+	  		&
+	  		\begin{tabular}{c | c | c}
+	  			$+$ & 0 & 1 \\\hline
+	  			0 & 0 & 1 \\\hline
+	  			1 & 1 & 0 \\
+	  		\end{tabular}
+	  	\end{tabular}
+  	\end{table}} The parity bit for even parity is calculated by doing the dot product of the two vectors, one of the vectors will always be filled with 1s and the other vector is the vector you want to calculate the parity of. For example if $\textbf{u} = \left( \begin{smallmatrix} 1 \\ 0 \\ 0 \\ 1 \end{smallmatrix}\right)$ and $\textbf{v} = \left( \begin{smallmatrix} 1 \\ 0 \\ 0 \\ 1 \end{smallmatrix}\right)$, then $\textbf{u}\bullet\textbf{v} = 1\times1 + 1\times0 + 1\times0 + 1\times1 = 1 + 1 = 0 $ therefore the parity bit is 0.

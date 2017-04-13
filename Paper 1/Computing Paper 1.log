@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210) (preloaded format=pdflatex 2016.5.31)  10 APR 2017 23:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210) (preloaded format=pdflatex 2016.5.31)  13 APR 2017 01:21
 entering extended mode
 **"./Computing Paper 1.tex"
 ("Computing Paper 1.tex"
@@ -1070,121 +1070,198 @@ Package marginnote Info: Margin note 19.1 is on absolute page 19
 Package marginnote Info: right page because not two side mode on input line 3.
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 3.
-Package marginnote Info: Margin note 19.2 is on absolute page 19
-(marginnote)              on input line 6.
-Package marginnote Info: right page because not two side mode on input line 6.
-Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 6.
-Package marginnote Info: Margin note 19.3 is on absolute page 19
-(marginnote)              on input line 9.
-Package marginnote Info: right page because not two side mode on input line 9.
-Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 9.
-Package marginnote Info: Margin note 19.4 is on absolute page 19
-(marginnote)              on input line 12.
-Package marginnote Info: right page because not two side mode on input line 12.
-
-Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 12.
-Package marginnote Info: Margin note 19.5 is on absolute page 19
-(marginnote)              on input line 15.
-Package marginnote Info: right page because not two side mode on input line 15.
-
-Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 15.
-Package marginnote Info: Margin note 19.6 is on absolute page 19
-(marginnote)              on input line 18.
-Package marginnote Info: right page because not two side mode on input line 18.
-
-Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 18.
-Package marginnote Info: Margin note 19.7 is on absolute page 20
-(marginnote)              on input line 21.
-Package marginnote Info: right page because not two side mode on input line 21.
-
-Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 21.
+File: Undirected-Graph.png Graphic file (type png)
+ <use Undirected-Graph.png>
+Package pdftex.def Info: Undirected-Graph.png used on input line 12.
+(pdftex.def)             Requested size: 157.38521pt x 148.55235pt.
  [19]
-Package marginnote Info: Margin note 20.1 is on absolute page 20
-(marginnote)              on input line 24.
-Package marginnote Info: right page because not two side mode on input line 24.
+Overfull \hbox (36.80635pt too wide) in paragraph at lines 20--29
+[][] 
+ []
+
+
+Overfull \hbox (36.80635pt too wide) in paragraph at lines 61--76
+[][] 
+ []
+
+[20]
+Package marginnote Info: Margin note 21.1 is on absolute page 21
+(marginnote)              on input line 96.
+Package marginnote Info: right page because not two side mode on input line 96.
 
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 24.
-Package marginnote Info: Margin note 20.2 is on absolute page 20
-(marginnote)              on input line 27.
-Package marginnote Info: right page because not two side mode on input line 27.
-
+(marginnote)             \marginnoteleftadjust ignored on input line 96.
+ [21]
+Package marginnote Info: Margin note 22.1 is on absolute page 22
+(marginnote)              on input line 141.
+Package marginnote Info: right page because not two side mode on input line 141
+.
+Package marginnote Info: xpos seems to be 93.28099pt,
+(marginnote)             \marginnoteleftadjust ignored on input line 141.
+Missing character: There is no â in font cmr10!
+Missing character: There is no ˆ in font cmr10!
+Missing character: There is no ’ in font cmr10!
+ [22]
+Missing character: There is no â in font cmr10!
+Missing character: There is no ˆ in font cmr10!
+Missing character: There is no ’ in font cmr10!
+Package marginnote Info: Margin note 23.1 is on absolute page 24
+(marginnote)              on input line 213.
+Package marginnote Info: right page because not two side mode on input line 213
+.
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 27.
-) (sections/4.tex
-Package marginnote Info: Margin note 20.3 is on absolute page 20
+(marginnote)             \marginnoteleftadjust ignored on input line 213.
+ [23]
+Package marginnote Info: Margin note 24.1 is on absolute page 24
+(marginnote)              on input line 224.
+Package marginnote Info: right page because not two side mode on input line 224
+.
+Package marginnote Info: xpos seems to be 89.62709pt,
+(marginnote)             \marginnoteleftadjust ignored on input line 224.
+Package marginnote Info: Margin note 24.2 is on absolute page 24
+(marginnote)              on input line 242.
+Package marginnote Info: right page because not two side mode on input line 242
+.
+Package marginnote Info: xpos seems to be 89.62709pt,
+(marginnote)             \marginnoteleftadjust ignored on input line 242.
+Package marginnote Info: Margin note 24.3 is on absolute page 24
+(marginnote)              on input line 259.
+Package marginnote Info: right page because not two side mode on input line 259
+.
+Package marginnote Info: xpos seems to be 89.62709pt,
+(marginnote)             \marginnoteleftadjust ignored on input line 259.
+ [24]
+Overfull \hbox (3.03055pt too wide) in paragraph at lines 291--291
+ \OT1/cmr/m/n/10 list[0]| 
+ []
+
+
+Overfull \hbox (3.03055pt too wide) in paragraph at lines 291--291
+ \OT1/cmr/m/n/10 list[1]| 
+ []
+
+
+Overfull \hbox (3.03055pt too wide) in paragraph at lines 291--291
+ \OT1/cmr/m/n/10 list[2]| 
+ []
+
+
+Overfull \hbox (3.03055pt too wide) in paragraph at lines 291--291
+ \OT1/cmr/m/n/10 list[3]| 
+ []
+
+
+Overfull \hbox (3.03055pt too wide) in paragraph at lines 291--291
+ \OT1/cmr/m/n/10 list[4]| 
+ []
+
+
+Overfull \hbox (3.03055pt too wide) in paragraph at lines 291--291
+ \OT1/cmr/m/n/10 list[5]| 
+ []
+
+
+Overfull \hbox (3.03055pt too wide) in paragraph at lines 291--291
+ \OT1/cmr/m/n/10 list[6]| 
+ []
+
+
+Overfull \hbox (3.03055pt too wide) in paragraph at lines 291--291
+ \OT1/cmr/m/n/10 list[7]| 
+ []
+
+
+Overfull \hbox (19.04924pt too wide) in paragraph at lines 290--298
+[][] 
+ []
+
+Package marginnote Info: Margin note 25.1 is on absolute page 25
+(marginnote)              on input line 304.
+Package marginnote Info: right page because not two side mode on input line 304
+.
+Package marginnote Info: xpos seems to be 89.62709pt,
+(marginnote)             \marginnoteleftadjust ignored on input line 304.
+Package marginnote Info: Margin note 25.2 is on absolute page 26
+(marginnote)              on input line 347.
+Package marginnote Info: right page because not two side mode on input line 347
+.
+Package marginnote Info: xpos seems to be 89.62709pt,
+(marginnote)             \marginnoteleftadjust ignored on input line 347.
+[25] <Dijkstra-Graph.png, id=110, 823.27576pt x 420.97275pt>
+File: Dijkstra-Graph.png Graphic file (type png)
+
+<use Dijkstra-Graph.png>
+Package pdftex.def Info: Dijkstra-Graph.png used on input line 369.
+(pdftex.def)             Requested size: 329.30446pt x 168.38611pt.
+ [26 <./Dijkstra-Graph.png>]) (sections/4.tex
+Package marginnote Info: Margin note 27.1 is on absolute page 27
 (marginnote)              on input line 3.
 Package marginnote Info: right page because not two side mode on input line 3.
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 3.
-Package marginnote Info: Margin note 20.4 is on absolute page 20
+Package marginnote Info: Margin note 27.2 is on absolute page 27
 (marginnote)              on input line 4.
 Package marginnote Info: right page because not two side mode on input line 4.
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 4.
-Package marginnote Info: Margin note 20.5 is on absolute page 20
+Package marginnote Info: Margin note 27.3 is on absolute page 27
 (marginnote)              on input line 44.
 Package marginnote Info: right page because not two side mode on input line 44.
 
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 44.
- [20]
-Package marginnote Info: Margin note 21.1 is on absolute page 21
+ [27]
+Package marginnote Info: Margin note 28.1 is on absolute page 28
 (marginnote)              on input line 75.
 Package marginnote Info: right page because not two side mode on input line 75.
 
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 75.
-Package marginnote Info: Margin note 21.2 is on absolute page 21
+Package marginnote Info: Margin note 28.2 is on absolute page 28
 (marginnote)              on input line 79.
 Package marginnote Info: right page because not two side mode on input line 79.
 
 Package marginnote Info: xpos seems to be 114.62712pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 79.
-Package marginnote Info: Margin note 21.3 is on absolute page 21
+Package marginnote Info: Margin note 28.3 is on absolute page 28
 (marginnote)              on input line 81.
 Package marginnote Info: right page because not two side mode on input line 81.
 
 Package marginnote Info: xpos seems to be 114.62712pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 81.
-Package marginnote Info: Margin note 21.4 is on absolute page 21
+Package marginnote Info: Margin note 28.4 is on absolute page 28
 (marginnote)              on input line 83.
 Package marginnote Info: right page because not two side mode on input line 83.
 
 Package marginnote Info: xpos seems to be 114.62712pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 83.
-Package marginnote Info: Margin note 21.5 is on absolute page 21
+Package marginnote Info: Margin note 28.5 is on absolute page 28
 (marginnote)              on input line 85.
 Package marginnote Info: right page because not two side mode on input line 85.
 
 Package marginnote Info: xpos seems to be 114.62712pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 85.
-Package marginnote Info: Margin note 21.6 is on absolute page 21
+Package marginnote Info: Margin note 28.6 is on absolute page 28
 (marginnote)              on input line 88.
 Package marginnote Info: right page because not two side mode on input line 88.
 
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 88.
-Package marginnote Info: Margin note 21.7 is on absolute page 21
+Package marginnote Info: Margin note 28.7 is on absolute page 28
 (marginnote)              on input line 89.
 Package marginnote Info: right page because not two side mode on input line 89.
 
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 89.
-Package marginnote Info: Margin note 21.8 is on absolute page 21
+Package marginnote Info: Margin note 28.8 is on absolute page 28
 (marginnote)              on input line 124.
 Package marginnote Info: right page because not two side mode on input line 124
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 124.
- [21]
-Package marginnote Info: Margin note 22.1 is on absolute page 22
+
+[28]
+Package marginnote Info: Margin note 29.1 is on absolute page 29
 (marginnote)              on input line 135.
 Package marginnote Info: right page because not two side mode on input line 135
 .
@@ -1196,85 +1273,85 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--156
 
  []
 
-Package marginnote Info: Margin note 22.2 is on absolute page 22
+Package marginnote Info: Margin note 29.2 is on absolute page 29
 (marginnote)              on input line 176.
 Package marginnote Info: right page because not two side mode on input line 176
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 176.
-Package marginnote Info: Margin note 22.3 is on absolute page 22
+Package marginnote Info: Margin note 29.3 is on absolute page 29
 (marginnote)              on input line 179.
 Package marginnote Info: right page because not two side mode on input line 179
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 179.
-Package marginnote Info: Margin note 22.4 is on absolute page 22
+Package marginnote Info: Margin note 29.4 is on absolute page 29
 (marginnote)              on input line 182.
 Package marginnote Info: right page because not two side mode on input line 182
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 182.
-Package marginnote Info: Margin note 22.5 is on absolute page 23
+Package marginnote Info: Margin note 29.5 is on absolute page 30
 (marginnote)              on input line 187.
 Package marginnote Info: right page because not two side mode on input line 187
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 187.
-[22]
-Package marginnote Info: Margin note 23.1 is on absolute page 23
+[29]
+Package marginnote Info: Margin note 30.1 is on absolute page 30
 (marginnote)              on input line 192.
 Package marginnote Info: right page because not two side mode on input line 192
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 192.
-Package marginnote Info: Margin note 23.2 is on absolute page 23
+Package marginnote Info: Margin note 30.2 is on absolute page 30
 (marginnote)              on input line 195.
 Package marginnote Info: right page because not two side mode on input line 195
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 195.
-Package marginnote Info: Margin note 23.3 is on absolute page 23
+Package marginnote Info: Margin note 30.3 is on absolute page 30
 (marginnote)              on input line 198.
 Package marginnote Info: right page because not two side mode on input line 198
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 198.
-Package marginnote Info: Margin note 23.4 is on absolute page 23
+Package marginnote Info: Margin note 30.4 is on absolute page 30
 (marginnote)              on input line 201.
 Package marginnote Info: right page because not two side mode on input line 201
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 201.
-Package marginnote Info: Margin note 23.5 is on absolute page 23
+Package marginnote Info: Margin note 30.5 is on absolute page 30
 (marginnote)              on input line 204.
 Package marginnote Info: right page because not two side mode on input line 204
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 204.
-Package marginnote Info: Margin note 23.6 is on absolute page 23
+Package marginnote Info: Margin note 30.6 is on absolute page 30
 (marginnote)              on input line 207.
 Package marginnote Info: right page because not two side mode on input line 207
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 207.
-Package marginnote Info: Margin note 23.7 is on absolute page 23
+Package marginnote Info: Margin note 30.7 is on absolute page 30
 (marginnote)              on input line 210.
 Package marginnote Info: right page because not two side mode on input line 210
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 210.
-Package marginnote Info: Margin note 23.8 is on absolute page 23
+Package marginnote Info: Margin note 30.8 is on absolute page 30
 (marginnote)              on input line 214.
 Package marginnote Info: right page because not two side mode on input line 214
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 214.
-) [23] ("Computing Paper 1.aux") ) 
+) [30] ("Computing Paper 1.aux") ) 
 Here is how much of TeX's memory you used:
- 17930 strings out of 493335
- 351779 string characters out of 3136671
- 475652 words of memory out of 3000000
- 21110 multiletter control sequences out of 15000+200000
+ 17985 strings out of 493335
+ 352537 string characters out of 3136671
+ 528651 words of memory out of 3000000
+ 21164 multiletter control sequences out of 15000+200000
  9018 words of font info for 33 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  61i,18n,75p,908b,1672s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1295,9 +1372,9 @@ Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Pro
 gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program 
 Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on "Computing Paper 1.pdf" (23 pages, 338611 bytes).
+Output written on "Computing Paper 1.pdf" (30 pages, 439934 bytes).
 PDF statistics:
- 156 PDF objects out of 1000 (max. 8388607)
+ 180 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 38 words of extra memory for PDF output out of 10000 (max. 10000000)
 

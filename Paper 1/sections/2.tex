@@ -69,14 +69,14 @@ file.close()	\end{python}
   	\end{tabular}
   \end{table}
   
-  If we wanted to add to this queue, we would add to the end queue, and then move the rear pointer to the address of the new item. So in this example if we were to add the name ``Helen to the queue'', the structure would become:
+  If we wanted to add to this queue (AKA enqueue), we would add to the end queue, and then move the rear pointer to the address of the new item. So in this example if we were to add the name ``Helen to the queue'', the structure would become:
   \begin{table}[H]
   	\begin{tabular}{C{1.5cm} C{1.5cm} C{1.5cm} C{1.5cm} C{1.5cm} C{1.5cm}}
   		Front Pointer & & & & Rear Pointer & \\\hline
   		\multicolumn{1}{|c|}{``Nathan''} & \multicolumn{1}{|c|}{``Tashy''} & \multicolumn{1}{|c|}{``Giorgia''} & \multicolumn{1}{|c|}{``Ryan''} & \multicolumn{1}{|c|}{``Helen''} & \multicolumn{1}{|c|}{}\\\hline
   	\end{tabular}
   \end{table}
-  If we wanted to delete from the queue, we always delete from the front, and the front pointer moves on to the next item, so in this case if we were to delete an item, the queue would become:
+  If we wanted to delete from the queue (AKA dequeue), we always delete from the front, and the front pointer moves on to the next item, so in this case if we were to delete an item, the queue would become:
   \begin{table}[H]
   	\begin{tabular}{C{1.5cm} C{1.5cm} C{1.5cm} C{1.5cm} C{1.5cm} C{1.5cm}}
   		 & Front Pointer & & & Rear Pointer & \\\hline

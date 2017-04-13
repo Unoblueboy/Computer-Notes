@@ -5,9 +5,9 @@
   \begin{python}
 func bubblesort( var a as array )
 for i from 1 to N
-for j from 0 to N - 1
-  if a[j] > a[j + 1]
-    swap( a[j], a[j + 1] )
+	for j from 0 to N - 1
+	  if a[j] > a[j + 1]
+	    swap( a[j], a[j + 1] )
 end func
   \end{python}
   We can use a technique called hand-tracing/ dry running to work through the code and see if it works as intended. An example of a dry run is as follows:
@@ -172,6 +172,8 @@ end func
     \end{tabular}
     \caption*{State Transition Table}
   \end{figure}
+  A Mealy Machine is a type of finite state machine which also produces an output, this output can be shown on a diagram by instead of labelling each transition with ``input'', you label them with ``input/output'', and that output is outputted when the transition it is on occurs. This can also be represented in a state transition Table by simply adding a column.
+  
   \noindent
   \marginnote{4.4.2.2}Maths for Regular Expressions
   

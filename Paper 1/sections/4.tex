@@ -175,18 +175,151 @@ end func
   A Mealy Machine is a type of finite state machine which also produces an output, this output can be shown on a diagram by instead of labelling each transition with ``input'', you label them with ``input/output'', and that output is outputted when the transition it is on occurs. This can also be represented in a state transition Table by simply adding a column.
   
   \noindent
-  \marginnote{4.4.2.2}Maths for Regular Expressions
+  \marginnote{4.4.2.2}There is a lot of random maths that is part of this course that isn't taught as part of even standard A level maths, but thankfully it only covers basic concepts so. The first thing we need to do is define a set, a set is ``a well-defined collection of distinct objects'', as we are only likely to deal with real numbers, you can just think of it as a collection of different numbers (they don't need to be in any specific order). A set is often defined using curly brackets for example, a set called A which is the set of numbers 1,2,3,4,5 would be shown as $A = {1,2,3,4,5}$.
+  There are a few standard sets that you should know
+  \begin{itemize}
+  	\item Real - The set of all numbers on the number line, represented as $\mathbb{R}$
+  	\item Rational - the set of all numbers that can be expressed as $\frac{a}{b}$ where $a$ and $b$ are both integers, represented as $\mathbb{Q}$
+  	\item Integers - The set of all whole numbers, positive and negative, represented as $\mathbb{Z}$
+	  	\subitem $\mathbb{Z} = \{\dots,-3,-2,-1,0,1,2,3,\dots\}$
+  	\item Naturals - The set of all positive, whole numbers, represented as $\mathbb{N}$
+	  	\subitem $\mathbb{N} = \{0,1,2,3,4,5,6,\dots\}$
+  \end{itemize}
+  
+  There are other ways to define a set instead of just listing the numbers, you can instead define how the set should be built, this is called set comprehension/ set building. for example set $B=\{x^2 \mid x\in\mathbb{N} \wedge x \geq 2\}$
+  Could be broken down as follows:
+  \begin{itemize}
+  	\item B - the name of the set
+  	\item \{\} - indicates the contents of the set
+  	\item $x^2$ - This indicates the values which you put into the set
+  	\item $\mid$ - Such that, the part after this defines the values which x can take
+  	\item $in$ - is a memeber of
+	\item $\mathbb{N}$ - The set of natural numbers
+	\item $\wedge$ - and 
+	\item $\geq2$ - greater than or equal to 2
+  \end{itemize}
+  So to write it as one sentence, the set B is the set of all values of $x^2$ such that x is a member of the set of natural numbers, and x is greater than or equal to 2. ($B=\{4,9,16,25,36,49,64,\dots\}$). One of the more unique and important sets is the empty set ($\{\} = \varnothing$) which contains no elements. Often is is easier to use a set comprehension to define a set, especially if it is infinite, for example the set $\{0^n1^n \mid n \geq 1\} = {01,0011,000111,00001111,0000011111,\dots}$. In python, sets are also defined using curly brackets.
+  
+  When talking about a set, it can be either finite or infinite. A finite set is a set that has a finite number of elements, it has an upper limit (less than infinity), whereas an infinite set has an infinite number of elements, it is not finite. A set is said to be countable if it has the same cardinality as some subset of the natural numbers, or more simply put, if it can be counted using the natural numbers. This implies that all finite sets are countable, as well as sets with the same cardinality (size) as the natural numbers. This brings us onto countably infinite sets, these are infinite sets that are countable, this means the set has the same cardinality as natural numbers, implying that the set and natural numbers can me mapped in a way to form a one to one correspondence between each elements of the two sets (for an example, lookup Cantor's diagonal argument). The cardinality of a set is the number of elements within the set.
+  
+  There are 5 set operations that you need to know:
+  \begin{itemize}
+  	\item Cartesian Product - Combines 2 sets to create a set of ordered pairs, for example, if $A=\{a,b,c\}$ and $B=\{1,2,3\}$ then $A\times B = \{
+  	\left(a,1\right)
+  	\left(a,2\right)
+  	\left(a,3\right)
+  	\left(b,1\right)
+  	\left(b,2\right)
+  	\left(b,3\right)
+  	\left(c,1\right)
+  	\left(c,2\right)
+  	\left(c,3\right)
+  	\}$ to define more generally, $A \times B = \{(x,y) \mid x \in A \wedge y \in B\}$.
+  	\item Membership - This is when an element belongs to a set so for example if we had a set $A=\{1,2,3,4\}$ then we can say that 2 is a member of the set A or in set notation $2\in A$
+  	
+  	\item Union - This joins two sets together so that it contains all of the elements that are in each of the sets. For example, the union of the set $A=\{1,2,3,4\}$ and the set $B=\{3,4,5,6\}$ is $\{1,2,3,4,5,6\}$ or in set notation $A \cup B = \{1,2,3,4,5,6\}$. It can be thought of as an OR.
+  	
+  	\item Intersection - This joins two sets together so that it contains all of the elements that are in both sets. For example, the intersection of the set $A=\{1,2,3,4\}$ and the set $B=\{3,4,5,6\}$ is $\{3,4\}$ or in set notation $A \cap B = \{3,4\}$ . It can be though of as an AND.
+  	
+  	\item Difference - This joins two sets together so that it contains all of the elements that are in one of the sets, but not in both sets. For example, the difference of the set $A=\{1,2,3,4\}$ and the set $B=\{3,4,5,6\}$ is $\{1,2\}$ or in set notation $A - B = \{1,2\}$ also $B - A = \{5,6\}$. The symmetric difference is $(A - B)\cup(B - A) = A \ominus B = A \Delta B = {1,2,5,6}$ (in our example).
+  \end{itemize}
+  
+  A set $A$ is a subset of another set $B$ if all elements of the set $A$ are elements of the set $B$. In other words, the set $A$ is contained inside the set $B$. The subset relationship is denoted as $A\subseteq B$. For example if $A = \{2,3,4\}$ and $B = \{1,2,3,4,5\}$ then $A\subseteq B$, this would also be true if $A = \{1,2,3,4,5\}$. A set is $A$ proper subset of $B$ if A is a subset of $B$ and $A \neq B$, so for example,  if $A = \{2,3,4\}$ and $B = \{1,2,3,4,5\}$ then $A\subset B$, this would not also be true if $A = \{1,2,3,4,5\}$ as $A=B$ therefore $A$ can't be a proper subset of $B$.
   
   \noindent
-  \marginnote{4.4.2.3}Regular Expressions
+  \marginnote{4.4.2.3}A regular expression is a simple way of describing a set and allow convenient shorthand description of certain languages. Here are common regular expressions:
+  \begin{table}[H]
+  	\begin{tabular}{l | l | l}
+  		Regular Expression & Meaning & Strings Produced \\\hline
+  		abc         & a then b then c                 & abc \\\hline
+  		a|b|c       & a or b or c                     & a \\
+	  	            &                                 & b \\
+	  	            &                                 & c \\\hline
+	  	a*bc        & 0 or more a then b then c       & bc\\
+	  	            &                                 & abc \\
+	  	            &                                 & aabc \\
+	  	            &                                 & aaabc \\\hline
+	  	a+bc        & 1 or more a then b then c       & abc \\
+	  	            &                                 & aabc \\
+	  	            &                                 & aaabc \\\hline
+	    a?bc        & 0 or 1 a then b then c          & bc \\
+	                &                                 & abc \\\hline
+	    a\{2,5\}bc  & 2 to 5 a then b then c          & aabc \\
+	                &                                 & aaabc \\
+	                &                                 & aaaabc \\
+	                &                                 & aaaaabc \\\hline
+	  	(a|b)c      & a or b, then c                  & ac \\
+	  	            &                                 & bc \\\hline
+	  	.bc         & any character then b then c     & abc\\
+	  	            &                                 & bbc\\
+	  	            &                                 & cbc\\
+	  	            &                                 & dbc\\
+	  	            &                                 & 1bc\\\hline
+	  	[abc]bc     & a or b or c then b then c       & abc \\
+	  	            &                                 & bbc \\
+	  	            &                                 & cbc \\\hline
+	  	[\^ abc]bc   & (not a or b or c) then b then c & dbc \\
+	  	            &                                 & ebc \\
+	  	            &                                 & 1bc \\\hline    
+  	\end{tabular}
+  \end{table}
+  
+  Regular expressions can also be represented using a finite state machine, for example, the regular expression a*(b|c)(bc)* could be represented by the following finite state machine.
+  
+  \begin{figure}[H]
+  	\centering
+  	\begin{tikzpicture}
+  	\def \n {5};
+  	\node[circle, minimum width=1cm, draw=black](S0) at (0,\n) {S0};
+  	\node[circle, minimum width=1cm, draw=black](S1) at (\n,\n) {S1};
+  	\node[circle, minimum width=1cm, draw=black](S2) at (2*\n,\n) {S2};
+  	\node[circle, minimum width=1cm, draw=black](S3) at (\n,0) {S3};
+  	\node[circle, minimum width=1.2cm, draw=black](S4) at (\n,\n) {};
+  	
+  	
+  	\draw[->, line width=2pt] ([yshift= 4pt]S0.east) -- node[above] {b} ([yshift= 4pt]S4.west);
+  	\draw[->, line width=2pt] ([yshift= -4pt]S0.east) -- node[below] {c} ([yshift= -4pt]S4.west);
+  	\draw[->, line width=2pt] (S0.south west) .. controls ([xshift= -20pt, yshift=-20pt]S0.south west) and ([xshift= -20pt, yshift= 20pt]S0.north west) .. node[above left] {a} (S0.north west);
+  	
+  	\draw[->, line width=2pt] ([yshift=4pt]S4.east) -- node[above] {b} ([yshift=4pt]S2.west);
+  	\draw[->, line width=2pt] (S4.south) -- node[right] {a,c} (S3.north);
+  	
+  	\draw[->, line width=2pt] ([yshift=-4pt]S2.west) -- node[below] {c} ([yshift=-4pt]S4.east);
+  	\draw[->, line width=2pt] (S2.south west) -- node[below right] {a,b} (S3.north east);
+  	
+  	\draw[->, line width=2pt] (S3.south east) .. controls ([xshift= 20pt, yshift = -20pt]S3.south east) and ([yshift= -20pt, xshift = -20pt]S3.south west) .. node[below] {a,b,c} (S3.south west);
+  	\end{tikzpicture}
+  	\caption*{State Transition Diagram}
+  \end{figure}
   
   \noindent
-  \marginnote{4.4.2.4}Regular Languages
+  \marginnote{4.4.2.4}A regular language is a language that can be represented by a regular expression, thus will also be accepted by a finite state machine
   
 \subsection{Context-free Languages}
   
   \noindent
-  \marginnote{4.4.3.1}Backus-Naur Form(BNF)/Syntax Diagrams
+  \marginnote{4.4.3.1}Context-free languages are languages that are defined by context-free grammars, which in turn are simply a set of rules which defines what strings are possible in a given language. We often find that languages are too complex to me represented by a regular expression or a finite state machine, thus context-free grammars are useful in these situations (e.g. try formulating a regular expression for a palindrome).
+  
+  Backus-Naur form is a notation we can use to describe context free grammars, thus describing the syntax of a program. There a few characters that are important within Backus-Naur Form:
+  \begin{itemize}
+  	\item <>
+	  	\subitem The name within the curly bracket defines a non-terminal expression, that is an expression that can be broken down further. For example in the expression <digits>::=0|1|2|3|4|5|6|7|8|9 , <digits> would be a non-terminal, and the digits from 0 to 9 would be terminal as they can't be broken down any further.
+  	\item ::=
+	  	\subitem This is used to say how non-terminal expressions are defined
+  	\item |
+	  	\subitem This is a way of breaking up several parts of an expression, an or of the different parts.
+  \end{itemize}
+  
+  To give a simple example which defines decimals would be as follows
+  <decimal> ::= <integer> "." <integer>
+  <integer> ::= <digit> | <digit> <integer>
+  <digit> ::= 0|1|2|3|4|5|6|7|8|9
+  
+  This shows that a decimal is 2 integers separated by a decimal point, an integer is either just a digit, or a digit followed by an integer (showing how context free grammars can be recursive), and a digit is defined as any natural number from 0 to 9.
+  
+  This can also be described using a syntax diagram, arrows show possible choices, ellipses show terminal expressions, and rectangles show non-terminal expressions. For example, the syntax diagrams for the above BNFs would be:
+  
+  \includegraphics[scale=0.4]{Syntax-Diagram}
   
 \subsection{Classification of Algorithms}
   

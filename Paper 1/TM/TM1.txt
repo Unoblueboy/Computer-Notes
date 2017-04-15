@@ -1,0 +1,16 @@
+\begin{tikzpicture}
+\def \n {0};
+\node[rectangle, minimum width=1cm,minimum height=0.5cm, draw=black](C1) at (0,0) {$\square$};
+\node[rectangle, minimum width=1cm,minimum height=0.5cm, draw=black](C2) at (1,0) {1};
+\node[rectangle, minimum width=1cm,minimum height=0.5cm, draw=black](C3) at (2,0) {0};
+\node[rectangle, minimum width=1cm,minimum height=0.5cm, draw=black](C4) at (3,0) {1};
+\node[rectangle, minimum width=1cm,minimum height=0.5cm, draw=black](C5) at (4,0) {1};
+\node[rectangle, minimum width=1cm,minimum height=0.5cm, draw=black](C6) at (5,0) {0};
+\node[rectangle, minimum width=1cm,minimum height=0.5cm, draw=black](C7) at (6,0) {$\square$};
+\draw (0.5+\n,-2) --
+node[left, scale=1.5]{$\leftarrow$} (1+\n,-0.5) --
+node[right, scale=1.5]{$\rightarrow$} (1.5+\n,-2)--
+node[below, scale=0.7]{Read/Write Head}(0.5+\n,-2);
+\draw (-0.5,0.25) -- (-1,0.25) -- (-0.5946,0.0932) -- (-0.7375,-0.0234) -- (-0.5422,-0.14) -- (-1,-0.25) -- (-0.5,-0.25);
+\draw (6.5,0.25) -- (7,0.25) -- (6.5946,0.0932) -- (6.7375,-0.0234) -- (6.5422,-0.14) -- (7,-0.25) -- (6.5,-0.25);
+\end{tikzpicture}

@@ -394,23 +394,208 @@ end func
   	
   \end{itemize}
   
-  
-  
-  \noindent
-  \marginnote{4.4.4.3}Order of Complexity
+  Another thing you need to know is n factorial ($n!$). n factorial is equal to the product of all positive integers less than or equal to $n$, so $n!=n \times (n-1) \times (n-2) \times \dots \times 3 \times 2 \times 1$. factorial is used for when you want to find the number of ways a set can be ranged, the number of permutations of a set. To show you how, if we want to find all of the permutations of the word ``dog'' we would find $6=3!$, to list them all: dog, dgo, odg, ogd, gdo, god. To get the logic behind it, think about it this way, there are 3 ways to pick the first letter, then 2 to pick the second, then only one option left for the last, we get $3 \times 2 \times 1 = 3! = 6$ permutations, for a set with 4 elements, you have 4 choices, then 3 choices, then 2 choices, then 1 choice, giving you $4 \times 3 \times 2 \times 1 =  4! = 24$ permutations, for a set with 5 elements $5 \times 4 \times 3 \times 2 \times 1 = 5! 120$ permutations. This pattern goes on, so a set of $n$ elements has $n!$ permutations.
   
   \noindent
-  \marginnote{4.4.4.4}Limits of Computation
+  \marginnote{4.4.4.3}Big O notation is a way to describe an algorithm time-wise or space-wise. Big O notation has 5 main classifications in terms of time complexity:
+  \begin{itemize}
+  	\item Constant Time ($O(1)$)
+	  	\subitem This is an algorithm that will always run in the same amount of time, no matter the size of the input. An example is accessing an array, as you get the value by referring directly to its address, thus no matter the size of the array, it will always take the same amount of time to carry out this process.
+  	\item Linear Time ($O(N)$)
+	  	\subitem This is an algorithm that grows proportionally to the size of the input. E.g. if the size of the input doubles, the amount of time the algorithm may also doubles. If you were to graph the length of time the algorithm takes against the size of input, you would end up with a linear function, so the above example may not necessarily be true if the graph made was $y=2x$, then is the size of the input doubled, the time taken would quadruple. A for loop over every element once will create an algorithm of linear time.
+  	\item Polynomial Time ($O(N^k)$ where $k$ is a positive integer constant greater than 2)
+	  	\subitem This is an algorithm that's time complexity can be upper bounded by a polynomial expression in terms of the size of the input, for the example, if the algorithm's time complexity can be expressed as $4n^2 + 6n - 4$, then in big O notation it can be written as $O(N^2)$. This can occur when iterative techniques are used, or when nested loops are used to iterate over elements, e.g. bubble sort.
+  	\item Exponential Time ($O(k^N)$ where $k$ is a positive constant)
+	  	\subitem This is an algorithm that's time complexity can be upper bounded by an exponential expression. Problems that require Algorithms of this time complexity to solve are called intractable problems as they become quite unwieldy as the size of the input increases.  	
+  	\item Logarithmic Time ($O(\log(N))$)
+	  	\subitem This is an algorithm that's time complexity can be upper bounded by an logarithmic expression. These time complexities often show up when working on a binary tree, or when performing a binary search.
+  \end{itemize}
+  
+  The order of time complexity from best to worst is as follows (if you want to convince yourself of this, plot graphs of each on top of each other)
+  \begin{enumerate}
+  	\item Constant Time
+  	\item Logarithmic Time
+  	\item Linear Time
+  	\item Polynomial Time
+  	\item Exponential time
+  \end{enumerate}
+  
+  When trying to derive the time complexity of the algorithm, consider the following:
+  \begin{itemize}
+  	\item Algorithms that require no data, and are simple assignment or comparisons, are linear time
+  	\item Algorithms that feature a loop over all of the inputs, are linear.
+  	\item Algorithms that feature multiple nested loops, all iterating over the inputs are polynomial time. The number of nested loops, indicate the order of the polynomial. e.g. bubble sort has 2 nested loops therefore it is $O(N^2)$, if we were to add a nested loop that printed the list after every stage, it would become $O(N^3)$.
+  	\item Algorithms that use recursion may have exponential time complexity (not always true, as shown with the merge sort)
+  	\item Splitting data into multiple pats, then performing actions on these parts, then repeating this, is often of logarithmic time complexity
+  \end{itemize}
   
   \noindent
-  \marginnote{4.4.4.5}Classification of Algorithmic Problems
+  \marginnote{4.4.4.4}In reality, we have limits to what we can do with an algorithm, such as the hardware (limits to RAM, and ROM), as well as the complexity of the algorithm, which limit what we can compute.
   
   \noindent
-  \marginnote{4.4.4.6}Computable and non-computable problems
+  \marginnote{4.4.4.5}There are two ways to classify a problem:
+  \begin{itemize}
+  	\item Tractable
+	  	\subitem Problems that have algorithmic solutions that are of polynomial time complexity or less
+  	\item intractable
+	  	\subitem Problems that do not have algorithmic solutions that are of polynomial time complexity or less. To solve these problems, often a heuristic is used, this is when you use some sort of measure to guess a solution, then use an algorithm to improve your initial guess. An example is the travelling salesman problem, which is to find the shortest route to visit all of the nodes in a weighted connected graph.
+  \end{itemize}
   
   \noindent
-  \marginnote{4.4.4.7}Halting Problem
+  \marginnote{4.4.4.6}There are problems that exist that cannot be solved algorithmically, meaning no matter how powerful your computer is, the problem has no algorithm solutions.
+  
+  \noindent
+  \marginnote{4.4.4.7}The Halting Problem is an example of a problem that cannot be solved algorithmically, as it would create a paradox. The halting problem is about trying to find an algorithm that can determine for all other algorithms whether it will end by feeding in this other algorithm. We can show that such an algorithm doesn't exist via a proof by contradiction. Let's assume that such an algorithm does exist and returns \verb|True| if the algorithm terminate, \verb|false| otherwise, we are going to feed in the following algorithm (let's call it the Anti-Halting Algorithm)
+  \begin{verbatim}
+IF the output of the halting algorithm is True:
+    WHILE True:
+        pass
+    ENDWHILE
+ELSE
+    HALT
+ENDIF
+  \end{verbatim}
+  Now we can look at the two cases that arise:
+  \begin{enumerate}
+  	\item The halting algorithm evaluates \verb|True|, meaning the anti-halting algorithm will halt
+	  	\subitem Then the anti-halting algorithm will go into an infinite while loop, never halting
+	\item The halting algorithm evaluates \verb|False|, meaning the anti-halting algorithm will not halt
+		\subitem Then the anti-halting algorithm will halt
+  \end{enumerate}
+  
+  Either way you will get some kind of contradiction, thus showing a halting algorithm cannot exist. Now you don't need to know the proof, but it is just good to understand why the halting problem is the way it is. We can gather 2 things from this:
+  \begin{enumerate}
+  	\item There are some problems that cannot be solved algorithmically (unsolvable problems)
+  	\item There are some problems that cannot be solved in a reasonable time frame (intractable problems)
+  \end{enumerate}
 
 \subsection{A model of computation}
   \noindent
-  \marginnote{4.4.5.1}Turing Machine
+  \marginnote{4.4.5.1}A Turing Machine is a model of computation that is used to identify whether a problem is computable. 
+  Here are the basics of the turing maching:
+  \begin{itemize}
+  	\item It is made up of a tape and a read/write head
+  	\item the tape is made up of multiple cells that act as memory
+  	\item Each cell will contain a symbol, often 0, 1 and the blank symbol (this can be many different things, including $\square$, $\diamondsuit$, or B)
+  	\item The read/ write head can read from or write to what is currently underneath it (writing to it basically overwrites its current value), and starts at the left most not blank cell.
+  	\item The tape can move left (L, $\leftarrow$) or right(R, $\rightarrow$), one cell at a time, meaning all cells are accessible to the read/write head.
+  	\item The machine can halt at any point if it reaches a halting state (a state with no outgoing transitions) or has processed all of the input
+  \end{itemize}
+  The order in which the read/ write head performs its operations are as follows:
+  \begin{enumerate}
+  	\item \textbf{Read} the square currently underneath the read/write head
+  	\item \textbf{Write} to the square currently underneath the read/write head
+  	\item \textbf{Move} the read/write head left or right
+  \end{enumerate} 
+  To define a Turing machine, you need a start state, a halting state, ability to move the read/ write head, and a transition function, this defines what's to be written and what state to move to, given the current state and what has been read. There are 3 main ways to do this:
+  \begin{itemize}
+  	\item An instruction table
+	  	\subitem this is a tabular way to show all of the transitions within a Turing machine, for example:
+	  	\begin{table}[H]
+	  		\begin{tabular}{| c | c | c | c | c |}\hline
+	  			State & Read      & Write     & Move & Next State \\\hline
+	  			S0    & 0         & 0         & R    & S0 \\\hline
+	  			S0    & 1         & 1         & R    & S0 \\\hline
+	  			S0    & $\square$ & $\square$ & L    & S1 \\\hline
+	  			S1    & 0         & 0         & L    & S! \\\hline
+	  			S1    & 1         & 1         & L    & S2 \\\hline
+	  			S1    & $\square$ & $\square$ & L    & S3 \\\hline
+	  			S2    & 0         & 1         & L    & S2 \\\hline
+	  			S2    & 1         & 0         & L    & S2 \\\hline
+	  			S2    & $\square$ & $\square$ & L    & S3 \\\hline
+	  		\end{tabular}
+	  	\end{table}
+  	\item A finite state machine
+	  	\subitem A Turing machine can be represented as a finite state machine in the following way:
+	  	
+	  	\begin{tikzpicture}
+	  	\def \n {5};
+	  	\node[circle, minimum width=1cm, draw=black](S1) at (0,\n) {S1};
+	  	\node[circle, minimum width=1cm, draw=black](S0) at (-1*\n,\n) {S0};
+	  	\node[circle, minimum width=1cm, draw=black](S2) at (\n,\n) {S2};
+	  	\node[circle, minimum width=1cm, draw=black](S3) at (0,0) {S3};
+	  	\node[circle, minimum width=1.2cm, draw=black](S4) at (0,0) {};
+	  	
+	  	\draw[->, line width=2pt] (S0.east) -- node[above] {$\square$/$\square$,L} (S1.west);
+	  	\draw[->, line width=2pt] (S0.north east) .. controls ([xshift=20pt,yshift=20pt]S0.north east) and ([xshift=-20pt,yshift=20pt]S0.north west) .. node[above] {0/0,L} (S0.north west);
+	  	\draw[->, line width=2pt] (S0.south west) .. controls ([xshift=-20pt,yshift=-20pt]S0.south west) and ([xshift=20pt,yshift=-20pt]S0.south east) .. node[below] {0/0,L} (S0.south east);
+	  	
+	  	\draw[->, line width=2pt] (S1.north east) .. controls ([xshift=20pt,yshift=20pt]S1.north east) and ([xshift=-20pt,yshift=20pt]S1.north west) .. node[above] {0/0,L} (S1.north west);
+	  	\draw[->, line width=2pt] (S1.east) -- node[above] {1/1,L} (S2.west);
+	  	\draw[->, line width=2pt] (S1.south) -- node[left] {$\square$/$\square$,L} (S4.north);
+	  	
+	  	\draw[->, line width=2pt] (S2.north east) .. controls ([xshift=20pt,yshift=20pt]S2.north east) and ([xshift=-20pt,yshift=20pt]S2.north west) .. node[above] {0/1,L} (S2.north west);
+	  	\draw[->, line width=2pt] (S2.south west) .. controls ([xshift=-20pt,yshift=-20pt]S2.south west) and ([xshift=20pt,yshift=-20pt]S2.south east) .. node[below] {1/0,L} (S2.south east);
+	  	\draw[->, line width=2pt] (S2.south west) -- node[right] {$\square$/$\square$,L} (S4.north east);
+	  	\end{tikzpicture}
+  	\item A list of transition rules
+	  	\subitem A Turing machine can also be defined as a list of transition rules of the following form $\delta$(Current State, Input Symbol) = (Next State, Output Symbol, Movement). For example:
+	  	\begin{itemize}
+	  		\item $\delta$(S0,0) = (S0,0,R)
+	  		\item $\delta$(S0,1) = (S0,1,R)
+	  		\item $\delta$(S0,$\square$) = (S1,$\square$,L)
+	  		\item $\delta$(S1,0) = (S1,0,L)
+	  		\item $\delta$(S1,1) = (S2,1,L)
+	  		\item $\delta$(S1,$\square$) = (S3,$\square$,L)
+	  		\item $\delta$(S2,0) = (S2,1,L)
+	  		\item $\delta$(S2,1) = (S2,0,L)
+	  		\item $\delta$(S2,$\square$) = (S3,$\square$,L)
+	  	\end{itemize}
+  \end{itemize}
+  
+  All of the above examples define the same Turing machines, so let's see what the output is for the input of 10110.
+  
+  
+  So it starts off as follows, in the state S0:
+  
+  \input{TM/TM1.txt}
+  
+  So then it reads 1, thus it writes 1, remains in S0, and moves right
+  
+  \input{TM/TM2.txt}
+  
+  Then it reads 0, thus it writes 0, remains in S0, and moves right
+  
+  \input{TM/TM3.txt}
+  
+  Then it reads 1, thus it writes 1, remains in S0, and moves right
+  
+  \input{TM/TM4.txt}
+  
+  Then it reads 1, thus it writes 1, remains in S0, and moves right
+  
+  \input{TM/TM5.txt}
+  
+  Then it reads 0, thus it writes 0, remains in S0, and moves right
+  
+  \input{TM/TM6.txt}
+  
+  Then it reads $\square$, thus it writes $\square$, Moves to the S1 state, and moves left
+  
+  \input{TM/TM7.txt}
+  
+  Then it reads 0, thus it writes 0, remains in S1, and moves left
+  
+  \input{TM/TM8.txt}
+  
+  Then it reads 1, thus it writes 1, Moves to the S2 state, and moves left
+  
+  \input{TM/TM9.txt}
+  
+  Then it reads 1, thus it writes 0, remains in S2, and moves left
+  
+  \input{TM/TM10.txt}
+  
+  Then it reads 0, thus it writes 1, remains in S2, and moves left
+  
+  \input{TM/TM11.txt}
+  
+  Then it reads 1, thus it writes 0, remains in S2, and moves left
+  
+  \input{TM/TM12.txt}
+  
+  Then it reads $\square$, thus it writes $\square$, Moves to the S3 state, and moves left. S3 is a halting state, therefore at this point the program stops, and the tape now reads 01010. The point of this Turing machine is to find the two's complement of the inputted string.
+  
+  A universal Turing machine is a machine that can simulate a Turing machine by reading a description of the machine along with the inputs of its tape. To put it another way, what it does is it takes in the description of another machine encoded into some sort of string, and from this is able to emulate the working of this machine onto an input, which would also be provided. Both the program and the data are stored on the tape, which is similar to the stored program concept, where the program and the data the program operates on are stored in the same location in memory. 
+  
+  Turing machines and Universal Turing machines are useful as they provide a model of computation which allows us to clearly define if a problem is computable, that is to say that if it can be solved using a universal Turing machine, then it is computable. Universal Turing machine is useful as you don't need to make a new machine for each problem, you just need the description of the machine, and the inputs you want it to work on.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210) (preloaded format=pdflatex 2016.5.31)  15 APR 2017 00:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210) (preloaded format=pdflatex 2016.5.31)  15 APR 2017 21:29
 entering extended mode
 **"./Computing Paper 1.tex"
 ("Computing Paper 1.tex"
@@ -1520,78 +1520,110 @@ Missing character: There is no 1 in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no ] in font nullfont!
-Package marginnote Info: Margin note 34.1 is on absolute page 34
+ [34]
+Package marginnote Info: Margin note 35.1 is on absolute page 35
 (marginnote)              on input line 400.
 Package marginnote Info: right page because not two side mode on input line 400
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 400.
-Package marginnote Info: Margin note 34.2 is on absolute page 34
-(marginnote)              on input line 403.
-Package marginnote Info: right page because not two side mode on input line 403
+Package marginnote Info: Margin note 35.2 is on absolute page 36
+(marginnote)              on input line 433.
+Package marginnote Info: right page because not two side mode on input line 433
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 403.
-Package marginnote Info: Margin note 34.3 is on absolute page 34
-(marginnote)              on input line 406.
-Package marginnote Info: right page because not two side mode on input line 406
+(marginnote)             \marginnoteleftadjust ignored on input line 433.
+Package marginnote Info: Margin note 35.3 is on absolute page 36
+(marginnote)              on input line 436.
+Package marginnote Info: right page because not two side mode on input line 436
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 406.
-Package marginnote Info: Margin note 34.4 is on absolute page 34
-(marginnote)              on input line 409.
-Package marginnote Info: right page because not two side mode on input line 409
+(marginnote)             \marginnoteleftadjust ignored on input line 436.
+ [35]
+Package marginnote Info: Margin note 36.1 is on absolute page 36
+(marginnote)              on input line 445.
+Package marginnote Info: right page because not two side mode on input line 445
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 409.
-Package marginnote Info: Margin note 34.5 is on absolute page 34
-(marginnote)              on input line 412.
-Package marginnote Info: right page because not two side mode on input line 412
+(marginnote)             \marginnoteleftadjust ignored on input line 445.
+Package marginnote Info: Margin note 36.2 is on absolute page 36
+(marginnote)              on input line 448.
+Package marginnote Info: right page because not two side mode on input line 448
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 412.
-Package marginnote Info: Margin note 34.6 is on absolute page 35
-(marginnote)              on input line 416.
-Package marginnote Info: right page because not two side mode on input line 416
+(marginnote)             \marginnoteleftadjust ignored on input line 448.
+Package marginnote Info: Margin note 36.3 is on absolute page 36
+(marginnote)              on input line 474.
+Package marginnote Info: right page because not two side mode on input line 474
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 416.
-) [34] [35] ("Computing Paper 1.aux") ) 
+(marginnote)             \marginnoteleftadjust ignored on input line 474.
+ [36]
+Missing character: There is no ; in font nullfont!
+ [37] (TM/TM1.txt
+Missing character: There is no ; in font nullfont!
+) (TM/TM2.txt
+Missing character: There is no ; in font nullfont!
+)
+(TM/TM3.txt
+Missing character: There is no ; in font nullfont!
+) (TM/TM4.txt
+Missing character: There is no ; in font nullfont!
+) (TM/TM5.txt
+Missing character: There is no ; in font nullfont!
+) (TM/TM6.txt
+Missing character: There is no ; in font nullfont!
+) (TM/TM7.txt
+Missing character: There is no ; in font nullfont!
+) [38]
+(TM/TM8.txt
+Missing character: There is no ; in font nullfont!
+) (TM/TM9.txt
+Missing character: There is no ; in font nullfont!
+) (TM/TM10.txt
+Missing character: There is no ; in font nullfont!
+) (TM/TM11.txt
+Missing character: There is no ; in font nullfont!
+) (TM/TM12.txt
+Missing character: There is no ; in font nullfont!
+)) [39]
+("Computing Paper 1.aux") ) 
 Here is how much of TeX's memory you used:
- 20012 strings out of 493335
- 389828 string characters out of 3136671
- 836805 words of memory out of 3000000
- 23149 multiletter control sequences out of 15000+200000
+ 20121 strings out of 493335
+ 391215 string characters out of 3136671
+ 836808 words of memory out of 3000000
+ 23220 multiletter control sequences out of 15000+200000
  19508 words of font info for 53 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  61i,18n,75p,1336b,1677s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\biddyboy\AppData\Local\MiKTeX
-\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0600.pk> <C:\Users\biddyboy\AppData
-\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0700.pk> <C:\Users\bid
-dyboy\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk> 
-<C:\Users\biddyboy\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
-ecti1000.pk> <C:\Users\biddyboy\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknapp
-en\ec\dpi600\ectt1000.pk> <C:\Users\biddyboy\AppData\Local\MiKTeX\2.9\fonts\pk\
-ljfour\jknappen\ec\dpi600\ecrm0800.pk> <C:\Users\biddyboy\AppData\Local\MiKTeX\
-2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0500.pk> <C:\Users\biddyboy\AppData\
-Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\bidd
-yboy\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <
-C:\Users\biddyboy\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\e
-crm1000.pk><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-ex10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi
-10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.
-pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb
-><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Pr
-ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Progra
-m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program File
-s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (
-x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86
-)/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "Computing Paper 1.pdf" (35 pages, 555288 bytes).
+ <C:\Users\biddyboy\AppData\Local\MiKTeX\2.9\fonts\p
+k\ljfour\jknappen\ec\dpi600\ecrm0600.pk> <C:\Users\biddyboy\AppData\Local\MiKTe
+X\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0700.pk> <C:\Users\biddyboy\AppDat
+a\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk> <C:\Users\bi
+ddyboy\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1000.pk>
+ <C:\Users\biddyboy\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
+\ectt1000.pk> <C:\Users\biddyboy\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknap
+pen\ec\dpi600\ecrm0800.pk> <C:\Users\biddyboy\AppData\Local\MiKTeX\2.9\fonts\pk
+\ljfour\jknappen\ec\dpi600\ecrm0500.pk> <C:\Users\biddyboy\AppData\Local\MiKTeX
+\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\biddyboy\AppData
+\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\bid
+dyboy\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk><
+C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:
+/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/P
+rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Prog
+ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program
+ Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86
+)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9
+/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files (x86)/MiKTeX 
+2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on "Computing Paper 1.pdf" (39 pages, 582314 bytes).
 PDF statistics:
- 599 PDF objects out of 1000 (max. 8388607)
+ 621 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  43 words of extra memory for PDF output out of 10000 (max. 10000000)
 

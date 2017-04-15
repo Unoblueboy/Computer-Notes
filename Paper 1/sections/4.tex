@@ -324,10 +324,77 @@ end func
 \subsection{Classification of Algorithms}
   
   \noindent
-  \marginnote{4.4.4.1}Comparing algorithms
+  \marginnote{4.4.4.1}In computer science we often derive several algorithms in order to solve the same problem. It is useful to have a way for us to compare these algorithms either time-wise (how ling the algorithm takes) or space-wise (how much memory does the algorithm use).
   
   \noindent
-  \marginnote{4.4.4.2}Maths For Understanding Big-O Notation
+  \marginnote{4.4.4.2}In order to understand Big O-notation, you need to understand some basic functions (as well as some random related facts), the first thing is domain and co-domain. The domain is the set from which all the values that you can input into a function are taken and the co-domain is the set from which all of the output values can be taken. If you do A-level maths, it is similar to the concept of the range, however the co-domain can be larger than the range (the range is a subset of the co-domain). For example, take the function $f(x)=x^2$ (or $f: x \mapsto x^2$ written slightly differently) it has the domain $\mathbb{R}$ as you can put in any real number, and it can have co-domain $\mathbb{R}$ as all of its outputs are real numbers, you can see how this can be different to range, as the range would be $\{x \mid x \in \mathbb{R} \wedge x \geq 0\} = \mathbb{R}_0^+$. Often to fully define a function, they will state the domain and co-domain of a function in the following way, $f: \mathbb{R} \mapsto \mathbb{R}$, so if we wanted to define a new function $g(x)$ that produces the same output as $f(x)$ but has a different co-domain, we may say $g: \mathbb{R} \mapsto \mathbb{R}_0^+ \\ g: x \mapsto x^2$ and this has co-domain $\mathbb{R}_0^+$
+  
+  For this section, you also need to know some general graph functions:
+  \begin{itemize}
+  	\item Linear, this would be a graph of the form y = ax + b, for example $y = 2x+3$
+  	
+  	\begin{tikzpicture}[scale=0.6, every node/.style={transform shape}]
+  	[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+  	\draw [color=cqcqcq,, xstep=1cm,ystep=1cm] (-4.3,-5.9) grid (9.46,6.3);
+  	\draw[->,color=black] (-4.3,0) -- (9.46,0);
+  	\foreach \x in {-4,-3,-2,-1,1,2,3,4,5,6,7,8,9}
+  	\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};\draw[->,color=black] (0,-5.9) -- (0,6.3);
+  	\foreach \y in {-5,-4,-3,-2,-1,1,2,3,4,5,6}
+  	\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+  	\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};\clip(-4.3,-5.9) rectangle (9.46,6.3);
+  	\draw (-4.45,-5.9) -- (1.65,6.3);\end{tikzpicture}  	
+  	
+  	\item Polynomial - An expression in terms of variable with integer powers greater than or equal to 1. If the largest power is 0 then it is constant ($a$), 1 then it is linear ($ax+b$), 2 then it is quadratic ($ax^2 + bx + c$), 3 then it is cubic ($ax^3 + bx^2 + cx +d$), 4 quartic, 5 quintic, etc. Below are examples of a quadratic and cubic expressions with forms $y=x^2$ and $y=x^3-x$ respectively.
+  	
+  	\begin{tikzpicture}
+  	[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+  	\draw [color=cqcqcq,, xstep=1cm,ystep=1cm] (-4.78996590159948,-2.0122769043830115) grid (5.077682925072191,3.6322654307068283);
+  	\draw[->,color=black] (-4.78996590159948,0) -- (5.077682925072191,0);
+  	\foreach \x in {-4,-3,-2,-1,1,2,3,4,5}
+	  	\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+  	\draw[->,color=black] (0,-2.0122769043830115) -- (0,3.6322654307068283);
+  	\foreach \y in {-2,-1,1,2,3}
+	  	\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+  	\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+  	\clip(-4.78996590159948,-2.0122769043830115) rectangle (5.077682925072191,3.6322654307068283);
+  	\draw[smooth,samples=100,domain=-4.78996590159948:5.077682925072191] plot(\x,{(\x)^(2)});
+  	\draw[line width=1.2pt,color=ccqqqq,smooth,samples=100,domain=-4.78996590159948:5.077682925072191] plot(\x,{((\x)^(2)-1)*(\x)});
+  	\end{tikzpicture}
+  	
+  	\item Exponential - This an expression of the form $a \times b ^ x$ where $a$ and $b$ are constants. Below is the function $3^x$:
+  	
+  	\begin{tikzpicture}[scale=0.6, every node/.style={transform shape}]
+  	[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+  	\draw [color=cqcqcq,, xstep=1cm,ystep=1cm] (-9.497184600752878,-0.7865459958507308) grid (3.5635447439440724,8.978100233465273);
+  	\draw[->,color=black] (-9.497184600752878,0) -- (3.5635447439440724,0);
+  	\foreach \x in {-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3}
+	  	\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+  	\draw[->,color=black] (0,-0.7865459958507308) -- (0,8.978100233465273);
+  	\foreach \y in {,1,2,3,4,5,6,7,8}\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+	  	\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+  	\clip(-9.497184600752878,-0.7865459958507308) rectangle (3.5635447439440724,8.978100233465273);
+  	\draw[smooth,samples=100,domain=-9.497184600752878:3.5635447439440724] plot(\x,{3^((\x))});
+  	\end{tikzpicture}
+  	
+  	\item Logarithmic, this is an expression of the form $y=\log_a(x)$ where a is a constant. The definition of a log is the solution $y$ to $b^y=x$, which means if $b^y=x$ then $y=\log_b(x)$. In other words its the power you have to raise a number to, to achieve another number. For example, if $2^x=128$, then we can see that $x = 7$, therefore $x = \log_2(128)=7$. The graph below shows $y=\log_{10}(x)$
+  	
+  	\begin{tikzpicture}[scale=0.6, every node/.style={transform shape}]
+  	[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+  	\draw [color=cqcqcq,, xstep=1cm,ystep=1cm] (-0.9433339033525788,-7.8386188238055805) grid (13.423468375814059,2.902492028442017);
+  	\draw[->,color=black] (-0.9433339033525788,0) -- (13.423468375814059,0);
+  	\foreach \x in {,1,2,3,4,5,6,7,8,9,10,11,12,13}
+  	\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+  	\draw[->,color=black] (0,-7.8386188238055805) -- (0,2.902492028442017);
+  	\foreach \y in {-7,-6,-5,-4,-3,-2,-1,1,2}
+  	\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+  	\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+  	\clip(-0.9433339033525788,-7.8386188238055805) rectangle (13.423468375814059,2.902492028442017);
+  	\draw[smooth,samples=1000,domain=1e-4:13.423468375814059] plot(\x,{ln((\x))/ln(10)});
+  	\end{tikzpicture}
+  	
+  \end{itemize}
+  
+  
   
   \noindent
   \marginnote{4.4.4.3}Order of Complexity

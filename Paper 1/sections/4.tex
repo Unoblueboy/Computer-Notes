@@ -1,6 +1,6 @@
 \subsection{Abstraction and Automation}
   \noindent
-  \marginnote{3.4.1.1}Problem solving is the process of finding solutions to a certain problem. One of the main tools used when problem solving is the application of Logical Reasoning which is the process of using a given set of facts to determine whether new facts are true or false. To solve a problem another important step is to identify what the problem is.\\
+  \marginnote{3.4.1.1}Problem solving is the process of finding solutions to a certain problem. One of the main tools used when problem solving is the application of Logical Reasoning which is the process of using a given set of facts to determine whether new facts are true or false. To solve a problem another important step is to identify what the problem is.\\ \\
   \marginnote{3.4.1.2}An Algorithm is a sequence of steps that can be followed to complete a task and that always terminate. An example of an algorithm (written in pseudo-code) is as follows:
   \begin{python}
 func bubblesort( var a as array )
@@ -40,7 +40,7 @@ end func
     \end{tabular}
   \end{table}
   \noindent
-  This shows what happens to the data throughout the process at which the algorithm is being run.\\
+  This shows what happens to the data throughout the process at which the algorithm is being run.\\ \\
   \marginnote{3.4.1.3}The main concept behind abstraction is to reduce a problem to its most basic parts, its essential features. This is useful as it allows a programmer to solve the problem without having to fuss too much about the details, abstraction is also useful because it allows the solution to one problem to be implemented in other similar problems. In general, there are two main types of abstraction:
   \begin{itemize}
     \setlength{\itemsep}{0em}
@@ -132,7 +132,7 @@ end func
   \end{itemize}
 \subsection{Regular Languages}
   \noindent
-  \marginnote{3.4.2.1}A finite state machine is any device device that stores its current state and whose status can change as the result of an input. Mainly used as a conceptual model for designing and describing systems. A state transition diagram is a visual representation of an FSM using circles and arrows, whereas a state transition table is a tabular representation of an FSM showing input, current state, and next state. Within a state transition diagram, there may be an accepting state, represented by two concentric circles, which shows whether an input has been accepted. An FSM doesn't necessarily need an accepting state. Below is an example of both a State Transition Diagram and a state transition table.\\
+  \marginnote{3.4.2.1}A finite state machine is any device device that stores its current state and whose status can change as the result of an input. Mainly used as a conceptual model for designing and describing systems. A state transition diagram is a visual representation of an FSM using circles and arrows, whereas a state transition table is a tabular representation of an FSM showing input, current state, and next state. Within a state transition diagram, there may be an accepting state, represented by two concentric circles, which shows whether an input has been accepted. An FSM doesn't necessarily need an accepting state. Below is an example of both a state transition diagram and a state transition table.\\
   \begin{figure}[H]
     \centering
     \begin{tikzpicture}
@@ -172,8 +172,7 @@ end func
     \end{tabular}
     \caption*{State Transition Table}
   \end{figure}
-  A Mealy Machine is a type of finite state machine which also produces an output, this output can be shown on a diagram by instead of labelling each transition with ``input'', you label them with ``input/output'', and that output is outputted when the transition it is on occurs. This can also be represented in a state transition Table by simply adding a column.
-  
+  A Mealy Machine is a type of finite state machine which also produces an output, this output can be shown on a diagram by instead of labelling each transition with ``input'', you label them with ``input/output'', and that output is outputted when the transition it is on occurs. This can also be represented in a state transition Table by simply adding a column.\\ \\
   \noindent
   \marginnote{4.4.2.2}There is a lot of random maths that is part of this course that isn't taught as part of even standard A level maths, but thankfully it only covers basic concepts so. The first thing we need to do is define a set, a set is ``a well-defined collection of distinct objects'', as we are only likely to deal with real numbers, you can just think of it as a collection of different numbers (they don't need to be in any specific order). A set is often defined using curly brackets for example, a set called A which is the set of numbers 1,2,3,4,5 would be shown as $A = {1,2,3,4,5}$.
   There are a few standard sets that you should know
@@ -193,14 +192,14 @@ end func
   	\item \{\} - indicates the contents of the set
   	\item $x^2$ - This indicates the values which you put into the set
   	\item $\mid$ - Such that, the part after this defines the values which x can take
-  	\item $in$ - is a memeber of
+  	\item $\in$ - is a member of
 	\item $\mathbb{N}$ - The set of natural numbers
 	\item $\wedge$ - and 
 	\item $\geq2$ - greater than or equal to 2
   \end{itemize}
   So to write it as one sentence, the set B is the set of all values of $x^2$ such that x is a member of the set of natural numbers, and x is greater than or equal to 2. ($B=\{4,9,16,25,36,49,64,\dots\}$). One of the more unique and important sets is the empty set ($\{\} = \varnothing$) which contains no elements. Often is is easier to use a set comprehension to define a set, especially if it is infinite, for example the set $\{0^n1^n \mid n \geq 1\} = {01,0011,000111,00001111,0000011111,\dots}$. In python, sets are also defined using curly brackets.
   
-  When talking about a set, it can be either finite or infinite. A finite set is a set that has a finite number of elements, it has an upper limit (less than infinity), whereas an infinite set has an infinite number of elements, it is not finite. A set is said to be countable if it has the same cardinality as some subset of the natural numbers, or more simply put, if it can be counted using the natural numbers. This implies that all finite sets are countable, as well as sets with the same cardinality (size) as the natural numbers. This brings us onto countably infinite sets, these are infinite sets that are countable, this means the set has the same cardinality as natural numbers, implying that the set and natural numbers can me mapped in a way to form a one to one correspondence between each elements of the two sets (for an example, lookup Cantor's diagonal argument). The cardinality of a set is the number of elements within the set.
+When talking about a set, it can be either finite or infinite. A finite set is a set that has a finite number of elements, it has an upper limit (less than infinity), whereas an infinite set has an infinite number of elements, it is not finite. A set is said to be countable if it has the same cardinality as some subset of the natural numbers, or more simply put, if it can be counted using the natural numbers. This implies that all finite sets are countable, as well as sets with the same cardinality (size) as the natural numbers. This brings us onto countably infinite sets, these are infinite sets that are countable, this means the set has the same cardinality as natural numbers, implying that the set and natural numbers can me mapped in a way to form a one to one correspondence between each elements of the two sets (for an example, look up Cantor's diagonal argument). The cardinality of a set is the number of elements within the set.
   
   There are 5 set operations that you need to know:
   \begin{itemize}
@@ -224,8 +223,7 @@ end func
   	\item Difference - This joins two sets together so that it contains all of the elements that are in one of the sets, but not in both sets. For example, the difference of the set $A=\{1,2,3,4\}$ and the set $B=\{3,4,5,6\}$ is $\{1,2\}$ or in set notation $A - B = \{1,2\}$ also $B - A = \{5,6\}$. The symmetric difference is $(A - B)\cup(B - A) = A \ominus B = A \Delta B = {1,2,5,6}$ (in our example).
   \end{itemize}
   
-  A set $A$ is a subset of another set $B$ if all elements of the set $A$ are elements of the set $B$. In other words, the set $A$ is contained inside the set $B$. The subset relationship is denoted as $A\subseteq B$. For example if $A = \{2,3,4\}$ and $B = \{1,2,3,4,5\}$ then $A\subseteq B$, this would also be true if $A = \{1,2,3,4,5\}$. A set is $A$ proper subset of $B$ if A is a subset of $B$ and $A \neq B$, so for example,  if $A = \{2,3,4\}$ and $B = \{1,2,3,4,5\}$ then $A\subset B$, this would not also be true if $A = \{1,2,3,4,5\}$ as $A=B$ therefore $A$ can't be a proper subset of $B$.
-  
+  A set $A$ is a subset of another set $B$ if all elements of the set $A$ are elements of the set $B$. In other words, the set $A$ is contained inside the set $B$. The subset relationship is denoted as $A\subseteq B$. For example if $A = \{2,3,4\}$ and $B = \{1,2,3,4,5\}$ then $A\subseteq B$, this would also be true if $A = \{1,2,3,4,5\}$. A set is $A$ proper subset of $B$ if A is a subset of $B$ and $A \neq B$, so for example,  if $A = \{2,3,4\}$ and $B = \{1,2,3,4,5\}$ then $A\subset B$, this would not also be true if $A = \{1,2,3,4,5\}$ as $A=B$ therefore $A$ can't be a proper subset of $B$.\\ \\
   \noindent
   \marginnote{4.4.2.3}A regular expression is a simple way of describing a set and allow convenient shorthand description of certain languages. Here are common regular expressions:
   \begin{table}[H]
@@ -298,7 +296,7 @@ end func
 \subsection{Context-free Languages}
   
   \noindent
-  \marginnote{4.4.3.1}Context-free languages are languages that are defined by context-free grammars, which in turn are simply a set of rules which defines what strings are possible in a given language. We often find that languages are too complex to me represented by a regular expression or a finite state machine, thus context-free grammars are useful in these situations (e.g. try formulating a regular expression for a palindrome).
+  \marginnote{4.4.3.1}Context-free languages are languages that are defined by context-free grammars, which in turn are simply a set of rules which defines what strings are possible in a given language. We often find that languages are too complex to be represented by a regular expression or a finite state machine, thus context-free grammars are useful in these situations (e.g. try formulating a regular expression for a palindrome).
   
   Backus-Naur form is a notation we can use to describe context free grammars, thus describing the syntax of a program. There a few characters that are important within Backus-Naur Form:
   \begin{itemize}
@@ -307,7 +305,7 @@ end func
   	\item ::=
 	  	\subitem This is used to say how non-terminal expressions are defined
   	\item |
-	  	\subitem This is a way of breaking up several parts of an expression, an or of the different parts.
+	  	\subitem This is a way of breaking up several parts of an expression, an 'or' of the different parts.
   \end{itemize}
   
   To give a simple example which defines decimals would be as follows
@@ -324,8 +322,7 @@ end func
 \subsection{Classification of Algorithms}
   
   \noindent
-  \marginnote{4.4.4.1}In computer science we often derive several algorithms in order to solve the same problem. It is useful to have a way for us to compare these algorithms either time-wise (how ling the algorithm takes) or space-wise (how much memory does the algorithm use).
-  
+  \marginnote{4.4.4.1}In computer science we often derive several algorithms in order to solve the same problem. It is useful to have a way for us to compare these algorithms either time-wise (how ling the algorithm takes) or space-wise (how much memory does the algorithm use).\\ \\
   \noindent
   \marginnote{4.4.4.2}In order to understand Big O-notation, you need to understand some basic functions (as well as some random related facts), the first thing is domain and co-domain. The domain is the set from which all the values that you can input into a function are taken and the co-domain is the set from which all of the output values can be taken. If you do A-level maths, it is similar to the concept of the range, however the co-domain can be larger than the range (the range is a subset of the co-domain). For example, take the function $f(x)=x^2$ (or $f: x \mapsto x^2$ written slightly differently) it has the domain $\mathbb{R}$ as you can put in any real number, and it can have co-domain $\mathbb{R}$ as all of its outputs are real numbers, you can see how this can be different to range, as the range would be $\{x \mid x \in \mathbb{R} \wedge x \geq 0\} = \mathbb{R}_0^+$. Often to fully define a function, they will state the domain and co-domain of a function in the following way, $f: \mathbb{R} \mapsto \mathbb{R}$, so if we wanted to define a new function $g(x)$ that produces the same output as $f(x)$ but has a different co-domain, we may say $g: \mathbb{R} \mapsto \mathbb{R}_0^+ \\ g: x \mapsto x^2$ and this has co-domain $\mathbb{R}_0^+$
   
@@ -394,8 +391,7 @@ end func
   	
   \end{itemize}
   
-  Another thing you need to know is n factorial ($n!$). n factorial is equal to the product of all positive integers less than or equal to $n$, so $n!=n \times (n-1) \times (n-2) \times \dots \times 3 \times 2 \times 1$. factorial is used for when you want to find the number of ways a set can be ranged, the number of permutations of a set. To show you how, if we want to find all of the permutations of the word ``dog'' we would find $6=3!$, to list them all: dog, dgo, odg, ogd, gdo, god. To get the logic behind it, think about it this way, there are 3 ways to pick the first letter, then 2 to pick the second, then only one option left for the last, we get $3 \times 2 \times 1 = 3! = 6$ permutations, for a set with 4 elements, you have 4 choices, then 3 choices, then 2 choices, then 1 choice, giving you $4 \times 3 \times 2 \times 1 =  4! = 24$ permutations, for a set with 5 elements $5 \times 4 \times 3 \times 2 \times 1 = 5! 120$ permutations. This pattern goes on, so a set of $n$ elements has $n!$ permutations.
-  
+  Another thing you need to know is n factorial ($n!$). n factorial is equal to the product of all positive integers less than or equal to $n$, so $n!=n \times (n-1) \times (n-2) \times \dots \times 3 \times 2 \times 1$. factorial is used for when you want to find the number of ways a set can be ranged, the number of permutations of a set. To show you how, if we want to find all of the permutations of the word ``dog'' we would find $6=3!$, to list them all: dog, dgo, odg, ogd, gdo, god. To get the logic behind it, think about it this way, there are 3 ways to pick the first letter, then 2 to pick the second, then only one option left for the last, we get $3 \times 2 \times 1 = 3! = 6$ permutations, for a set with 4 elements, you have 4 choices, then 3 choices, then 2 choices, then 1 choice, giving you $4 \times 3 \times 2 \times 1 =  4! = 24$ permutations, for a set with 5 elements $5 \times 4 \times 3 \times 2 \times 1 = 5! 120$ permutations. This pattern goes on, so a set of $n$ elements has $n!$ permutations.\\ \\
   \noindent
   \marginnote{4.4.4.3}Big O notation is a way to describe an algorithm time-wise or space-wise. Big O notation has 5 main classifications in terms of time complexity:
   \begin{itemize}
@@ -430,14 +426,13 @@ end func
   \end{itemize}
   
   \noindent
-  \marginnote{4.4.4.4}In reality, we have limits to what we can do with an algorithm, such as the hardware (limits to RAM, and ROM), as well as the complexity of the algorithm, which limit what we can compute.
-  
-  \noindent
+  \marginnote{4.4.4.4}In reality, we have limits to what we can do with an algorithm, such as the hardware (limits to RAM, and ROM), as well as the complexity of the algorithm, which limit what we can compute.\\ \\
+  \noindent 
   \marginnote{4.4.4.5}There are two ways to classify a problem:
   \begin{itemize}
   	\item Tractable
 	  	\subitem Problems that have algorithmic solutions that are of polynomial time complexity or less
-  	\item intractable
+  	\item Intractable
 	  	\subitem Problems that do not have algorithmic solutions that are of polynomial time complexity or less. To solve these problems, often a heuristic is used, this is when you use some sort of measure to guess a solution, then use an algorithm to improve your initial guess. An example is the travelling salesman problem, which is to find the shortest route to visit all of the nodes in a weighted connected graph.
   \end{itemize}
   
@@ -445,7 +440,8 @@ end func
   \marginnote{4.4.4.6}There are problems that exist that cannot be solved algorithmically, meaning no matter how powerful your computer is, the problem has no algorithm solutions.
   
   \noindent
-  \marginnote{4.4.4.7}The Halting Problem is an example of a problem that cannot be solved algorithmically, as it would create a paradox. The halting problem is about trying to find an algorithm that can determine for all other algorithms whether it will end by feeding in this other algorithm. We can show that such an algorithm doesn't exist via a proof by contradiction. Let's assume that such an algorithm does exist and returns \verb|True| if the algorithm terminate, \verb|false| otherwise, we are going to feed in the following algorithm (let's call it the Anti-Halting Algorithm)
+  \marginnote{4.4.4.7}The Halting Problem is an example of a problem that cannot be solved algorithmically, as it would create a paradox. The halting problem is about trying to find an algorithm that can determine for all other algorithms whether it will end by feeding in this other algorithm. We can show that such an algorithm doesn't exist via a proof by contradiction. Let's assume that such an algorithm does exist and returns \verb|True| if the algorithm terminates, \verb|false| otherwise, we are going to feed in the following algorithm (let's call it the Anti-Halting Algorithm)
+  
   \begin{verbatim}
 IF the output of the halting algorithm is True:
     WHILE True:
@@ -454,8 +450,7 @@ IF the output of the halting algorithm is True:
 ELSE
     HALT
 ENDIF
-  \end{verbatim}
-  Now we can look at the two cases that arise:
+  \end{verbatim}Now we can look at the two cases that arise:
   \begin{enumerate}
   	\item The halting algorithm evaluates \verb|True|, meaning the anti-halting algorithm will halt
 	  	\subitem Then the anti-halting algorithm will go into an infinite while loop, never halting
@@ -497,7 +492,7 @@ ENDIF
 	  			S0    & 0         & 0         & R    & S0 \\\hline
 	  			S0    & 1         & 1         & R    & S0 \\\hline
 	  			S0    & $\square$ & $\square$ & L    & S1 \\\hline
-	  			S1    & 0         & 0         & L    & S! \\\hline
+	  			S1    & 0         & 0         & L    & S1 \\\hline
 	  			S1    & 1         & 1         & L    & S2 \\\hline
 	  			S1    & $\square$ & $\square$ & L    & S3 \\\hline
 	  			S2    & 0         & 1         & L    & S2 \\\hline
@@ -517,8 +512,8 @@ ENDIF
 	  	\node[circle, minimum width=1.2cm, draw=black](S4) at (0,0) {};
 	  	
 	  	\draw[->, line width=2pt] (S0.east) -- node[above] {$\square$/$\square$,L} (S1.west);
-	  	\draw[->, line width=2pt] (S0.north east) .. controls ([xshift=20pt,yshift=20pt]S0.north east) and ([xshift=-20pt,yshift=20pt]S0.north west) .. node[above] {0/0,L} (S0.north west);
-	  	\draw[->, line width=2pt] (S0.south west) .. controls ([xshift=-20pt,yshift=-20pt]S0.south west) and ([xshift=20pt,yshift=-20pt]S0.south east) .. node[below] {0/0,L} (S0.south east);
+	  	\draw[->, line width=2pt] (S0.north east) .. controls ([xshift=20pt,yshift=20pt]S0.north east) and ([xshift=-20pt,yshift=20pt]S0.north west) .. node[above] {0/0,R} (S0.north west);
+	  	\draw[->, line width=2pt] (S0.south west) .. controls ([xshift=-20pt,yshift=-20pt]S0.south west) and ([xshift=20pt,yshift=-20pt]S0.south east) .. node[below] {1/1,R} (S0.south east);
 	  	
 	  	\draw[->, line width=2pt] (S1.north east) .. controls ([xshift=20pt,yshift=20pt]S1.north east) and ([xshift=-20pt,yshift=20pt]S1.north west) .. node[above] {0/0,L} (S1.north west);
 	  	\draw[->, line width=2pt] (S1.east) -- node[above] {1/1,L} (S2.west);
@@ -598,4 +593,4 @@ ENDIF
   
   A universal Turing machine is a machine that can simulate a Turing machine by reading a description of the machine along with the inputs of its tape. To put it another way, what it does is it takes in the description of another machine encoded into some sort of string, and from this is able to emulate the working of this machine onto an input, which would also be provided. Both the program and the data are stored on the tape, which is similar to the stored program concept, where the program and the data the program operates on are stored in the same location in memory. 
   
-  Turing machines and Universal Turing machines are useful as they provide a model of computation which allows us to clearly define if a problem is computable, that is to say that if it can be solved using a universal Turing machine, then it is computable. Universal Turing machine is useful as you don't need to make a new machine for each problem, you just need the description of the machine, and the inputs you want it to work on.
+  Turing machines and Universal Turing machines are useful as they provide a model of computation which allows us to clearly define if a problem is computable, that is to say that if it can be solved using a universal Turing machine, then it is computable. Universal Turing machines are useful as you don't need to make a new machine for each problem, you just need the description of the machine, and the inputs you want it to work on.

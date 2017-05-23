@@ -67,6 +67,7 @@ while True:
     \item Easier for others to understand when working on a large project.
     \item Easier to update the code.
   \end{itemize}
+
   \marginnote{4.1.1.3}[0cm]The basic arithmetic operations are:
   \begin{itemize}
     \setlength\itemsep{0em}
@@ -89,6 +90,7 @@ while True:
     \item truncation \verb|Math.trunc(a)|
       \subitem \verb|Math.trunc(0.6666666666)=0|, \verb|Math.trunc(1.4352534234) = 1|
   \end{itemize}
+
   \marginnote{4.1.1.4}[0cm]Relational operations are expressions that compare two values. Some common Relational Operations are:
   \begin{itemize}
     \setlength\itemsep{0em}
@@ -107,6 +109,7 @@ while True:
     \item NOT: Negates (inverses) the input, \verb|True| $\to$ \verb|False|, \verb|False| $\to$ \verb|True|
     \item XOR: Returns \verb|True| if either of its inputs are true but not if both are true.
   \end{itemize}
+
   \marginnote{4.1.1.6}[0cm]A constant is an item of data whose value does not change whereas a variable is an item of data whose value could change while the program is being run. Named constants are useful because you can easily use them throughout the program, and don't have to worry about the initial value, also you can easily change it by changing the assignment and declaration of the constant.\\ \\
   \marginnote{4.1.1.7}[0cm]There are several ways to manipulate and convert strings from one data type to another. Some examples of string handling functions are:
   \begin{itemize}
@@ -141,6 +144,7 @@ while True:
         \subitem \verb|time.strftime("%d/%m/%Y",time.localtime())="28/05/2016"|
     \end{itemize}
   \end{itemize}
+
   \marginnote{4.1.1.8}In python random number generator functions are all contained within the module \verb|random| and therefore requires us to import it using \verb|import random|. There are several functions within this module, but the three most important functions are:
   \begin{itemize}
     \setlength\itemsep{0em}
@@ -148,6 +152,7 @@ while True:
     \item \verb|random.randint(a,b)|: produces a random integer between \verb|a| and \verb|b|.
     \item \verb|random.sample(population, k)|: Chooses \verb|k| unique random elements from a \verb|population|.
   \end{itemize}
+
   \marginnote{4.1.1.9}Exception Handling is the process of dealing with events that cause the current subroutine/ procedure to stop. In general this is done by:
   \begin{enumerate}
     \setlength\itemsep{0em}
@@ -167,8 +172,8 @@ except:
 else:
 	print("Your age is %i"%(Age))
 \end{python}
-  What this code does is it first asks the user to input their age. We then go into the exception handling part where the code tries to make the input an integer. If an error occurs then the program prints \verb|"Age is not an Integer please try again."|, if no errors occur, then the program prints out the age inputted at the start of the program.
-  \marginnote{4.1.1.10}A subroutine is self-contained and it carries out one or more related processes, subroutines must be given unique identifiers or names, which means that once they have been written they can be called using their name at any time while the program is being run. Subroutines can be written to handle events (something that happens during runtime).\\
+  What this code does is it first asks the user to input their age. We then go into the exception handling part where the code tries to make the input an integer. If an error occurs then the program prints \verb|"Age is not an Integer please try again."|, if no errors occur, then the program prints out the age inputted at the start of the program.\\ \\
+  \marginnote{4.1.1.10}[0cm]A subroutine is self-contained and it carries out one or more related processes, subroutines must be given unique identifiers or names, which means that once they have been written they can be called using their name at any time while the program is being run. Subroutines can be written to handle events (something that happens during runtime).\\
   The benefits of using subroutines are as follows:
   \begin{itemize}
     \setlength\itemsep{0em}
@@ -178,41 +183,40 @@ else:
     \item Easier to debug as each subroutine is self-contained.
     \item Large projects can be developed by multiple programmers
   \end{itemize}
-  \marginnote{4.1.1.11}A Subroutine often has parameters and Argument. Parameters are pieces of data that represents data to be passed into a subroutine and an argument is a piece of data that is passed into the subroutine. For example if you defined a subroutine \verb|LoadGame(Filename, Board)| Filename and Board are parameters, later when it is called as \verb|LoadGame(TRAININGGAME, Board)| the variables TRAINNINGGAME and Board are the arguments. To pass the arguments into the subroutine a block interface is used, which is code that describes the data being passed into the subroutine.\\
-  \marginnote{4.1.1.12} To define a subroutine/ function in python we use the keyword \verb|def| and to add arguments brackets are used after the subroutine name. so if we wanted to define a function named Add\_Contact which has the parameters Name, and Address, we would write \verb|def Add_Contact(Name, Address):| for the function to return a value you simply use \verb|return| followed by the data you want the function to return to the calling routine.\\
-  \marginnote{4.1.1.13}Within a subroutine (in python) any variable that isn't declared as a global variable, is considered a local variable, meaning that it only exists within the subroutine, and once the subroutine has finished, the variable would no longer exist, so they cannot be accessed outside of the subroutine. There are three main benefits to this which are:
+
+  \marginnote{4.1.1.11}A Subroutine often has parameters and Argument. Parameters are pieces of data that represents data to be passed into a subroutine and an argument is a piece of data that is passed into the subroutine. For example if you defined a subroutine \verb|LoadGame(Filename, Board)| Filename and Board are parameters, later when it is called as \verb|LoadGame(TRAININGGAME, Board)| the variables TRAINNINGGAME and Board are the arguments. To pass the arguments into the subroutine a block interface is used, which is code that describes the data being passed into the subroutine.\\ \\
+  \marginnote{4.1.1.12}[0cm]To define a subroutine/ function in python we use the keyword \verb|def| and to add arguments brackets are used after the subroutine name. so if we wanted to define a function named Add\_Contact which has the parameters Name, and Address, we would write \verb|def Add_Contact(Name, Address):| for the function to return a value you simply use \verb|return| followed by the data you want the function to return to the calling routine.\\ \\
+  \marginnote{4.1.1.13}[0cm]Within a subroutine (in python) any variable that isn't declared as a global variable, is considered a local variable, meaning that it only exists within the subroutine, and once the subroutine has finished, the variable would no longer exist, so they cannot be accessed outside of the subroutine. There are three main benefits to this which are:
   \begin{itemize}
     \setlength\itemsep{0em}
     \item Can't inadvertently change the value being stored elsewhere in the program.
     \item Use the same identifier in several places and have them be consider different variables.
     \item Free up memory as each time a local variable is finished with it is removed from memory.
   \end{itemize}
-  \marginnote{4.1.1.14} The difference between a local and global variable is that a local variable has a limited existance within a subroutine or function in which it was declared whereas a global variable can be used anywhere in the program.
-  
+
+  \marginnote{4.1.1.14} The difference between a local and global variable is that a local variable has a limited existence within a subroutine or function in which it was declared whereas a global variable can be used anywhere in the program.\\ \\
   \noindent
-  \marginnote{4.1.1.15}whenever a program is being executed, it will have to deal with functions from on part of the program returning values to other parts of the program. To deal with this, we use a call stack which takes care of all the times a function is called and where to return the values of the function. The call stack in itself is made up of stack frames, which in themselves are made of three main parts:
+  \marginnote{4.1.1.15}Whenever a program is being executed, it will have to deal with functions from on part of the program returning values to other parts of the program. To deal with this, we use a call stack which takes care of all the times a function is called and where to return the values of the function. The call stack in itself is made up of stack frames, which in themselves are made of three main parts:
   \begin{itemize}
   	\item The arguments to be passed
   	\item The address the final output should be returned to (the return address)
   	\item The local variables of the subroutine
   \end{itemize}
-  There is another part of the stack frame called the frame pointer which points to the part of the just before the function is called, which often means it will be before the local variables of the subroutine, but after the return address, the frame pointer is useful as not all functions will have the same number of local variables, so the stack size can vary, so it is often useful to have this stack pointer to easily be able to restore the stack to the state before the function was called.
-  
+  There is another part of the stack frame called the frame pointer which points to the part of the just before the function is called, which often means it will be before the local variables of the subroutine, but after the return address, the frame pointer is useful as not all functions will have the same number of local variables, so the stack size can vary, so it is often useful to have this stack pointer to easily be able to restore the stack to the state before the function was called.\\ \\
   \noindent
   \marginnote{4.1.1.16}Recursion is the process of a subroutine calling itself in order to complete a task. The most simple example of recursion is to calculate n factorial ($n! = n\times(n-1)\times(n-2)\times\cdots\times3\times2\times1$).
-  
+
   \begin{python}
 def factorial(n):
 	if n==0:
 		return 1
 	else:
 		return n * factorial(n-1)\end{python}
-  
+
   In this example it is clear to see that there's a base case (a case where you return a value that does not call itself), which in this case is return 0 if n equals 0, and a general case (the case that calls upon the function itself) which in this case was return $n \times (n-1)!$
 \subsection{Programming Paradigms}
   \noindent
-  \marginnote{4.1.2.1}A programming paradigm can be thought of as the way in which we structure our programs. A procedural programming paradigm involves us just writing out step by step instructions for our program to follow, and then executing our program. In object oriented program, we deal with objects and the way in which they are related to one another and the way in which they are allowed to interact with one another, which is very useful when trying to model groups of things such as te animal kingdom.
-
+  \marginnote{4.1.2.1}A programming paradigm can be thought of as the way in which we structure our programs. A procedural programming paradigm involves us just writing out step by step instructions for our program to follow, and then executing our program. In object oriented programs, we deal with objects, the way in which they are related to one another and the way in which they are allowed to interact with one another, which is very useful when trying to model groups of things such as the animal kingdom.\\ \\
   \noindent
   \marginnote{4.1.2.2}Hierarchy or Structure Charts use a top-down approach to explain how a program is put together, meaning it starts from the program name and breaks the problem down into smaller pieces. A Structure Chart differs from a Hierarchy Chart as a Structure Chart shows how data flows through a system, whereas a Hierarchy Chart does not. An example of a Hierarchy Chart is as follows:
   \begin{figure}[H]
@@ -247,16 +251,16 @@ def factorial(n):
     \item Sensible variable names.
     \item Indenting the contents of loops and subroutines.
   \end{itemize}
-  After the code is initially written, debugging will often have to occur. This can be done using a dry run and a trace table. A dry run is the process of stepping through each line of code to see what will happen before a program is run, a trace table is a method of recording the result of each step that takes place when dry running code.
-  
+  After the code is initially written, debugging will often have to occur. This can be done using a dry run and a trace table. A dry run is the process of stepping through each line of code to see what will happen before a program is run, a trace table is a method of recording the result of each step that takes place when dry running code.\\ \\
   \noindent
   \marginnote{4.1.2.3}Object-Oriented Programming is a way of programming in which we try and organise objects in a way that reflects the real world. There are some basic concepts that we should define first:
   \begin{itemize}
+    \setlength\itemsep{0cm}
   	\item class
   	\item object
   	\item instantiation
   \end{itemize}
-  A class is used to define all all fo the properties (the defining features of the class, the variables) and methods (the things that the class can do, the functions) that are core to a group of similar objects (in the non computing sense). An Object is an instance of a class so for example, if we were to say that the human race was a class, you would by an object of that class. Instantiate is the process of creating an object from a class, following our humans example, giving birth would be instantiation. An example of the difference in python would be
+  A class is used to define all of the properties (the defining features of the class, the variables) and methods (the things that the class can do, the functions) that are core to a group of similar objects (in the non computing sense). An object is an instance of a class so for example, if we were to say that the human race was a class, you would be an object of that class. Instantiation is the process of creating an object from a class; following our humans example, giving birth would be instantiation. An example of the difference in python would be
   \begin{python}
 class Humans:
 	def __init__(self,age,height,name):
@@ -265,10 +269,10 @@ class Humans:
 		self.name = name
 
 nathan = Humans(18,1.95,"Nathan")\end{python}
-  Here we can see that Humans is the class, nathan is an object from the class humans, and the way that we instantiate Human objects is through a constructor (which constructs an object) like: Humans(18,1.95,"Nathan")
-  
-  One of the first concepts within Object Oriented Programming we will talk about is encapsulation. This is the idea that the properties and the methods that manipulates that properties should be in the same class, meaning the class is self contained. This means it is less likely that the property of a class will be occidentally affected by other parts of the program. This process may also be called information hiding as the properties are available within the class but not outside it.
-  
+  Here we can see that Humans is the class, Nathan is an object from the class humans, and the way that we instantiate Human objects is through a constructor (which constructs an object) like: Humans(18,1.95,"Nathan")
+
+  One of the first concepts within Object Oriented Programming we will talk about is encapsulation. This is the idea that the properties and the methods that manipulates these properties should be in the same class, meaning the class is self contained. This means it is less likely that the property of a class will be accidentally affected by other parts of the program. This process may also be called information hiding as the properties are available within the class but not outside it.
+
   Another concept is the concept of inheritance, this is the idea that a parent class can share its properties and its methods with a child/ sub class. With inheritance, you may consider starting off with a base class and then building children off of that. This base class should contain properties and methods that are common to all of its children. With our humans example, we could re-write the code so that it is a child of a class called Animals and let Animals also have other children classes. A coding example of this would be:
   \begin{python}
 class Animals:
@@ -306,68 +310,69 @@ class Dog(Animals):
 	def Bark(self):
 		print("bark")
   	\end{python}
-  	
+
   	Inheritance can be shown using a diagram. The class diagram follows the following rules.
   	\begin{itemize}
+        \setlength\itemsep{0cm}
   		\item It is hierarchical in structure, with the base class on top.
-  		\item arrows indicate direction of inheritance
+  		\item The arrows indicate direction of inheritance
   		\item Each class is represented by a box containing three sections
 	  		\subitem Name
 	  		\subitem Properties
 	  		\subitem Methods
   		\item If class A inherits from class B, a hollowed triangle arrow drawn from class A to class B.
   		\item If object A is a composite aggregate of class B and C, a filled diamond arrow drawn from class B to class A and from class C to class A.
-  		\item If object A is a associate aggregate of class B and C, a hollowed diamond arrow drawn from class B to class A and from class C to class A.
+  		\item If object A is an associate aggregate of class B and C, a hollowed diamond arrow drawn from class B to class A and from class C to class A.
   		\item If a class method/ property is private (can only be accessed within the class), prefix it with a -
   		\item If a class method/ property is public (can be accessed anywhere within the program), prefix it with a +
   		\item If a class method/ property is protected (can be accessed by the class and all of its children), prefix it with a \#
   	\end{itemize}
-  	
+
   	\begin{figure}[H]
   		\centering
 	  	\includegraphics[scale=0.7]{Class-Diagram}
     \end{figure}
-  	The third concept you need to know about is Aggregation, this is a way of creating new objects (meaning 2 or more) from objects that already exist. There are two types of aggregation, association aggregation and composition aggregation. With composition Aggregation (AKA composition) this implies that the one ``parent'' object owns the other ``child'' objects, an example would be a university and its departments, if the university were to shut down, then all of the departments would also have to shut down as the university owns the departments. With association aggregation if the parent object is destroyed, this does not necessarily mean the child objects would be destroyed. An example would be a department and its professors, if the department is shut down, the professors still exist, they just have to find work else where.
-  	
+  	The third concept you need to know about is aggregation, this is a way of creating new objects (meaning 2 or more) from objects that already exist. There are two types of aggregation, \textbf{association aggregation} and \textbf{composition aggregation}. With composition aggregation (AKA composition) this implies that the one ``parent'' object owns the other ``child'' objects, an example would be a university and its departments, if the university were to shut down, then all of the departments would also have to shut down as the university owns the departments. With association aggregation if the parent object is destroyed, this does not necessarily mean the child objects would be destroyed. An example would be a department and its professors, if the department is shut down, the professors still exist, they just have to find work else where.
+
   	The final concept is polymorphism, this is the idea that a method defined in a base class can be redefined in classes that inherit from it, and thus be used in different ways. When the method defined within the sub class takes precedence over the same method defined in the base class, this is called overriding.
-  	
-  	There are several advantages to using an Object-oriented programming Paradigm:
+
+  	There are several advantages to using an object-oriented programming paradigm:
   	\begin{itemize}
-  		\item It is easier to follow a modular approach to programming, thus making editing and appending programs easier
-  		\item Easy to add functionality to a module
-  		\item Modular design allows teams of programmers to easily work on self-contained modules
-  		\item Inheritance means code made more easily reusable throughout the program
-  		\item Less likely to cause bugs as only edit something within one class
-  		\item Libraries of classes can be created for easy code reuse
+  		\item It is easier to follow a modular approach to programming, thus making editing and appending programs easier.
+  		\item Easy to add functionality to a module.
+  		\item Modular design allows teams of programmers to easily work on self-contained modules.
+  		\item Inheritance means code is made more easily reusable throughout the program.
+  		\item Less likely to cause bugs as only edit something within one class.
+  		\item Libraries of classes can be created for easy code reuse.
   	\end{itemize}
-  	
-  	There are 3 design principles within object oriented Programming
+
+  	There are 3 design principles within object oriented programming:
   	\begin{itemize}
   		\item Encapsulate what varies
-  		\subitem This is basically saying that break the problem down into as many classes as necessary to represent the problem in a way that adequately models the world around us. If you find a class should be broken up further, then break it up.
+  		\subitem This is basically saying to break the problem down into as many classes as necessary to represent the problem in a way that adequately models the world around us. If you find a class should be broken up further, then break it up.
   		\item Favour composition over inheritance
   		\subitem For inheritance you would need to create a new class that inherits from other classes, whereas with composition or association aggregation, if you know the original classes work, you just need to instantiate the classes and combine the objects, which is less error prone.
   		\item Program to interfaces not to implementations
-  		\subitem Program classes so that if they are related in some way they share methods that will carry out similar functions on similar pieces of data(if you want some experience with interfaces, I would suggest looking into learning some basic java) instead of creating many classes with lots of different classes which carry out the same function, but with different method names. (An example of where I broke this above is with the speak method in Humans and the bark method in Dogs, I could have easily moved the speak method into the Animals class and then overridden them in the sub classes, which would make the classes more logically coherent).
+  		\subitem Program classes so that if they are related in some way they share methods that will carry out similar functions on similar pieces of data (if you want some experience with interfaces, I would suggest looking into learning some basic java) instead of creating many classes with lots of different classes which carry out the same function, but with different method names. (An example of where I broke this above is with the speak method in Humans and the bark method in Dogs, I could have easily moved the speak method into the Animals class and then overridden them in the sub classes, which would make the classes more logically coherent).
   	\end{itemize}
-  	
+
   	For the exam, you should be able to write object oriented programs and have experience in coding the following:
   	\begin{itemize}
-  		\item abstract methods
+  		\item Abstract methods
 	  		\subitem A method that is declared but has no implementation
-  		\item virtual methods
+  		\item Virtual methods
 	  		\subitem A method defined in the base class which can be overridden. Its purpose is to allow the program on run time to decide at run-time what version of the method to run based on the instance used.
-  		\item static methods
-  		\item inheritance
-  		\item aggregation
-  		\item polymorphism
-  		\item public, private and protected specifiers
+  		\item Static methods
+  		\item Inheritance
+  		\item Aggregation
+  		\item Polymorphism
+  		\item Public, private and protected specifiers
   	\end{itemize}
-  	
+
   	Below I'm going to show a quick example of how to do each of the above in python
-  	
-  	\textbf{abstract methods}
-  	
+
+  	\textbf{Abstract methods}
+
   	\begin{python}
 #Abstract Base Class
 import abc
@@ -376,19 +381,19 @@ Class A:
 	@abc.abstractMethod
 	def methodToDefine(self,input):
 		return\end{python}
-	
-	\textbf{virtual methods} - thankfully in python all methods are \textit{technically} virtual due to duck typing (Google it).
-	
-	\textbf{static methods}
-	
+
+	\textbf{Virtual methods} - thankfully in python all methods are \textit{technically} virtual due to duck typing (Google it).
+
+	\textbf{Static methods}
+
 \begin{python}
 Class A:
 	@staticmethod
 	def printHi():
-  		print("Hi")\end{python}	
-  	
+  		print("Hi")\end{python}
+
   	\textbf{Inheritance}, where class B inherits from class A
-  	
+
 \begin{python}
 class A:
 	pass
@@ -396,7 +401,7 @@ class A:
 class B(A):
 	pass
 \end{python}
-	
+
 	\textbf{Association Aggregation}, where class A and class B make class C
 
 \begin{python}
@@ -410,33 +415,33 @@ class C:
 	def __init__(self, a1, b1)
 		self.a = a1
 		self.b = b1
-		
+
 obj_a = A()
 obj_b = B()
 obj_c = C(a,b)
 \end{python}
 
 	\textbf{Composition Aggregation}, where class A and class B make class C
-	
+
 \begin{python}
 class A:
-pass
+    pass
 
 class B:
-pass
+    pass
 
 class C:
-def __init__(self)
-self.a = A()
-self.b = B()
+    def __init__(self):
+        self.a = A()
+        self.b = B()
 \end{python}
-	
-	polymorphism
+
+	\textbf{Polymorphism}
 \begin{python}
 class A:
 	def printWelcoming(self):
 		print("Hi")
-	
+
 class B(A):
 	def printWelcoming(self):
 		print("Hello")
@@ -453,5 +458,5 @@ class A:
 		self._b = b1
 		"""self.c is private"""
 		self.__c = c1
-	
+
 \end{python}

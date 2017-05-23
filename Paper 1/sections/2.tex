@@ -1,6 +1,6 @@
 \subsection{Data Structures and Abstract Data Types}
-  \marginnote{4.2.1.1}A data structure is any method used to store data in an organised and accessible format, they normally contain data that are related, different data structures allow for different data manipulations which means different data structures are use for different types of applications. For example an array may be useful to store a list of names whereas a textfile may be used to store information for a database.
-  \marginnote{4.2.1.2}An array is a set of related data items stored under a single identifier, they can have one or more dimensions, all elements are often of the same type(homogeneous). An array most commonly has either one dimension(which can be useful to represent vectors) which can be visualised using a list, or two dimensions (which is useful for representing a matrix) which can be visualised using a two-dimensional table. In python, instead of Arrays we use lists, which have a few minute differences to standard arrays (python lists are heterogeneous(They can store dat of different types)) but can be used in the same way as arrays. Some uses of lists are as follows:
+  \marginnote{4.2.1.1}A data structure is any method used to store data in an organised and accessible format, they normally contain data that are related, different data structures allow for different data manipulations which means different data structures are use for different types of applications. For example an array may be useful to store a list of names whereas a textfile may be used to store information for a database.\\ \\
+  \marginnote{4.2.1.2}An array is a set of related data items stored under a single identifier, they can have one or more dimensions, all elements are often of the same type(homogeneous). An array most commonly has either one dimension (which can be useful to represent vectors) which can be visualised using a list, or two dimensions (which is useful for representing a matrix) which can be visualised using a two-dimensional table. In python, instead of arrays we use lists, which have a few minute differences to standard arrays (python lists are heterogeneous - they can store data of different types) but can be used in the same way as arrays. Some uses of lists are as follows:
   \begin{python}
 Studentname = ["Derrick","Gill","Jamal","Lois"]
 Studentname[1]
@@ -9,7 +9,7 @@ Studentname[1]
 ArrayAdd=[[0,1,2],[1,2,3],[2,3,4]]
 ArrayAdd[1][2]
 3		\end{python}
-  \marginnote{4.2.1.3}Files are used to store many different types of data meaning that many different file types are needed to store all of these different types of data. Many file types are portable meaning that they can be used on many different platforms, the two most common portable file types when programming are text files (which is a file that contains human readable characters) and binary files (which stores data as 1s and 0s). One line on a text file may be referred to as a record, and the different items of data stored within the record are called the fields.\\
+  \marginnote{4.2.1.3}Files are used to store many different types of data meaning that many different file types are needed to store all of these different types of data. Many file types are portable, meaning that they can be used on many different platforms, the two most common portable file types when programming are text files (which is a file that contains human readable characters) and binary files (which stores data as 1s and 0s). One line on a text file may be referred to as a record, and the different items of data stored within the record are called the fields.\\
   All files have an internal structure which allows them to store data efficiently, there are two common structures that are used to store data These are:\\
   Tab-delimited text (txt) file:
   \begin{csv}
@@ -18,7 +18,7 @@ Laura	Harvey	lharvey1@utexas.edu	Female	62.114.62.185
 Eugene	Wells	ewells2@weibo.com	Male	119.176.45.229
 Helen	Jordan	hjordan3@geocities.jp	Female	81.49.64.62
 Shirley	Weaver	sweaver4@pbs.org	Female	218.20.41.34	\end{csv}
-  Comma seperate variable (csv):
+  Comma separated values (csv):
   \begin{csv}
 Sara,Phillips,sphillips0@google.co.jp,Female,117.135.192.97
 Laura,Harvey,lharvey1@utexas.edu,Female,62.114.62.185
@@ -34,10 +34,8 @@ Writer = csv.writer(file) # This creates an object which allows us to write to t
 file.write("\n")
 Writer.writerow(['Joe', 'Shmuck', 'JShmuck3D@hotmail.com', 'Male','162.148.10.205'])
 file.close()	\end{python}
-  Binary files contain binary codes and usually contain some header information that describes what these represent, binary files are not easily readable by a human, but can quickly be interpreted by a program. For example, the PNG image file is a binary file, can be used in a range of applications and requires less memory than some other image formats. Many program files (executables) are binary files so they can be used on other platforms. The two main actions you might want to perform on binary files are to read and write data from and to it.
-  
-  
-  \marginnote{4.2.1.4}An abstract data is the conceptual model of how data should be stored and the operations that can be done on this data. Data structures are the physical implementations of these abstract data types within a programming language. There are a large arrange of abstract data types, the ones needed for the exam are as follows:
+  Binary files contain binary codes and usually contain some header information that describes what these represent, binary files are not easily readable by a human, but can quickly be interpreted by a program. For example, the PNG image file is a binary file, can be used in a range of applications and requires less memory than some other image formats. Many program files (executables) are binary files so they can be used on other platforms. The two main actions you might want to perform on binary files are to read and write data from and to it.\\ \\
+  \marginnote{4.2.1.4}An abstract data is the conceptual model of how data should be stored and the operations that can be done on this data. Data structures are the physical implementations of these abstract data types within a programming language. There are a large range of abstract data types, and the ones needed for the exam are as follows:
   \begin{itemize}
   	\item Queue
   	\item Stack
@@ -59,7 +57,7 @@ file.close()	\end{python}
   	\end{tabular}
   \end{table}
 \subsection{Queues}
-  
+
   \marginnote{4.2.2.1}The queue is a FIFO (First in First Out) structure (meaning the first value into the structure, will be the first out). A queue acts like a queue in a shopping market, the first person into the queue, will be the first to be serviced.\\
   To implement a queue, we use a front and rear pointer to represent the front and back of the queue respectively. To explain the general operations of a queue we will use an example on a small scale with a queue (capable of storing a max of 6 items) with some values already in it:
   \begin{table}[H]
@@ -68,8 +66,8 @@ file.close()	\end{python}
   		\multicolumn{1}{|c|}{``Nathan''} & \multicolumn{1}{|c|}{``Tashy''} & \multicolumn{1}{|c|}{``Giorgia''} & \multicolumn{1}{|c|}{``Ryan''} & \multicolumn{1}{|c|}{} & \multicolumn{1}{|c|}{}\\\hline
   	\end{tabular}
   \end{table}
-  
-  If we wanted to add to this queue (AKA enqueue), we would add to the end queue, and then move the rear pointer to the address of the new item. So in this example if we were to add the name ``Helen to the queue'', the structure would become:
+
+  If we wanted to add to this queue (AKA enqueue), we would add to the end of the queue, and then move the rear pointer to the address of the new item. So in this example if we were to add the name ``Helen'' to the queue, the structure would become:
   \begin{table}[H]
   	\begin{tabular}{C{1.5cm} C{1.5cm} C{1.5cm} C{1.5cm} C{1.5cm} C{1.5cm}}
   		Front Pointer & & & & Rear Pointer & \\\hline
@@ -84,47 +82,47 @@ file.close()	\end{python}
   	\end{tabular}
   \end{table}
   The example above shows an implementation of a queue called a linear queue, where the queue can be visualised as a straight line. Other implementations of a queue include the circular queue and priority queue (although this structure varies slightly from a normal queue in that it adds a priority attribute to each element).
-  
-  With the linear queue, it is possible that if we were to implement it using a static data structure such as an array, it is possible that the queue has no elements and is thus empty, or the queue has used all the elements in the array, thus being full. tests are needed for both of these scenarios, as well as the name, maximum size, and the position of the pointers when the queue is initialised. You may have also noticed that in our example, if two more names were added to the array, then the rear pointer would be out of the range of the array and cause an array. A fix for this could be to shift all the elements of the array back when an element is removed, however this could be a long operation if they are using a longer queue. Another way to solve this problem is to use a circular queue.
-  
+
+  With the linear queue, it is possible that if we were to implement it using a static data structure such as an array, it is possible that the queue has no elements and is thus empty, or the queue has used all the elements in the array, thus being full. tests are needed for both of these scenarios, as well as the name, maximum size, and the position of the pointers when the queue is initialised. You may have also noticed that in our example, if two more names were added to the array, then the rear pointer would be out of the range of the array and cause an error. A fix for this could be to shift all the elements of the array back when an element is removed, however this could be a long operation if they are using a longer queue. Another way to solve this problem is to use a circular queue.
+
   A solution to the problem that is caused by linear queues is to implement a circular queue, this queue uses the same underlying concept of a linear queue, however whenever the pointer would go out of bounds, it instead wraps around to the beginning of the array, causing it the array to act as if it is a circle. If we were to use an example of adding two names to the example queue, then delete a name, here is what it would look like:
-  
-  Add the Name Anik:
-    
+
+  Add the name Anik:
+
   \begin{table}[H]
   	\begin{tabular}{C{1.5cm} C{1.5cm} C{1.5cm} C{1.5cm} C{1.5cm} C{1.5cm}}
   		& Front Pointer & & & & Rear Pointer \\\hline
   		\multicolumn{1}{|c|}{} & \multicolumn{1}{|c|}{``Tashy''} & \multicolumn{1}{|c|}{``Giorgia''} & \multicolumn{1}{|c|}{``Ryan''} & \multicolumn{1}{|c|}{``Helen''} & \multicolumn{1}{|c|}{``Anik''}\\\hline
   	\end{tabular}
   \end{table}
-  
+
   Add the Name Bilal:
-  
+
   \begin{table}[H]
   	\begin{tabular}{C{1.5cm} C{1.5cm} C{1.5cm} C{1.5cm} C{1.5cm} C{1.5cm}}
   		Rear Pointer & Front Pointer & & & & \\\hline
   		\multicolumn{1}{|c|}{``Bilal''} & \multicolumn{1}{|c|}{``Tashy''} & \multicolumn{1}{|c|}{``Giorgia''} & \multicolumn{1}{|c|}{``Ryan''} & \multicolumn{1}{|c|}{``Helen''} & \multicolumn{1}{|c|}{``Anik''}\\\hline
   	\end{tabular}
   \end{table}
-  
+
   Delete a name:
-  
+
   \begin{table}[H]
   	\begin{tabular}{C{1.5cm} C{1.5cm} C{1.5cm} C{1.5cm} C{1.5cm} C{1.5cm}}
   		Rear Pointer & & Front Pointer & & & \\\hline
   		\multicolumn{1}{|c|}{``Bilal''} & \multicolumn{1}{|c|}{} & \multicolumn{1}{|c|}{``Giorgia''} & \multicolumn{1}{|c|}{``Ryan''} & \multicolumn{1}{|c|}{``Helen''} & \multicolumn{1}{|c|}{``Anik''}\\\hline
   	\end{tabular}
   \end{table}
-  
+
   A priority queue acts like other queues but removal is now based on priority as well as position. Elements with a higher priority are removed first and if two elements have the same priority, whichever element was added first is removed first (keeping the FIFO aspect of a queue). The priority of an object is often shown via subscript and assumes that 1 is the highest priority. For example, in the following priority queue:
-  
+
   \begin{table}[H]
   	\begin{tabular}{C{1.5cm} C{1.5cm} C{1.5cm} C{1.5cm} C{1.5cm} C{1.5cm}}
   		Front Pointer & & & Rear Pointer & & \\\hline
   		 \multicolumn{1}{|c|}{``Nathan''$_1$} & \multicolumn{1}{|c|}{``Giorgia''$_2$} & \multicolumn{1}{|c|}{``Ryan''$_1$} & \multicolumn{1}{|c|}{``Helen''$_3$} & \multicolumn{1}{|c|}{}& \multicolumn{1}{|c|}{} \\\hline
   	\end{tabular}
   \end{table}
-  
+
   The order of deletion would be:
   \begin{enumerate}
   	\item Nathan
@@ -132,7 +130,7 @@ file.close()	\end{python}
   	\item Giorgia
   	\item Helen
   \end{enumerate}
-  
+
   There are two main ways to set up a priority queue:
 	 \begin{itemize}
 	 	\item Add new elements at the end of the queue (after the rear pointer)
@@ -144,12 +142,12 @@ file.close()	\end{python}
 	 			\multicolumn{1}{|c|}{``Nathan''$_1$} & \multicolumn{1}{|c|}{``Ryan''$_1$} & \multicolumn{1}{|c|}{``Giorgia''$_2$} & \multicolumn{1}{|c|}{``Helen''$_3$} & \multicolumn{1}{|c|}{}& \multicolumn{1}{|c|}{} \\\hline
 	 		\end{tabular}
 	 	\end{table}
-		 	\subitem This makes removal easy as all it has to do is remove the data at the front pointer and increment the front pointer however, addition becomes more complicated as a search of the data structure must be done to be able to insert the data into the correct location. 	
+		 	\subitem This makes removal easy as all it has to do is remove the data at the front pointer and increment the front pointer however, addition becomes more complicated as a search of the data structure must be done to be able to insert the data into the correct location.
 	 \end{itemize}
-  
-  
+
+
 \subsection{Stacks}
-  
+
   \marginnote{4.2.3.1}Stacks are Last In First Out (LIFO) data structures, they are often implemented using an array and use a stack pointer to point to the top element of the stack. There are 3 main methods that are used on a stack:
   \begin{enumerate}
   	\item Push
@@ -159,21 +157,21 @@ file.close()	\end{python}
   	\item Peek/ Top
 	  	\subitem This returns the top data value without removing it from the queue.
   \end{enumerate}
-  
+
   Let's show an example of how these methods would look like on an example stack:
-  
+
   \begin{table}[H]
   	\begin{tabular}{C{1.5cm} | C{1.5cm} |}
   		 & \multicolumn{1}{|c|}{}\\
   		 & \multicolumn{1}{|c|}{}\\
-  		Stack Pointer & \multicolumn{1}{|c|}{``Walle''}\\
+  		Stack Pointer & \multicolumn{1}{|c|}{``Wally''}\\
   		 & \multicolumn{1}{|c|}{``Cisco''}\\
   		 & \multicolumn{1}{|c|}{``Barry''} \\\cline{2-2}
   	\end{tabular}
   \end{table}
-  
+
   Now if we were to pop a value from the stack, it would become:
-  
+
   \begin{table}[H]
   	\begin{tabular}{C{1.5cm} | C{1.5cm} |}
   		 & \multicolumn{1}{|c|}{}\\
@@ -183,27 +181,27 @@ file.close()	\end{python}
   		 & \multicolumn{1}{|c|}{``Barry''} \\\cline{2-2}
   	\end{tabular}
   \end{table}
-  
-  And the value ``Walle'' would be returned, next we're gonna push the name ``Jesse'' onto the stack it would become:
-  
+
+  And the value ``Wally'' would be returned, next we're gonna push the name ``Jesse'' onto the stack it would become:
+
   \begin{table}[H]
   	\begin{tabular}{C{1.5cm} | C{1.5cm} |}
   		 & \multicolumn{1}{|c|}{}\\
   		 & \multicolumn{1}{|c|}{}\\
   		Stack Pointer & \multicolumn{1}{|c|}{``Jesse''}\\
-  		 & \multicolumn{1}{|c|}{``Cisco''}\\
+  		 & \multicolumn{1}{|c|}{``'Cisco''}\\
   		 & \multicolumn{1}{|c|}{``Barry''} \\\cline{2-2}
   	\end{tabular}
   \end{table}
-  
+
   And now if we were to perform Peek/ Top on the stack, the value ``Jesse'' Would be returned, and the stack would remain the same.
-  
+
   There are two main errors which may occur when dealing with stacks, stack overflow and stack underflow. Stack-overflow occurs when you try and add more data to a stack which is already full, whereas stack underflow occurs then you try and remove data from an empty stack.
-  
+
 \subsection{Graphs}
-  
+
   \marginnote{4.2.4.1}Graphs are a data structure which is used to represent more complex relationships.
-  
+
   There are many uses of a graph, such as:
   \begin{itemize}
   	\item Human Networks
@@ -222,7 +220,7 @@ file.close()	\end{python}
   	\item Game theory
 	  	\subitem Nodes represent actions and the edges are the outcomes.
   \end{itemize}
-  
+
   Key Terms:
   \begin{itemize}
   	\item Graph
@@ -238,17 +236,17 @@ file.close()	\end{python}
   	\item Directed Graph
 	  	\subitem A graph where the relationship between vertices is one-way
   \end{itemize}
-  
+
   There are 2 ways of representing a graph so that it can be processed by a computer
   \begin{itemize}
   	\item Adjacency Matrix
   	\item Adjacency List
   \end{itemize}
-  
+
   A graph can be represented using a two-dimensional matrix; this is called an adjacency matrix. Visually, this is like a table which records information about which vertices have an edge connecting them i.e which vertices are adjacent. Each vertex has a row in the table and each vertex has a column in the table. A ``1'' is placed in the intersection if a vertex's row with another vertex's column, if there is an edge between them. A ``0'' is placed in all of the other cells to denote that there is no edge connecting the two vertices.
-  
+
   \includegraphics[scale=0.4]{Undirected-Graph}
-  
+
   \begin{table}[H]
 	  	\begin{tabular}{c | c c c c c}
 	  		Vertex	&	1	&	2	&	3	&	4	&	5 	\\ \hline
@@ -262,7 +260,7 @@ file.close()	\end{python}
   \end{table}
 
 
-  An Alternative to an adjacency matrix is an adjacency list, which can be used to indicate which vertices are next to each other
+  An alternative to an adjacency matrix is an adjacency list, which can be used to indicate which vertices are next to each other.
   \begin{table}[H]
   	\caption{Undirected Graph}
   	\begin{tabular}{cc}
@@ -276,10 +274,10 @@ file.close()	\end{python}
   \end{table}
 
 
-  Directed graphs can also be represented as an adjacency matrix or list. The method is very similar to that fr an undirected graph, there are slight differences so that the matrix/ list reflect the direction of each stage.
-  
+  Directed graphs can also be represented as an adjacency matrix or list. The method is very similar to that for an undirected graph, there are slight differences so that the matrix/ list reflect the direction of each stage.
+
   \includegraphics[scale=0.4]{Directed-Graph}
-  
+
   \begin{table}[H]
   	\caption{Directed Graph}
   	\begin{tabular}{c | c c c c c}
@@ -305,26 +303,24 @@ file.close()	\end{python}
 
 
   It is quicker to find out if there is an edge between 2 vertices using an adjacency matrix (you only have to look at one item, in an list you may have to look at all items in a vertex's list to see if there is an edge to another vertex)
-  
+
   However, an adjacency list can require significantly less space as there is no wastage - it only stores information about which edges do exist in the graph, an adjacency matrix stores information about each possible edge (whether it exists or not).
-  
+
   For large graphs which have many vertices but few edges an adjacency list is normally preferable, if a graph has many edges an adjacency matrix is normally the best way of representing the graph.
-  
-  
+
+
 \subsection{Trees}
-  
-  \marginnote{4.2.5.1}Trees are a connected, undirected graph with no cycles, it is called the tree because of the fact that this type of data structure can easily be visualised as a hierarchical structure with branches. A rooted tree is a tree in which one of the nodes are designated from the roots, and all other edges are branching away from the root node. A binary tree is a rooted tree in which each of the node has at most two children nodes. A common use for a binary tree is as a binary search tree, a structure used to store data input in a random order in such a way that it is already sorted. It follows the following algorithm:
-  
-  Store First data item in root node
-  While not in empty branch
-	  If the value of the new data item is less than the value in the current node, branch left
-	  else branch right
-  Put value in node at end of branch
-  
+
+  \marginnote{4.2.5.1}Trees are a connected, undirected graph with no cycles, it is called the tree because of the fact that this type of data structure can easily be visualised as a hierarchical structure with branches. A rooted tree is a tree in which one of the nodes are designated from the roots, and all other edges are branching away from the root node. A binary tree is a rooted tree in which each of the node has at most two children nodes. A common use for a binary tree is as a binary search tree, a structure used to store data input in a random order in such a way that it is already sorted. It follows the following algorithm (insertion into a binary tree):
+\begin{verbatim}Store first data item in root node;
+While not in empty branch:
+      If the value of the new data item is less than the value in the current node, branch left;
+      Else branch right;
+Put value in node at end of branch;\end{verbatim}
 \subsection{Hash Tables}
-  
+
   \marginnote{4.2.6.1}Hash Tables are a data structure that stores key/value pairs based on an index calculated from an algorithm. It is made up of two parts, the data and the keys. A hashing algorithm is used on the key which generates the index into which the data will be stored, this hashing algorithm will always produce the same output for a given input. Whenever you want to search for a certain key, you can perform the hashing algorithm on the key to find the index the data should be held in and thus retrieve the data in one step. Hashing algorithms are used in: Databases, Memory Addresses, Operating Systems, Encryption, Checksums, Programming.
-  
+
   There are a few factors to be considered when choosing a hashing algorithm:
   \begin{itemize}
   	\item A numeric value must be produced from this hashing algorithm
@@ -333,7 +329,7 @@ file.close()	\end{python}
   	\item There must be enough space to store the data volumes
   	\item Has to balance speed and complexity
   \end{itemize}
-  
+
   The reason why we have to chose a suitable hashing algorithm is so that we can avoid collisions, this occurs when a hashing algorithm produces the same output (index) for multiple different inputs (keys). Whenever a collision occurs, there must be some sort of way to assign this key a unique index. Two main methods are used for this:
   \begin{itemize}
   	\item Chaining
@@ -342,19 +338,19 @@ file.close()	\end{python}
 	  	\subitem If a collision occurs one of two things is done: another hashing algorithm is used, or it looks for the next empty space and puts the data into this space.
   \end{itemize}
 \subsection{Dictionaries}
-  
+
   \marginnote{4.2.7.1}A dictionary is a data structure that is used to associate keys with values, similar to a hash table. It can also be called an associative array as it associates two sets of data.
-  
+
   Dictionaries can be useful for information retrieval (the tracing and recovery of specific information from stored data) for example, the sentence ``To be, or not to be: that is the question:'' could be represented as the following \{'the': 1, 'or': 1, 'that': 1, 'question': 1, 'is': 1, 'not': 1, 'be': 2, 'to': 2\}
-  
+
   The main python dictionary methods
-  
+
   \textbf{instantiation}
-  
+
  \begin{python}
  dict = {}
  \end{python}
-  
+
   \textbf{insertion}
 
 \begin{python}
@@ -363,7 +359,7 @@ dict["b"] = 2
 dict["c"] = 3
 # dict = {"a"=1,"b"=2,"c"=3}
 \end{python}
-  
+
   \textbf{retrieval}
 
 \begin{python}
@@ -372,22 +368,22 @@ dict["a"]
 \end{python}
 
   \textbf{modification}
-  
+
 \begin{python}
 dict["a"] = 4
 # dict = {"a"=4,"b"=2,"c"=3}
 \end{python}
 
   \textbf{deletion}
-  
+
 \begin{python}
 del dict["a"]
 # dict = {"b"=2,"c"=3}
 \end{python}
-  
-  
+
+
 \subsection{Vectors}
-  
+
   \marginnote{4.2.8.1}In mathematics, a vector is generally defined as a quantity with direction and magnitude. There are many ways which a vector can be represented:
   \begin{itemize}
   	\item a List/ 1D array
@@ -397,31 +393,31 @@ del dict["a"]
   	\item a function
 	  	\subitem $f:0\mapsto1$
 	  	\subitem $f:1\mapsto-3$
-	  	\subitem $f:2\mapsto2$ 
+	  	\subitem $f:2\mapsto2$
   	\item an arrow
 	  	\begin{figure}[H]
 		  	\includegraphics[scale=0.4]{Arrow-Vector2}
 	  	\end{figure}
   \end{itemize}
   Each of the different parts that make up a vector are called its components, so for the examples above, they would have components 1,3, and 2. In maths notation these vectors can be written as $ \left( \begin{smallmatrix} 1 \\ -3 \\ 2\end{smallmatrix}\right)  $ or $i - 3j + 2k$. From the arrow representation, you can see that you can calculate magnitude (size) of the vector using Pythagoras's Theorem so the magnitude of $i + 3j + 2k$ (which can be represented as $|i - 3j + 2k|$) $ = \sqrt{1^2+(-3)^2+2^2} = \sqrt{14}$
-  
+
   There are 3 simple operations that you need to be able to do with vectors:
   \begin{itemize}
   	\item Vector Addition
 	  	\subitem $\textbf{a} = \left( \begin{smallmatrix} a_1 \\ a_2 \\ \vdots \\ a_n \end{smallmatrix}\right)$
-	  	\subitem $\textbf{b} = \left( \begin{smallmatrix} b_1 \\ b_2 \\ \vdots \\ b_n\end{smallmatrix}\right)$ 
+	  	\subitem $\textbf{b} = \left( \begin{smallmatrix} b_1 \\ b_2 \\ \vdots \\ b_n\end{smallmatrix}\right)$
 	  	\subitem $\textbf{a} + \textbf{b} = \left( \begin{smallmatrix} a_1+b_1 \\ a_2+b_2 \\ \vdots \\ a_n+b_n\end{smallmatrix}\right)$
   	\item Vector scalar multiplication
 	  	\subitem $\textbf{a} = \left( \begin{smallmatrix} a_1 \\ a_2 \\ \vdots \\ a_n \end{smallmatrix}\right)$
 	  	\subitem $x \times \textbf{a} = \left( \begin{smallmatrix} x \times a_1 \\ x \times a_2 \\ \vdots \\ x \times a_n\end{smallmatrix}\right)$
   	\item Dot/ Scalar Product
 	  	\subitem $\textbf{a} = \left( \begin{smallmatrix} a_1 \\ a_2 \\ \vdots \\ a_n \end{smallmatrix}\right)$
-	  	\subitem $\textbf{b} = \left( \begin{smallmatrix} b_1 \\ b_2 \\ \vdots \\ b_n\end{smallmatrix}\right)$ 
+	  	\subitem $\textbf{b} = \left( \begin{smallmatrix} b_1 \\ b_2 \\ \vdots \\ b_n\end{smallmatrix}\right)$
 	  	\subitem $\textbf{a} \bullet \textbf{b} = \left( \begin{smallmatrix} a_1 \times b_1 \\ a_2 \times b_2 \\ \vdots \\ a_n \times b_n\end{smallmatrix}\right)$
   \end{itemize}
-  
+
   Another concept you need to be aware of is the convex combination, This can most easily be thought of as the space between two vectors. It can be more rigorously defined on the following way. Given 2 vectors $\textbf{a}$ and $\textbf{b}$ and two scalars (AKA real numbers) $\alpha$ and $\beta$, the convex combinations is the set of vectors in the form $ \alpha\textbf{a} + \beta\textbf{b} $ given $\alpha \geq 0$, $\beta \geq 0$, and $\alpha + \beta = 1$.
-  
+
   The parity bit can be generated given two vectors over GF(2)\footnote{to briefly go into this, a Galois field of two elements, GF(2), is simply a system where only the numbers 1 and two are used, this is useful as it makes it easier to represent bitwise operations as arithmetic operations instead, XOR is addition/subtraction, AND is multiplication, there tables would be as follows
   	\begin{table}[H]
   		\begin{tabular}{c c}

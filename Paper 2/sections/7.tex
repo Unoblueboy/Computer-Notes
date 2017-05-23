@@ -176,7 +176,39 @@
     \item Halt
       \subitem Stops the execution of the program.
   \end{itemize}
-  \marginnote{4.7.3.6}Interrupts
+  \marginnote{4.7.3.6}Interrupts are signals sent by an external source or program to the processor, usually to request the processor to start doing something. Some examples are:
+  \begin{itemize}
+  	\item Printer requesting more data be sent
+  	\item Key press
+  	\item Run time error
+  	\item hardware fault
+  	\item requesting termination of a program
+  	\item power down
+  	\item switch user
+  \end{itemize}
+  
+  To incorporate interrupts into the fetch execute cycle, we just add checking for interrupts on the end of the cycle:
+  \begin{enumerate}
+  	\item Fetch
+  	\item Decode
+  	\item Execute
+  	\item Check for Interrupts
+  \end{enumerate}
+  If an interrupt is found, the interrupt service routine (ISR) calls the routine required to service the interrupt. As most interrupts are temporary, the processor needs to be able to store the data from the current task somewhere while it fulfils the interrupts. It does this by storing the PC and CIR in the system stack, then recovering them when the interrupt has been serviced, restoring them to their appropriate registers.
+  
+  To deal with the fact that an interrupt may interrupt an interrupt, all interrupts are given a priority, meaning the most important interrupts are serviced first, then less important interrupts are serviced, the order of priority from most to least important are as follows
+  \begin{itemize}
+  	\item Hardware Failure
+	  	\subitem E.g. Power failure
+  	\item Reset interrupt
+	  	\subitem E.g. Resetting a computer to factory settings
+  	\item Program Error
+	  	\subitem E.g. Arithmetic overflow
+  	\item Timer
+	  	\subitem Real time clock, allows actions to be performed at regular intervals
+  	\item Input/ Output
+	  	\subitem E.g. Keyboard key pressed
+  \end{itemize}
   
   \noindent
   \marginnote{4.7.3.7}There are several factors that can impact the performance of a processor:

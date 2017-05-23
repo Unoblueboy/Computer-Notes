@@ -236,20 +236,83 @@
   \end{enumerate}
   You can deal with part 1 by simply using the original method to convert from decimal to binary, to deal with part 2, you will have to try and seperate the fraction to show it as the sum of fractions in the form $ \frac{1}{2^n} $.
   
-  \noindent
-  \marginnote{4.5.4.5}Rounding Errors
+  Another way to represent numbers that have a fractional part is to use floating point numbers. This method allows the binary point to move around to allow for a larger range of values than is available within fixed point numbers, the decimal equivalent is scientific notation, where a number like $2960000000000$ will be represented as $2.96\times10^{12}$ or $0.000000184$ will be represented as $1.84\times10^{-7}$. In the first example, we can see that the notation can be broken up into two parts, the mantissa $2.96$ and the exponent $12$, the exponent tells how to move the decimal point, positive is to the right, negative is to the left. In floating point we use a similar system, using an 8 bit mantissa and a 4 bit exponent and we look at the floating point number 000101100101, we can write this more clearly as
+  \begin{table}
+  	\begin{tabular}{| c | c | c | c | c | c | c | c | c | c | c | c | c |}
+  		\multicolumn{8}{l}{Mantissa} & \multicolumn{1}{l}{} & \multicolumn{4}{l}{Exponent} \\\cline{1-8}\cline{10-13}
+  		0 & 0 & 0 & 1 & 0 & 1 & 1 & 0 & & 0 & 1 & 0 & 1 \\ \cline{1-8}\cline{10-13}
+  	\end{tabular}
+  \end{table}
+  We can see now that the exponent is +5 so there are two ways which we could procede:
+  \begin{enumerate}
+  	\item Convert the mantissa to decimal (being aware that there is a binary pint after the first bit), then multiply the answer by 2 to the power of the exponent, which in this case would be $2^5=32$
+  	\item write out the mantissa with a binary point after the first bit, then move the binary point in accordance to the exponent (negative to the left, positive to the right), then convert the resulting number into decimal
+  \end{enumerate}
+  The second method is less error prone and is general easier to carry out and will get you marks in the paper, however if you feel you understand the maths behind it, the first method can be much faster (generally in the case of negative exponents). Before we continue, I will note that in the exam the mantissa and exponent are both given in two's complement, so that both positive and negative numbers can be represented. Below I will go through both methods:
+  
+  
+  METHOD 1
+  
+  $0.0010110_2= \frac{1}{2^3} + \frac{1}{2^5} + \frac{1}{2^6} = 0.171875_{10}$ \\
+  $0.171875\times2^5 = 5.5_{10}$ \\
+  so we get a final answer of 5.5
+  
+  METHOD 2
+  
+  $0.0010110_2 \implies 000101.10_2 = 5.5_{10}$\\
+  so we yet again get a final answer of 5.5
+  
+  Now to convert from a decimal number into a normalised floating point binary, you basically do the second method from above, but in reverse so you:
+  \begin{enumerate}
+  	\item Write your number as a binary fixed point number in two's complement (the number of bits you use to write the number doesn't matter too much at this step)
+  	\item Normalise the fixed point number, which involves moving the binary point so that the first bit of the mantissa after the binary point is opposite to the MSB (meaning normalised negative numbers begin 10 and normalised positive numbers 01)
+  	\item Write down the exponent to say how far the binary point needs to be moved to undo the action (for example if you move the binary point to the right 3 places, to undo this you would need to move the binary point 3 places to the left, so you would write the binary equivalent to -3 in two's complement).
+  \end{enumerate}
+  
+  Example 1 - Positive Number (6.75)
+  $6.75_{10} = 0110.11_2$ \\
+  Normalise so $0110.11 \implies 0.11011 $\\
+  The binary point was moved 2 places to the left so the exponent is $2_{10} = 010_2$
+  Now, we are going to use an 8 bit mantissa and 4 bit exponent, so we are going to have to extend the numbers \\
+  For the mantissa, we can append zeros to the end and have no change in the value so $0.11011 \implies 0.110110$ \\
+  For the exponent, we can repeatedly append the MSB (in this case a 0) to the beginning of the number so $ 010 \implies 0010$ \\
+  Putting the two parts together and removing the binary point, we get the final answer $01101100010$
+  
+  Example 2 - Negative Number (-0.09375)
+  $-0.09375_{10} = 1.11101_2$ \\
+  Normalise so $1.11101 \implies 1111.01 = 1.01 $\\
+  The binary point was moved 3 places to the right so the exponent is $-3_{10} = 101_2$
+  Now, we are going to use an 8 bit mantissa and 4 bit exponent, so we are going to have to extend the numbers \\
+  For the mantissa, we can append zeros to the end and have no change in the value so $1.01 \implies 1.0100000$ \\
+  For the exponent, we can repeatedly append the MSB (in this case a 1) to the beginning of the number so $ 101 \implies 1101$ \\
+  Putting the two parts together and removing the binary point, we get the final answer $101000001101$
+  
   
   \noindent
-  \marginnote{4.5.4.6}Absolute and Relative Errors
+  \marginnote{4.5.4.5}Rounding Errors occur when you can't represent a number exactly due to the number of bits that we use, and example is decimal is trying to write out $\frac{1}{3}$, if we only were allowed to use 4 decimal places, we would write $\frac{1}{3}$ as 0.3333, or if we had 10 decimal places, we would write it as 0.3333333333. In both of the above, there is some rounding of the results as $\frac{1}{3}$ can only represented in decimal using infinite decimal places, so if we use any finite number of decimal places, we will always have some small error due to this rounding. The same thing can happen in binary, for example if you try and write out $0.1_{10}$ in binary, then you'll find that it has an infinite binary expansion, and cutting it off at any point will cause some sort of rounding error. Rounding errors often occur in floating point number when you try and add two numbers of vastly different magnitudes, for example, $1000000_{10} + 0.000001_{10} = 1000000_{10}$ may occur if you're only allowed 7 significant figures maximum.
   
   \noindent
-  \marginnote{4.5.4.7}Range and Precision
+  \marginnote{4.5.4.6}Absolute and Relative Errors are ways to measure the difference between the number to be represented and the approximation of that number in binary. The easier of the two to explain is the absolute error, this is simply the difference between the two, and can be memorised as $|\text{actual}-\text{expected}|$ where $||$ means the sign doesn't matter. This is often a useful measure for accuracy for numbers around 1, but not so much as for numbers of very large or small magnitude, as the absolute error will be larger for large numbers and smaller for small numbers, but this doesn't mean that they are necessarily inaccurate. Thus we talk about the relative error, which is a way to calculate the error of a number relative to its size meaning that, for example that a large number with a absolute error of 0.5 would have a smaller relative error than a number with an absolute error of 0.5, the formula is $|\frac{\text{actual}-\text{expected}}{\text{expected}}|=|\frac{\text{absolute error}}{\text{expected}}|$
   
   \noindent
-  \marginnote{4.5.4.8}Normalisation of Floating Point Form
+  \marginnote{4.5.4.7}Fixed point and floating point numbers can have their own relative advantages, for floating point numbers this is:
+  \begin{itemize}
+  	\item A much wider range of numbers can be represented compared to a fixed point number with the same number of bits
+  	\item Useful when a wide range of numbers need to represented
+  \end{itemize}
+  Fixed point numbers have the following advantages
+  \begin{itemize}
+  	\item No manipulation of binary point allows for quicker calculations
+  	\item The absolute error is always the same, whereas with floating point numbers, the absolute value will vary with the magnitude of the number
+  	\item Useful for applications which require speed over precision (gaming or signal processing)
+  	\item Useful when an absolute level of precision is needed, e.g. currency where you only need to go down to pennies.
+  \end{itemize}
   
   \noindent
-  \marginnote{4.5.4.9}Underflow and Overflow
+  \marginnote{4.5.4.8}The point of normalising a floating point number is to ensure that there is only one way to represent a number, and that the way in which it is represented is as efficient as possible, you can tell if a number is normalised by seeing if the first two bits are the same or not, if they are the same, then the number is not normalised. There is a quick way to normalise non-normalised floating point numbers: while the first two bits are the same, strip the first bit and subtract one from the exponent.
+  
+  \noindent
+  \marginnote{4.5.4.9}Underflow occurs when a number is too small to represented in a given the number of bits allocated, for example, the smallest positive value for an 8 bit fixed point number (with binary point directly in the middle) is 0.0625, so if you wanted to represent the number 0.05, it would be too small to be represented, thus causing an underflow error. Overflow occurs when a number is too large to be represented in a given number of bit allocated, for example, the largest positive value for an 8 bit two's complement number is 127, so if you wanted to represent the number 128, the number represented within the computer would be -128, and thus an overflow error would occur.
   
 \subsection{Information Coding Systems}
   \noindent
@@ -287,6 +350,8 @@
         \item 111 $\to$ 1
       \end{itemize}
       \subitem meaning we get the final datum of 1001.
+    \item Checksums
+	  \subitem This process involves calculating some sort of sum from the data to be sent, and sending this data as a type of validation, to be checked by the receiving party. This is used within packet switching to check that all of the data within the packets have been transmitted quickly.
     \item Check Digits
       \subitem This has many uses outside of binary, the central idea is that a digit is added to the end of the number, which is the result of some sort of simple arithmetic calculation, this calculation can then be done again at the other end to check whether the number transmitted is valid. A system using weights is often used as it usually means that both changing values and translation (the position of numbers changing)
   \end{itemize}
@@ -307,10 +372,93 @@
   We also need to note that the picture may also contain meta data, meaning that the bit-map stores information about itself, such as width, height, colour depth, file type, and this will add to the size of the file. The meta data will normally be found at the beginning of a file within the header.\\
   
   \noindent
-  \marginnote{4.5.6.5}Vector Graphics
+  \marginnote{4.5.6.5}Vector Graphics are used to represent an image so that it can easily be rescaled via mathematical operations. Vector graphics are represented using a list of geometrical objects/ shapes such as lines, arcs, points in space, closed path shapes, and shape  fill colour. For example, a square can be represented using 4 co-ordinates, and a line between each of the edges. Common properties are width, height, radius, co-ordinates, fill colour, stroke weight. A primitive data type is a data type provided by a programming language as a basic building block, within vector graphics, there are many primitives within vector graphics, these include:
+  \begin{itemize}
+  	\item Rectangle
+  	\item Line
+  	\item Circle
+  	\item Text
+  \end{itemize}
+  For the exam you should know how to use each of these primitives to draw a shape. To define objects, a layout similar to that of an xml/ css, where you have tags, and then define a bunch of properties, the properties that can be defined for each are as follows:
+  \begin{itemize}
+  	\item Rectangle
+  	\begin{itemize}
+  		\item width
+  		\item height
+  		\item x
+  		\item y
+  		\item fill
+  		\item stroke (colour)
+  		\item stroke-width
+  	\end{itemize}
+  	\item Line
+  	\begin{itemize}
+  		\item x1
+  		\item y1
+  		\item x2
+  		\item y2
+  		\item stroke-width
+  		\item stroke (colour)
+  	\end{itemize}
+  	\item Circles
+  	\begin{itemize}
+  		\item cx
+  		\item cy
+  		\item r
+  		\item fill
+  		\item stroke (colour)
+  		\item stroke-width
+  	\end{itemize}
+  	\item Text
+  	\begin{itemize}
+  		\item x
+  		\item y
+  	\end{itemize}
+  \end{itemize}
+  Note that not all of the properties need to be defined in order to define a shape, below I will show a simple example of how a vector graphic can be made and saved, using the .svg (scalable vector graphic) format:
+  \begin{verbatim}
+<svg width="14" height="14">
+	<rect x="11" y="0" width="1" height="1"
+	stroke="black" stroke-width="0.1"
+	fill="white"/>
+	<rect x="2" y="1" width="1" height="1"
+	stroke="black" stroke-width="0.1"
+	fill="white"/>
+	<rect x="2" y="6" width="10" height="4"
+	fill="red"/>
+	<rect x="2.5" y="6.5" width="9" height="3"
+	fill="black"/>
+	<circle cx="7" cy="5" r="2"
+	fill="blue"/>
+	<line x1="7" y1="5" x2="6" y2="6" stroke="black" stroke-width="0.1"/>
+	<line x1="7" y1="5" x2="8" y2="6" stroke="black" stroke-width="0.1"/>
+</svg>\end{verbatim}
+  \begin{figure}[H]
+  	\centering
+  	\def\svgwidth{12cm}
+  	\input{lmao.pdf_tex}
+  \end{figure}
   
   \noindent
-  \marginnote{4.5.6.6}Vector Graphics versus Bitmapped Graphics
+  \marginnote{4.5.6.6}Advantages of vector Graphics compared with bitmap graphics:
+  \begin{itemize}
+  	\item Vector images are scalable without the loss of image quality
+	  	\subitem This is due to the fact that within vector graphics, an image can be rescaled via their properties and then re-rendered to the screen, whereas for a bitmap image, you have to somehow guess what the details between pixels are when the resolution is increased.
+  	\item Vector images are in general smaller than bitmap images
+	  	\subitem If you change the dimension of a vector graphic, you don't change the content of the Vector Graphic so its size doesn't change. Within a bitmap graphic changing the dimension of the file, may increase or decrease the amount of pictures within the file, and thus change the file size of the bitmap graphic
+	\item Vector images are easy create, read and edit
+		\subitem Vector graphics are often stored in a text format so they can easily be edited using a text editor, or using special software such as inkscape. Whereas bitmap graphics are often saved in binary files, and thus would be almost impossible to read for a human, and are thus edited using special software.
+	\item Vector images has no resolution
+		\subitem Vector images can be scaled to fit any size without a loss in quality, meaning they can be shown on screens of many different resolutions. Whereas with bitmap graphics, they have a set resolution, meaning that if they are shown on any screen except from their original resolution, either the image won't fit on the screen, or the image is stretched, losing quality
+	\item Vector objects are reusable
+		\subitem easy to change and modify a vector object from one image, and insert it into another vector image.
+  \end{itemize}
+  
+  Disadvantages of vector graphics compared with bitmap graphics:
+  \begin{itemize}
+  	\item There are many images that are impossible to represent using vector graphics.
+	  	\subitem This includes images that include complex textures such as skin, present within digital photos. As well as images where the texture of the surface being drawn on is important, such as a painting, which can't be emulated by colour gradients within vectors, but can be emulated within bitmap graphics.
+  \end{itemize}
   
   \marginnote{4.5.6.7}The sample rate of a sound represents the number of samples that will be taken per second, the higher the sample rate, the more accurate the sound will be compared to the original analogue sound. The sampling resolution is the number of bits allocated to representing the (amplitude of the) sound. When deciding the optimum sampling rate, many programmers refer to Nyquist's Theorem, which states that to faithfully recreate the analogue signal, you should sample at least twice the highest frequency for example, the human ear can hear a maximum frequency of 20,000Hz, so a sampling rate of at least 40,000Hz should be used. This is because using double the frequency allows the sample to cover the complete range of peaks and troughs. To calculate the space a sound sample will take up, we do the following calculation: Sample rate (Hz) $\times$ length of recording (seconds) $\times$ sampling resolution (bits)\\
   \marginnote{4.5.6.8}Musical Instrument Digital Interface (MIDI) is a way to convert Analogue signals from instruments to digital signals. MIDI uses event messages to control various properties of the sound. These messages provide communication between MIDI devices or between a MIDI device and a processor. For Example, an event message may contain data on:

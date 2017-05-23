@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210) (preloaded format=pdflatex 2016.5.31)  15 APR 2017 21:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.5.16)  23 MAY 2017 17:27
 entering extended mode
-**"./Computing Paper 1.tex"
+**"Computing Paper 1.tex"
 ("Computing Paper 1.tex"
-LaTeX2e <2016/03/31>
-Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
+LaTeX2e <2014/05/01>
+Babel <3.9l> and hyphenation patterns for 68 languages loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size10.clo"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
 File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -21,21 +21,22 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
-Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
-Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count87
@@ -51,15 +52,15 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen110
 \Gm@dimlist=\toks15
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fontenc.sty"
-Package: fontenc 2016/06/19 v1.99m Standard LaTeX package
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.def"
-File: t1enc.def 2016/06/19 v1.99m Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.def"
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ))
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
 \lst@mode=\count90
 \lst@gtempboxa=\box26
 \lst@token=\toks16
@@ -73,27 +74,28 @@ LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 \lst@lineno=\count95
 \lst@maxwidth=\dimen114
 
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
-File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 \c@lstnumber=\count96
 \lst@skipnumbers=\count97
 \lst@framebox=\box27
 )
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.cfg
-File: listings.cfg 2015/06/04 1.6 listings configuration
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+File: listings.cfg 2014/09/06 1.5e listings configuration
 ))
-Package: listings 2015/06/04 1.6 (Carsten Heinz)
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\latex\subfiles\subfiles.sty
+Package: listings 2014/09/06 1.5e (Carsten Heinz)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\subfiles\subfiles.sty"
 Package: subfiles 2012/05/23 Federico Garcia
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\verbatim.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\verbatim.sty"
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks17
 \verbatim@line=\toks18
 \verbatim@in@stream=\read1
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\multicol.sty"
-Package: multicol 2016/04/07 v1.8p multicolumn formatting (FMi)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\multicol.sty"
+Package: multicol 2014/10/28 v1.8i multicolumn formatting (FMi)
 \c@tracingmulticols=\count98
 \mult@box=\box28
 \multicol@leftmargin=\dimen115
@@ -141,10 +143,10 @@ Package: multicol 2016/04/07 v1.8p multicolumn formatting (FMi)
 \colbreak@box=\box53
 \mc@col@check@num=\count106
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks19
 \symAMSa=\mathgroup4
@@ -152,49 +154,37 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\jknappen\mathrsfs.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\jknappen\mathrsfs.sty"
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup6
 )
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\math\pgfmath.sty
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\utilities\pgfrcs.st
-y
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfutil
--common.tex
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\math\pgfmath.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\utilities\pgfrcs.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common.tex"
 \pgfutil@everybye=\toks20
 \pgfutil@tempdima=\dimen124
 \pgfutil@tempdimb=\dimen125
 
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfutil
--common-lists.tex))
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfutil
--latex.def
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common-lists.te
+x")) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-latex.def"
 \pgfutil@abb=\box54
-
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\latex\ms\everyshi.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\ms\everyshi.sty"
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfrcs.
-code.tex
-Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfrcs.code.tex"
+Package: pgfrcs 2013/12/20 v3.0.0 (rcs-revision 1.28)
 ))
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\utilities\pgfkeys.s
-ty
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfkeys
-.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\utilities\pgfkeys.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex"
 \pgfkeys@pathtoks=\toks21
 \pgfkeys@temptoks=\toks22
 
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfkeys
-filtered.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeysfiltered.code.te
+x"
 \pgfkeys@tmptoks=\toks23
-)))
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmath.code
-.tex
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathcalc.
-code.tex
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathutil.
-code.tex
+))) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathcalc.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathutil.code.tex"
 \pgf@x=\dimen126
 \pgf@xa=\dimen127
 \pgf@xb=\dimen128
@@ -208,8 +198,7 @@ code.tex
 \c@pgf@countc=\count109
 \c@pgf@countd=\count110
 )
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathparse
-r.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathparser.code.tex"
 \pgfmath@dimen=\dimen134
 \pgfmath@count=\count111
 \pgfmath@box=\box55
@@ -217,29 +206,27 @@ r.code.tex
 \pgfmath@stack@operand=\toks25
 \pgfmath@stack@operation=\toks26
 )
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunct
-ions.code.tex
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunct
-ions.basic.code.tex)
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunct
-ions.trigonometric.code.tex)
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunct
-ions.random.code.tex)
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunct
-ions.comparison.code.tex)
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunct
-ions.base.code.tex)
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunct
-ions.round.code.tex)
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunct
-ions.misc.code.tex)
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunct
-ions.integerarithmetics.code.tex)))
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfloat
-.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.basic.code.
+tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.trigonometr
+ic.code.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.random.code
+.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.comparison.
+code.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.base.code.t
+ex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.round.code.
+tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.misc.code.t
+ex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.integerarit
+hmetics.code.tex")))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfloat.code.tex"
 \c@pgfmathroundto@lastzeros=\count112
 )))
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\latex\booktabs\booktabs.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty"
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen135
 \lightrulewidth=\dimen136
@@ -259,62 +246,57 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@lastruleclass=\count116
 \@thisrulewidth=\dimen147
 )
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\latex\marginnote\marginnote.s
-ty
+("C:\Program Files\MiKTeX 2.9\tex\latex\marginnote\marginnote.sty"
 Package: marginnote 2012/03/29 v1.1i non floating margin notes for LaTeX
 \c@mn@abspage=\count117
-) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\color.sty"
-Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
-
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\latex\graphics-cfg\color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package color Info: Driver file: pdftex.def on input line 147.
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
+Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
 
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\latex\graphics-def\pdftex.def
-File: pdftex.def 2016/07/10 v0.06j Graphics/color for pdfTeX
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package color Info: Driver file: pdftex.def on input line 137.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count118
 ))
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\latex\tikz-qtree\tikz-qtree.s
-ty
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\frontendlayer\tikz.
-sty
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\basiclayer\pgf.sty
-Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tikz-qtree\tikz-qtree.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\frontendlayer\tikz.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf.sty"
+Package: pgf 2013/12/18 v3.0.0 (rcs-revision 1.14)
 
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\basiclayer\pgfcore.
-sty ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgfcore.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
-Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\latex\graphics-cfg\graphics.c
-fg
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
-Package graphics Info: Driver file: pdftex.def on input line 99.
+Package graphics Info: Driver file: pdftex.def on input line 91.
 )
 \Gin@req@height=\dimen148
 \Gin@req@width=\dimen149
 )
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\systemlayer\pgfsys.
-sty
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsy
-s.code.tex
-Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\systemlayer\pgfsys.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys.code.tex"
+Package: pgfsys 2013/11/30 v3.0.0 (rcs-revision 1.47)
 
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfkeys
-.code.tex)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex")
 \pgf@x=\dimen150
 \pgf@y=\dimen151
 \pgf@xa=\dimen152
@@ -333,56 +315,51 @@ Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 \t@pgf@tokb=\toks28
 \t@pgf@tokc=\toks29
 
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgf.c
-fg
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgf.cfg"
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsy
-s-pdftex.def
-File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys-pdftex.def"
+File: pgfsys-pdftex.def 2013/07/18  (rcs-revision 1.33)
 
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsy
-s-common-pdf.def
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys-common-pdf.def
+"
 File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 )))
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsy
-ssoftpath.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.t
+ex"
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
 \pgfsyssoftpath@smallbuffer@items=\count123
 \pgfsyssoftpath@bigbuffer@items=\count124
 )
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsy
-sprotocol.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsysprotocol.code.t
+ex"
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
-))
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\xcolor.sty
-Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+)) ("C:\Program Files\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\latex\graphics-cfg\color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
-LaTeX Info: Redefining \color on input line 709.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
-Package xcolor Info: Model `RGB' extended on input line 1364.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+LaTeX Info: Redefining \color on input line 702.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcor
-e.code.tex
-Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcore.code.tex"
+Package: pgfcore 2010/04/11 v3.0.0 (rcs-revision 1.7)
 
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmath.code
-.tex)
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcor
-epoints.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepoints.code.tex
+"
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
 \pgf@picminx=\dimen158
 \pgf@picmaxx=\dimen159
@@ -399,121 +376,110 @@ File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
 \pgf@zx=\dimen170
 \pgf@zy=\dimen171
 )
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcor
-epathconstruct.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathconstruct.c
+ode.tex"
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
 \pgf@path@lastx=\dimen172
 \pgf@path@lasty=\dimen173
 )
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcor
-epathusage.code.tex
-File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathusage.code.
+tex"
+File: pgfcorepathusage.code.tex 2013/12/13  (rcs-revision 1.23)
 \pgf@shorten@end@additional=\dimen174
 \pgf@shorten@start@additional=\dimen175
 )
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcor
-escopes.code.tex
-File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorescopes.code.tex
+"
+File: pgfcorescopes.code.tex 2013/10/09  (rcs-revision 1.44)
 \pgfpic=\box56
 \pgf@hbox=\box57
 \pgf@layerbox@main=\box58
 \pgf@picture@serial@count=\count125
 )
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcor
-egraphicstate.code.tex
-File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoregraphicstate.co
+de.tex"
+File: pgfcoregraphicstate.code.tex 2013/09/19  (rcs-revision 1.11)
 \pgflinewidth=\dimen176
 )
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcor
-etransformations.code.tex
-File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransformations
+.code.tex"
+File: pgfcoretransformations.code.tex 2013/10/10  (rcs-revision 1.17)
 \pgf@pt@x=\dimen177
 \pgf@pt@y=\dimen178
 \pgf@pt@temp=\dimen179
 )
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcor
-equick.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorequick.code.tex"
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
 )
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcor
-eobjects.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreobjects.code.te
+x"
 File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
 )
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcor
-epathprocessing.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathprocessing.
+code.tex"
 File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 )
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcor
-earrows.code.tex
-File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorearrows.code.tex
+"
+File: pgfcorearrows.code.tex 2013/11/07  (rcs-revision 1.40)
 \pgfarrowsep=\dimen180
 )
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcor
-eshade.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreshade.code.tex"
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen181
 \pgf@sys@shading@range@num=\count126
-)
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcor
-eimage.code.tex
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreimage.code.te
+x"
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcor
-eexternal.code.tex
-File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreexternal.code.t
+ex"
+File: pgfcoreexternal.code.tex 2013/07/15  (rcs-revision 1.20)
 \pgfexternal@startupbox=\box59
 ))
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcor
-elayers.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorelayers.code.tex
+"
 File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
 )
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcor
-etransparency.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransparency.co
+de.tex"
 File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
 )
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcor
-epatterns.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepatterns.code.t
+ex"
 File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 )))
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmodule
-shapes.code.tex
-File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleshapes.code.tex"
+File: pgfmoduleshapes.code.tex 2013/10/31  (rcs-revision 1.34)
 \pgfnodeparttextbox=\box60
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleplot.code.tex"
+File: pgfmoduleplot.code.tex 2013/07/31  (rcs-revision 1.12)
 )
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmodule
-plot.code.tex
-File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
-)
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\compatibility\pgfco
-mp-version-0-65.sty
-Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version-0-65.
+sty"
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.0 (rcs-revision 1.7)
 \pgf@nodesepstart=\dimen182
 \pgf@nodesepend=\dimen183
 )
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\compatibility\pgfco
-mp-version-1-18.sty
-Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
-))
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\utilities\pgffor.st
-y
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgffor.
-code.tex
-Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version-1-18.
+sty"
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.0 (rcs-revision 1.1)
+)) ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\utilities\pgffor.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgffor.code.tex"
+Package: pgffor 2013/12/13 v3.0.0 (rcs-revision 1.25)
 
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmath.code
-.tex)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex")
 \pgffor@iter=\dimen184
 \pgffor@skip=\dimen185
 \pgffor@stack=\toks30
 \pgffor@toks=\toks31
 ))
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tik
-z\tikz.code.tex
-Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\tikz.code.tex"
+Package: tikz 2013/12/13 v3.0.0 (rcs-revision 1.142)
 
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\pgflibr
-aryplothandlers.code.tex
-File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryplothandlers.
+code.tex"
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
 \pgf@plot@mark@count=\count127
 \pgfplotmarksize=\dimen186
 )
@@ -532,8 +498,7 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \tikznumberofcurrentchild=\count130
 \tikz@fig@count=\count131
 
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmodule
-matrix.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmodulematrix.code.tex"
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 \pgfmatrixcurrentrow=\count132
 \pgfmatrixcurrentcolumn=\count133
@@ -541,50 +506,47 @@ File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 )
 \tikz@expandcount=\count135
 
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tik
-z\libraries\tikzlibrarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
+librarytopaths.code.tex"
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.0 (rcs-revision 1.2)
 )))
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\latex\tikz-qtree\pgftree.sty
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\latex\tikz-qtree\pgfsubpic.st
-y
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\tikz-qtree\pgfsubpic.
-tex
+("C:\Program Files\MiKTeX 2.9\tex\latex\tikz-qtree\pgftree.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\tikz-qtree\pgfsubpic.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\tikz-qtree\pgfsubpic.tex"
 \pgf@subpicminx=\dimen193
 \pgf@subpicminy=\dimen194
 \pgf@subpicmaxx=\dimen195
 \pgf@subpicmaxy=\dimen196
 ))
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\tikz-qtree\pgftree.te
-x
+("C:\Program Files\MiKTeX 2.9\tex\generic\tikz-qtree\pgftree.tex"
 \levelsep=\dimen197
 \subtreesep=\dimen198
 \smuggle@levelsep=\dimen199
-\smuggle@subtreesep=\dimen256
-\this@levelsep=\dimen257
-\this@subtreesep=\dimen258
-\pgftree@childx=\dimen259
-\pgftree@savechildx=\dimen260
-\pgftree@childy=\dimen261
-\pgftree@savechildy=\dimen262
+\smuggle@subtreesep=\dimen200
+\this@levelsep=\dimen201
+\this@subtreesep=\dimen202
+\pgftree@childx=\dimen203
+\pgftree@savechildx=\dimen204
+\pgftree@childy=\dimen205
+\pgftree@savechildy=\dimen206
 \pgftree@childi=\count136
 \pgftree@savechildi=\count137
 \pgftree@level=\count138
-\pgftree@depth=\dimen263
+\pgftree@depth=\dimen207
 \pgf@subpic@hbox@children=\box65
-\pgf@subpic@minx@children=\dimen264
-\pgf@subpic@miny@children=\dimen265
-\pgf@subpic@maxx@children=\dimen266
-\pgf@subpic@maxy@children=\dimen267
-\pgftree@lastchildx=\dimen268
-\pgftree@lastchildy=\dimen269
+\pgf@subpic@minx@children=\dimen208
+\pgf@subpic@miny@children=\dimen209
+\pgf@subpic@maxx@children=\dimen210
+\pgf@subpic@maxy@children=\dimen211
+\pgftree@lastchildx=\dimen212
+\pgftree@lastchildy=\dimen213
 ))
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\tikz-qtree\tikz-qtree
-.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\tikz-qtree\tikz-qtree.tex"
 \@result=\toks32
 \child@list=\toks33
 \root@node=\toks34
-)) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count139
 \float@exts=\toks35
@@ -592,41 +554,41 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks36
 \@floatcapt=\box67
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
-Package: amsmath 2016/06/28 v2.15d AMS math features
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip45
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
-Package: amstext 2000/06/29 v2.01 AMS text
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
-File: amsgen.sty 1999/11/30 v2.0 generic functions
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks37
-\ex@=\dimen270
+\ex@=\dimen214
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
-Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen271
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen215
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
-Package: amsopn 2016/03/08 v2.02 operator names
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count140
-LaTeX Info: Redefining \frac on input line 199.
+LaTeX Info: Redefining \frac on input line 210.
 \uproot@=\count141
 \leftroot@=\count142
-LaTeX Info: Redefining \overline on input line 297.
+LaTeX Info: Redefining \overline on input line 306.
 \classnum@=\count143
 \DOTSCASE@=\count144
-LaTeX Info: Redefining \ldots on input line 394.
-LaTeX Info: Redefining \dots on input line 397.
-LaTeX Info: Redefining \cdots on input line 518.
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
 \Mathstrutbox@=\box68
 \strutbox@=\box69
-\big@size=\dimen272
-LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
+\big@size=\dimen216
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \macc@depth=\count145
 \c@MaxMatrixCols=\count146
 \dotsspace@=\muskip10
@@ -637,82 +599,77 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
 \column@=\count150
 \maxfields@=\count151
 \andhelp@=\toks39
-\eqnshift@=\dimen273
-\alignsep@=\dimen274
-\tagshift@=\dimen275
-\tagwidth@=\dimen276
-\totwidth@=\dimen277
-\lineht@=\dimen278
+\eqnshift@=\dimen217
+\alignsep@=\dimen218
+\tagshift@=\dimen219
+\tagwidth@=\dimen220
+\totwidth@=\dimen221
+\lineht@=\dimen222
 \@envbody=\toks40
 \multlinegap=\skip46
 \multlinetaggap=\skip47
 \mathdisplay@stack=\toks41
-LaTeX Info: Redefining \[ on input line 2739.
-LaTeX Info: Redefining \] on input line 2740.
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\array.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen279
-\extrarowheight=\dimen280
+\col@sep=\dimen223
+\extrarowheight=\dimen224
 \NC@list=\toks42
 \extratabsurround=\skip48
 \backup@length=\skip49
 )
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
-Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty"
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
-Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen281
-\captionmargin@=\dimen282
-\captionwidth=\dimen283
-\caption@tempdima=\dimen284
-\caption@indent=\dimen285
-\caption@parindent=\dimen286
-\caption@hangindent=\dimen287
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty"
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen225
+\captionmargin@=\dimen226
+\captionwidth=\dimen227
+\caption@tempdima=\dimen228
+\caption@indent=\dimen229
+\caption@parindent=\dimen230
+\caption@hangindent=\dimen231
 )
 \c@ContinuedFloat=\count152
 Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 )
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tik
-z\libraries\tikzlibraryshapes.geometric.code.tex
-File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
-)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
+libraryshapes.geometric.code.tex"
+File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
 
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\shapes\
-pgflibraryshapes.geometric.code.tex
-File: pgflibraryshapes.geometric.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
 
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\shapes\pgflibraryshapes
+.geometric.code.tex"
+File: pgflibraryshapes.geometric.code.tex 2008/06/26 v3.0.0 (rcs-revision 1.1)
 ))
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tik
-z\libraries\tikzlibraryarrows.code.tex
-File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
+libraryarrows.code.tex"
+File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
 
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\pgflibr
-aryarrows.code.tex
-File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
-\arrowsize=\dimen288
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryarrows.code.t
+ex"
+File: pgflibraryarrows.code.tex 2013/09/23 v3.0.0 (rcs-revision 1.16)
+\arrowsize=\dimen232
 ))
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tik
-z\libraries\tikzlibrarycalc.code.tex
-File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
+librarycalc.code.tex"
+File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.0 (rcs-revision 1.9)
 )
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tik
-z\libraries\tikzlibrarypositioning.code.tex
-File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
+librarypositioning.code.tex"
+File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.0 (rcs-revision 1.7)
 )
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tik
-z\libraries\tikzlibraryintersections.code.tex
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\pgflibr
-aryintersections.code.tex
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\pgflibr
-aryfpu.code.tex)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
+libraryintersections.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryintersections
+.code.tex"
 \pgf@intersect@solutions=\count153
 )) ("Computing Paper 1.aux")
-\openout1 = `"Computing Paper 1.aux"'.
-
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 119.
 LaTeX Font Info:    ... okay on input line 119.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 119.
@@ -765,60 +722,29 @@ ABD: EveryShipout initializing macros
 Package marginnote Info: \pdfoutput not 0 and \pdflastxpos available.
 (marginnote)             Extended position detection mode activated.
 
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count155
-\scratchdimen=\dimen289
+\scratchdimen=\dimen233
 \scratchbox=\box70
 \nofMPsegments=\count156
 \nofMParguments=\count157
 \everyMPshowfont=\toks43
 \MPscratchCnt=\count158
-\MPscratchDim=\dimen290
+! No room for a new \dimen .
+\ch@ck ...\else \errmessage {No room for a new #3}
+                                                  \fi 
+l.1253 \newdimen\MPscratchDim
+                              % will be assigned global
+This error message was generated by an \errmessage
+command, so I can't give any explicit help.
+Pretend that you're Hercule Poirot: Examine all clues,
+and deduce the truth by order and method.
+
+\MPscratchDim=\dimen234
 \MPnumerator=\count159
 \makeMPintoPDFobject=\count160
 \everyMPtoPDFconversion=\toks44
-) ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
-Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
@@ -828,32 +754,31 @@ Package marginnote Info: right page because not two side mode on input line 120
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 120.
-
-(sections/1.tex
+ (sections/1.tex
 Package marginnote Info: Margin note 1.2 is on absolute page 1
 (marginnote)              on input line 3.
 Package marginnote Info: right page because not two side mode on input line 3.
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 3.
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 6.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 6.
 LaTeX Font Info:    Try loading font information for U+msa on input line 9.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 9.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for U+rsfs on input line 9.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\jknappen\ursfs.fd"
+("C:\Program Files\MiKTeX 2.9\tex\latex\jknappen\ursfs.fd"
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 Package marginnote Info: Margin note 1.3 is on absolute page 1
@@ -867,140 +792,175 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--26
 
  []
 
-(C:\Users\biddyboy\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
-File: lstlang1.sty 2015/06/04 1.6 listings language file
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 42.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 ) [1
 
-{C:/Users/biddyboy/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
 Package marginnote Info: Margin note 2.1 is on absolute page 2
-(marginnote)              on input line 70.
-Package marginnote Info: right page because not two side mode on input line 70.
+(marginnote)              on input line 71.
+Package marginnote Info: right page because not two side mode on input line 71.
 
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 70.
+(marginnote)             \marginnoteleftadjust ignored on input line 71.
 Package marginnote Info: Margin note 2.2 is on absolute page 2
-(marginnote)              on input line 92.
-Package marginnote Info: right page because not two side mode on input line 92.
+(marginnote)              on input line 94.
+Package marginnote Info: right page because not two side mode on input line 94.
 
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 92.
+(marginnote)             \marginnoteleftadjust ignored on input line 94.
 Package marginnote Info: Margin note 2.3 is on absolute page 2
-(marginnote)              on input line 102.
-Package marginnote Info: right page because not two side mode on input line 102
+(marginnote)              on input line 104.
+Package marginnote Info: right page because not two side mode on input line 104
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 102.
+(marginnote)             \marginnoteleftadjust ignored on input line 104.
  [2]
 Package marginnote Info: Margin note 3.1 is on absolute page 3
-(marginnote)              on input line 110.
-Package marginnote Info: right page because not two side mode on input line 110
+(marginnote)              on input line 113.
+Package marginnote Info: right page because not two side mode on input line 113
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 110.
+(marginnote)             \marginnoteleftadjust ignored on input line 113.
 Package marginnote Info: Margin note 3.2 is on absolute page 3
-(marginnote)              on input line 111.
-Package marginnote Info: right page because not two side mode on input line 111
+(marginnote)              on input line 114.
+Package marginnote Info: right page because not two side mode on input line 114
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 111.
+(marginnote)             \marginnoteleftadjust ignored on input line 114.
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--112
+Underfull \hbox (badness 10000) in paragraph at lines 113--115
 
  []
 
 Package marginnote Info: Margin note 3.3 is on absolute page 3
-(marginnote)              on input line 144.
-Package marginnote Info: right page because not two side mode on input line 144
+(marginnote)              on input line 148.
+Package marginnote Info: right page because not two side mode on input line 148
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 144.
+(marginnote)             \marginnoteleftadjust ignored on input line 148.
 Package marginnote Info: Margin note 3.4 is on absolute page 3
-(marginnote)              on input line 151.
-Package marginnote Info: right page because not two side mode on input line 151
+(marginnote)              on input line 156.
+Package marginnote Info: right page because not two side mode on input line 156
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 151.
+(marginnote)             \marginnoteleftadjust ignored on input line 156.
 [3]
 Package marginnote Info: Margin note 4.1 is on absolute page 4
-(marginnote)              on input line 171.
-Package marginnote Info: right page because not two side mode on input line 171
+(marginnote)              on input line 176.
+Package marginnote Info: right page because not two side mode on input line 176
 .
 Package marginnote Info: xpos seems to be 377.92816pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 171.
-Package marginnote Info: Margin note 4.2 is on absolute page 4
-(marginnote)              on input line 181.
-Package marginnote Info: right page because not two side mode on input line 181
-.
-Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 181.
-Package marginnote Info: Margin note 4.3 is on absolute page 4
-(marginnote)              on input line 182.
-Package marginnote Info: right page because not two side mode on input line 182
-.
-Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 182.
-Package marginnote Info: Margin note 4.4 is on absolute page 4
-(marginnote)              on input line 183.
-Package marginnote Info: right page because not two side mode on input line 183
-.
-Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 183.
+(marginnote)             \marginnoteleftadjust ignored on input line 176.
 
-Overfull \hbox (10.16948pt too wide) in paragraph at lines 181--184
+Underfull \hbox (badness 10000) in paragraph at lines 175--178
+
+ []
+
+Package marginnote Info: Margin note 4.2 is on absolute page 4
+(marginnote)              on input line 187.
+Package marginnote Info: right page because not two side mode on input line 187
+.
+Package marginnote Info: xpos seems to be 89.62709pt,
+(marginnote)             \marginnoteleftadjust ignored on input line 187.
+Package marginnote Info: Margin note 4.3 is on absolute page 4
+(marginnote)              on input line 188.
+Package marginnote Info: right page because not two side mode on input line 188
+.
+Package marginnote Info: xpos seems to be 89.62709pt,
+(marginnote)             \marginnoteleftadjust ignored on input line 188.
+Package marginnote Info: Margin note 4.4 is on absolute page 4
+(marginnote)              on input line 189.
+Package marginnote Info: right page because not two side mode on input line 189
+.
+Package marginnote Info: xpos seems to be 89.62709pt,
+(marginnote)             \marginnoteleftadjust ignored on input line 189.
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--190
+
+ []
+
+
+Overfull \hbox (10.16948pt too wide) in paragraph at lines 187--190
 \T1/cmr/m/n/10 which has the pa-ram-e-ters Name, and Ad-dress, we would write [
 ]\T1/cmtt/m/n/10 def Add_Contact(Name, Address):
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--190
+
+ []
+
 Package marginnote Info: Margin note 4.5 is on absolute page 4
-(marginnote)              on input line 190.
-Package marginnote Info: right page because not two side mode on input line 190
+(marginnote)              on input line 197.
+Package marginnote Info: right page because not two side mode on input line 197
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 190.
+(marginnote)             \marginnoteleftadjust ignored on input line 197.
 Package marginnote Info: Margin note 4.6 is on absolute page 4
-(marginnote)              on input line 193.
-Package marginnote Info: right page because not two side mode on input line 193
+(marginnote)              on input line 199.
+Package marginnote Info: right page because not two side mode on input line 199
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 193.
+(marginnote)             \marginnoteleftadjust ignored on input line 199.
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--200
+
+ []
+
 [4]
 Package marginnote Info: Margin note 5.1 is on absolute page 5
-(marginnote)              on input line 202.
-Package marginnote Info: right page because not two side mode on input line 202
+(marginnote)              on input line 207.
+Package marginnote Info: right page because not two side mode on input line 207
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 202.
+(marginnote)             \marginnoteleftadjust ignored on input line 207.
+
+Underfull \hbox (badness 10000) in paragraph at lines 205--208
+
+ []
+
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 209.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 214.
 Package marginnote Info: Margin note 5.2 is on absolute page 5
-(marginnote)              on input line 214.
-Package marginnote Info: right page because not two side mode on input line 214
+(marginnote)              on input line 219.
+Package marginnote Info: right page because not two side mode on input line 219
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 214.
+(marginnote)             \marginnoteleftadjust ignored on input line 219.
 Package marginnote Info: Margin note 5.3 is on absolute page 5
-(marginnote)              on input line 217.
-Package marginnote Info: right page because not two side mode on input line 217
+(marginnote)              on input line 221.
+Package marginnote Info: right page because not two side mode on input line 221
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 217.
- [5]
+(marginnote)             \marginnoteleftadjust ignored on input line 221.
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--240
+
+ []
+
+[5]
 Package marginnote Info: Margin note 6.1 is on absolute page 6
-(marginnote)              on input line 253.
-Package marginnote Info: right page because not two side mode on input line 253
+(marginnote)              on input line 256.
+Package marginnote Info: right page because not two side mode on input line 256
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 253.
- [6] <Class-Diagram.png, id=37, 483.8075pt x 372.39125pt>
+(marginnote)             \marginnoteleftadjust ignored on input line 256.
+
+Underfull \hbox (badness 10000) in paragraph at lines 254--257
+
+ []
+
+[6] <Class-Diagram.png, id=37, 483.8075pt x 372.39125pt>
 File: Class-Diagram.png Graphic file (type png)
 
 <use Class-Diagram.png>
-Package pdftex.def Info: Class-Diagram.png used on input line 328.
+Package pdftex.def Info: Class-Diagram.png used on input line 333.
 (pdftex.def)             Requested size: 338.66293pt x 260.67209pt.
  [7] [8 <./Class-Diagram.png>] [9]) (sections/2.tex
 Package marginnote Info: Margin note 10.1 is on absolute page 10
@@ -1013,213 +973,237 @@ Package marginnote Info: Margin note 10.2 is on absolute page 10
 Package marginnote Info: right page because not two side mode on input line 3.
 Package marginnote Info: xpos seems to be 210.60895pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 3.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--4
+
+ []
+
 Package marginnote Info: Margin note 10.3 is on absolute page 10
 (marginnote)              on input line 12.
 Package marginnote Info: right page because not two side mode on input line 12.
 
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 12.
-
 [10]
 Package marginnote Info: Margin note 11.1 is on absolute page 11
-(marginnote)              on input line 40.
-Package marginnote Info: right page because not two side mode on input line 40.
+(marginnote)              on input line 38.
+Package marginnote Info: right page because not two side mode on input line 38.
 
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 40.
+(marginnote)             \marginnoteleftadjust ignored on input line 38.
 
-Overfull \hbox (5.28487pt too wide) in paragraph at lines 53--60
+Underfull \hbox (badness 10000) in paragraph at lines 37--39
+
+ []
+
+
+Overfull \hbox (5.28487pt too wide) in paragraph at lines 51--58
 [][] 
  []
 
 Package marginnote Info: Margin note 11.2 is on absolute page 12
-(marginnote)              on input line 63.
-Package marginnote Info: right page because not two side mode on input line 63.
+(marginnote)              on input line 61.
+Package marginnote Info: right page because not two side mode on input line 61.
 
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 63.
+(marginnote)             \marginnoteleftadjust ignored on input line 61.
 [11] [12]
 Package marginnote Info: Margin note 13.1 is on absolute page 13
-(marginnote)              on input line 153.
-Package marginnote Info: right page because not two side mode on input line 153
+(marginnote)              on input line 151.
+Package marginnote Info: right page because not two side mode on input line 151
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 153.
+(marginnote)             \marginnoteleftadjust ignored on input line 151.
  [13]
 Package marginnote Info: Margin note 14.1 is on absolute page 14
-(marginnote)              on input line 205.
-Package marginnote Info: right page because not two side mode on input line 205
+(marginnote)              on input line 203.
+Package marginnote Info: right page because not two side mode on input line 203
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 205.
+(marginnote)             \marginnoteleftadjust ignored on input line 203.
  [14] <Undirected-Graph.png, id=66, 393.47pt x 371.3875pt>
 File: Undirected-Graph.png Graphic file (type png)
 
 <use Undirected-Graph.png>
-Package pdftex.def Info: Undirected-Graph.png used on input line 250.
+Package pdftex.def Info: Undirected-Graph.png used on input line 248.
 (pdftex.def)             Requested size: 157.38521pt x 148.55235pt.
  [15 <./Undirected-Graph.png>]
 <Directed-Graph.png, id=71, 393.47pt x 353.32pt>
 File: Directed-Graph.png Graphic file (type png)
  <use Directed-Graph.png>
-Package pdftex.def Info: Directed-Graph.png used on input line 281.
+Package pdftex.def Info: Directed-Graph.png used on input line 279.
 (pdftex.def)             Requested size: 157.38521pt x 141.32549pt.
 Package marginnote Info: Margin note 16.1 is on absolute page 16
-(marginnote)              on input line 316.
-Package marginnote Info: right page because not two side mode on input line 316
+(marginnote)              on input line 314.
+Package marginnote Info: right page because not two side mode on input line 314
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 316.
+(marginnote)             \marginnoteleftadjust ignored on input line 314.
 
 [16 <./Directed-Graph.png>]
+Overfull \hbox (85.62328pt too wide) in paragraph at lines 317--317
+[]      \T1/cmtt/m/n/10 If the value of the new data item is less than the valu
+e in the current node, branch left;[] 
+ []
+
 Package marginnote Info: Margin note 17.1 is on absolute page 17
-(marginnote)              on input line 326.
-Package marginnote Info: right page because not two side mode on input line 326
+(marginnote)              on input line 322.
+Package marginnote Info: right page because not two side mode on input line 322
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 326.
+(marginnote)             \marginnoteleftadjust ignored on input line 322.
 Package marginnote Info: Margin note 17.2 is on absolute page 17
-(marginnote)              on input line 346.
-Package marginnote Info: right page because not two side mode on input line 346
+(marginnote)              on input line 342.
+Package marginnote Info: right page because not two side mode on input line 342
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 346.
- [17]
+(marginnote)             \marginnoteleftadjust ignored on input line 342.
+[17]
 Package marginnote Info: Margin note 18.1 is on absolute page 18
-(marginnote)              on input line 391.
-Package marginnote Info: right page because not two side mode on input line 391
+(marginnote)              on input line 387.
+Package marginnote Info: right page because not two side mode on input line 387
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 391.
-
-<Arrow-Vector2.png, id=79, 404.51125pt x 396.48125pt>
+(marginnote)             \marginnoteleftadjust ignored on input line 387.
+ <Arrow-Vector2.png, id=79, 404.51125pt x 396.48125pt>
 File: Arrow-Vector2.png Graphic file (type png)
- <use Arrow-Vector2.png>
-Package pdftex.def Info: Arrow-Vector2.png used on input line 403.
-(pdftex.def)             Requested size: 161.80162pt x 158.58968pt.
 
-[18 <./Arrow-Vector2.png>]) (sections/3.tex
+<use Arrow-Vector2.png>
+Package pdftex.def Info: Arrow-Vector2.png used on input line 399.
+(pdftex.def)             Requested size: 161.80162pt x 158.58968pt.
+ [18 <./Arrow-Vector2.png>]) (sections/3.tex
 Package marginnote Info: Margin note 19.1 is on absolute page 19
 (marginnote)              on input line 3.
 Package marginnote Info: right page because not two side mode on input line 3.
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 3.
 File: Undirected-Graph.png Graphic file (type png)
- <use Undirected-Graph.png>
+
+<use Undirected-Graph.png>
 Package pdftex.def Info: Undirected-Graph.png used on input line 12.
 (pdftex.def)             Requested size: 157.38521pt x 148.55235pt.
  [19]
-Overfull \hbox (36.80635pt too wide) in paragraph at lines 20--29
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
+
+ []
+
+
+Overfull \hbox (36.80635pt too wide) in paragraph at lines 19--28
 [][] 
  []
 
 
-Overfull \hbox (36.80635pt too wide) in paragraph at lines 61--76
+Overfull \hbox (36.80635pt too wide) in paragraph at lines 59--74
 [][] 
  []
 
 [20]
 Package marginnote Info: Margin note 21.1 is on absolute page 21
-(marginnote)              on input line 96.
-Package marginnote Info: right page because not two side mode on input line 96.
+(marginnote)              on input line 93.
+Package marginnote Info: right page because not two side mode on input line 93.
 
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 96.
+(marginnote)             \marginnoteleftadjust ignored on input line 93.
  [21]
 Package marginnote Info: Margin note 22.1 is on absolute page 22
-(marginnote)              on input line 141.
-Package marginnote Info: right page because not two side mode on input line 141
+(marginnote)              on input line 138.
+Package marginnote Info: right page because not two side mode on input line 138
 .
 Package marginnote Info: xpos seems to be 93.28696pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 141.
+(marginnote)             \marginnoteleftadjust ignored on input line 138.
  [22]
 Package marginnote Info: Margin note 23.1 is on absolute page 24
-(marginnote)              on input line 213.
-Package marginnote Info: right page because not two side mode on input line 213
+(marginnote)              on input line 208.
+Package marginnote Info: right page because not two side mode on input line 208
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 213.
+(marginnote)             \marginnoteleftadjust ignored on input line 208.
  [23]
 Package marginnote Info: Margin note 24.1 is on absolute page 24
-(marginnote)              on input line 224.
-Package marginnote Info: right page because not two side mode on input line 224
+(marginnote)              on input line 219.
+Package marginnote Info: right page because not two side mode on input line 219
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 224.
+(marginnote)             \marginnoteleftadjust ignored on input line 219.
 Package marginnote Info: Margin note 24.2 is on absolute page 24
-(marginnote)              on input line 242.
-Package marginnote Info: right page because not two side mode on input line 242
+(marginnote)              on input line 237.
+Package marginnote Info: right page because not two side mode on input line 237
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 242.
+(marginnote)             \marginnoteleftadjust ignored on input line 237.
 Package marginnote Info: Margin note 24.3 is on absolute page 24
-(marginnote)              on input line 259.
-Package marginnote Info: right page because not two side mode on input line 259
+(marginnote)              on input line 254.
+Package marginnote Info: right page because not two side mode on input line 254
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 259.
+(marginnote)             \marginnoteleftadjust ignored on input line 254.
  [24]
-Overfull \hbox (3.02464pt too wide) in paragraph at lines 291--291
+Overfull \hbox (3.02464pt too wide) in paragraph at lines 284--284
  \T1/cmr/m/n/10 list[0]| 
  []
 
 
-Overfull \hbox (3.02464pt too wide) in paragraph at lines 291--291
+Overfull \hbox (3.02464pt too wide) in paragraph at lines 284--284
  \T1/cmr/m/n/10 list[1]| 
  []
 
 
-Overfull \hbox (3.02464pt too wide) in paragraph at lines 291--291
+Overfull \hbox (3.02464pt too wide) in paragraph at lines 284--284
  \T1/cmr/m/n/10 list[2]| 
  []
 
 
-Overfull \hbox (3.02464pt too wide) in paragraph at lines 291--291
+Overfull \hbox (3.02464pt too wide) in paragraph at lines 284--284
  \T1/cmr/m/n/10 list[3]| 
  []
 
 
-Overfull \hbox (3.02464pt too wide) in paragraph at lines 291--291
+Overfull \hbox (3.02464pt too wide) in paragraph at lines 284--284
  \T1/cmr/m/n/10 list[4]| 
  []
 
 
-Overfull \hbox (3.02464pt too wide) in paragraph at lines 291--291
+Overfull \hbox (3.02464pt too wide) in paragraph at lines 284--284
  \T1/cmr/m/n/10 list[5]| 
  []
 
 
-Overfull \hbox (3.02464pt too wide) in paragraph at lines 291--291
+Overfull \hbox (3.02464pt too wide) in paragraph at lines 284--284
  \T1/cmr/m/n/10 list[6]| 
  []
 
 
-Overfull \hbox (3.02464pt too wide) in paragraph at lines 291--291
+Overfull \hbox (3.02464pt too wide) in paragraph at lines 284--284
  \T1/cmr/m/n/10 list[7]| 
  []
 
 
-Overfull \hbox (19.04924pt too wide) in paragraph at lines 290--298
+Overfull \hbox (19.04924pt too wide) in paragraph at lines 283--291
 [][] 
  []
 
 Package marginnote Info: Margin note 25.1 is on absolute page 25
-(marginnote)              on input line 304.
-Package marginnote Info: right page because not two side mode on input line 304
+(marginnote)              on input line 295.
+Package marginnote Info: right page because not two side mode on input line 295
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 304.
+(marginnote)             \marginnoteleftadjust ignored on input line 295.
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--296
+
+ []
+
 Package marginnote Info: Margin note 25.2 is on absolute page 26
-(marginnote)              on input line 347.
-Package marginnote Info: right page because not two side mode on input line 347
+(marginnote)              on input line 338.
+Package marginnote Info: right page because not two side mode on input line 338
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 347.
+(marginnote)             \marginnoteleftadjust ignored on input line 338.
 [25] <Dijkstra-Graph.png, id=113, 823.27576pt x 420.97275pt>
 File: Dijkstra-Graph.png Graphic file (type png)
 
 <use Dijkstra-Graph.png>
-Package pdftex.def Info: Dijkstra-Graph.png used on input line 369.
+Package pdftex.def Info: Dijkstra-Graph.png used on input line 360.
 (pdftex.def)             Requested size: 329.30446pt x 168.38611pt.
  [26 <./Dijkstra-Graph.png>]) (sections/4.tex
 Package marginnote Info: Margin note 27.1 is on absolute page 27
@@ -1232,13 +1216,23 @@ Package marginnote Info: Margin note 27.2 is on absolute page 27
 Package marginnote Info: right page because not two side mode on input line 4.
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 4.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--5
+
+ []
+
 Package marginnote Info: Margin note 27.3 is on absolute page 27
 (marginnote)              on input line 44.
 Package marginnote Info: right page because not two side mode on input line 44.
 
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 44.
- [27]
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--45
+
+ []
+
+[27]
 Package marginnote Info: Margin note 28.1 is on absolute page 28
 (marginnote)              on input line 75.
 Package marginnote Info: right page because not two side mode on input line 75.
@@ -1287,8 +1281,7 @@ Package marginnote Info: right page because not two side mode on input line 124
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 124.
-
-[28]
+ [28]
 Package marginnote Info: Margin note 29.1 is on absolute page 29
 (marginnote)              on input line 135.
 Package marginnote Info: right page because not two side mode on input line 135
@@ -1301,36 +1294,43 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--156
 
  []
 
-[29]
-Package marginnote Info: Margin note 30.1 is on absolute page 30
-(marginnote)              on input line 178.
-Package marginnote Info: right page because not two side mode on input line 178
+Package marginnote Info: right page because not two side mode on input line 177
 .
-Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 178.
- [30]
-Package marginnote Info: Margin note 31.1 is on absolute page 31
-(marginnote)              on input line 230.
-Package marginnote Info: right page because not two side mode on input line 230
-.
-Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 230.
-Missing character: There is no ; in font nullfont!
- [31]
-Package marginnote Info: Margin note 32.1 is on absolute page 32
-(marginnote)              on input line 296.
-Package marginnote Info: right page because not two side mode on input line 296
-.
-Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 296.
-Package marginnote Info: Margin note 32.2 is on absolute page 32
-(marginnote)              on input line 301.
-Package marginnote Info: right page because not two side mode on input line 301
-.
-Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 301.
+Package marginnote Info: xpos not known,
+(marginnote)             using \marginnoteleftadjust on input line 177.
 
-Overfull \hbox (27.05113pt too wide) in paragraph at lines 306--307
+Underfull \hbox (badness 10000) in paragraph at lines 175--179
+
+ []
+
+[29] [30]
+Package marginnote Info: Margin note 31.1 is on absolute page 31
+(marginnote)              on input line 228.
+Package marginnote Info: right page because not two side mode on input line 228
+.
+Package marginnote Info: xpos seems to be 89.62709pt,
+(marginnote)             \marginnoteleftadjust ignored on input line 228.
+
+Underfull \hbox (badness 10000) in paragraph at lines 226--263
+
+ []
+
+Missing character: There is no ; in font nullfont!
+[31]
+Package marginnote Info: Margin note 32.1 is on absolute page 32
+(marginnote)              on input line 294.
+Package marginnote Info: right page because not two side mode on input line 294
+.
+Package marginnote Info: xpos seems to be 89.62709pt,
+(marginnote)             \marginnoteleftadjust ignored on input line 294.
+Package marginnote Info: Margin note 32.2 is on absolute page 32
+(marginnote)              on input line 299.
+Package marginnote Info: right page because not two side mode on input line 299
+.
+Package marginnote Info: xpos seems to be 89.62709pt,
+(marginnote)             \marginnoteleftadjust ignored on input line 299.
+
+Overfull \hbox (27.05113pt too wide) in paragraph at lines 304--305
 \T1/cmr/m/n/10 sion that can be bro-ken down fur-ther. For ex-am-ple in the ex-
 pres-sion <dig-its>::=0|1|2|3|4|5|6|7|8|9
  []
@@ -1338,292 +1338,309 @@ pres-sion <dig-its>::=0|1|2|3|4|5|6|7|8|9
 <Syntax-Diagram.png, id=135, 589.20125pt x 389.455pt>
 File: Syntax-Diagram.png Graphic file (type png)
  <use Syntax-Diagram.png>
-Package pdftex.def Info: Syntax-Diagram.png used on input line 322.
+Package pdftex.def Info: Syntax-Diagram.png used on input line 320.
 (pdftex.def)             Requested size: 235.67632pt x 155.77924pt.
 
 [32]
 Package marginnote Info: Margin note 33.1 is on absolute page 33
+(marginnote)              on input line 325.
+Package marginnote Info: right page because not two side mode on input line 325
+.
+Package marginnote Info: xpos seems to be 89.62709pt,
+(marginnote)             \marginnoteleftadjust ignored on input line 325.
+Package marginnote Info: Margin note 33.2 is on absolute page 33
 (marginnote)              on input line 327.
 Package marginnote Info: right page because not two side mode on input line 327
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
 (marginnote)             \marginnoteleftadjust ignored on input line 327.
-Package marginnote Info: Margin note 33.2 is on absolute page 33
-(marginnote)              on input line 330.
-Package marginnote Info: right page because not two side mode on input line 330
+
+Underfull \hbox (badness 10000) in paragraph at lines 324--328
+
+ []
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no j in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no > in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no ] in font nullfont!
+[33 <./Syntax-Diagram.png>]
+Missing character: There is no [ in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no j in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no > in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no [ in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no j in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no > in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no ] in font nullfont!
+Package marginnote Info: right page because not two side mode on input line 396
 .
-Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 330.
-Missing character: There is no [ in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no = in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no j in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no = in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no > in font nullfont!
-Missing character: There is no = in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no 5 in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no x in font nullfont!
-Missing character: There is no = in font nullfont!
-Missing character: There is no 1 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no = in font nullfont!
-Missing character: There is no 1 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no ] in font nullfont!
- [33 <./Syntax-Diagram.png>]
-Missing character: There is no [ in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no = in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no j in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no = in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no > in font nullfont!
-Missing character: There is no = in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no 5 in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no x in font nullfont!
-Missing character: There is no = in font nullfont!
-Missing character: There is no 1 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no = in font nullfont!
-Missing character: There is no 1 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no ] in font nullfont!
-Missing character: There is no [ in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no = in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no j in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no = in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no > in font nullfont!
-Missing character: There is no = in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no 5 in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no x in font nullfont!
-Missing character: There is no = in font nullfont!
-Missing character: There is no 1 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no = in font nullfont!
-Missing character: There is no 1 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no ] in font nullfont!
- [34]
+Package marginnote Info: xpos not known,
+(marginnote)             using \marginnoteleftadjust on input line 396.
+
+Underfull \hbox (badness 10000) in paragraph at lines 394--397
+
+ []
+
+[34]
 Package marginnote Info: Margin note 35.1 is on absolute page 35
-(marginnote)              on input line 400.
-Package marginnote Info: right page because not two side mode on input line 400
+(marginnote)              on input line 429.
+Package marginnote Info: right page because not two side mode on input line 429
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 400.
+(marginnote)             \marginnoteleftadjust ignored on input line 429.
 Package marginnote Info: Margin note 35.2 is on absolute page 36
-(marginnote)              on input line 433.
-Package marginnote Info: right page because not two side mode on input line 433
+(marginnote)              on input line 431.
+Package marginnote Info: right page because not two side mode on input line 431
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 433.
-Package marginnote Info: Margin note 35.3 is on absolute page 36
-(marginnote)              on input line 436.
-Package marginnote Info: right page because not two side mode on input line 436
-.
-Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 436.
- [35]
+(marginnote)             \marginnoteleftadjust ignored on input line 431.
+
+Underfull \hbox (badness 10000) in paragraph at lines 428--432
+
+ []
+
+[35]
 Package marginnote Info: Margin note 36.1 is on absolute page 36
-(marginnote)              on input line 445.
-Package marginnote Info: right page because not two side mode on input line 445
+(marginnote)              on input line 440.
+Package marginnote Info: right page because not two side mode on input line 440
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 445.
+(marginnote)             \marginnoteleftadjust ignored on input line 440.
 Package marginnote Info: Margin note 36.2 is on absolute page 36
-(marginnote)              on input line 448.
-Package marginnote Info: right page because not two side mode on input line 448
+(marginnote)              on input line 443.
+Package marginnote Info: right page because not two side mode on input line 443
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 448.
+(marginnote)             \marginnoteleftadjust ignored on input line 443.
+
+
+LaTeX Warning: Characters dropped after `\end{verbatim}' on input line 453.
+
 Package marginnote Info: Margin note 36.3 is on absolute page 36
-(marginnote)              on input line 474.
-Package marginnote Info: right page because not two side mode on input line 474
+(marginnote)              on input line 469.
+Package marginnote Info: right page because not two side mode on input line 469
 .
 Package marginnote Info: xpos seems to be 89.62709pt,
-(marginnote)             \marginnoteleftadjust ignored on input line 474.
- [36]
+(marginnote)             \marginnoteleftadjust ignored on input line 469.
+[36]
 Missing character: There is no ; in font nullfont!
  [37] (TM/TM1.txt
 Missing character: There is no ; in font nullfont!
 ) (TM/TM2.txt
 Missing character: There is no ; in font nullfont!
-)
-(TM/TM3.txt
+) (TM/TM3.txt
 Missing character: There is no ; in font nullfont!
 ) (TM/TM4.txt
 Missing character: There is no ; in font nullfont!
 ) (TM/TM5.txt
 Missing character: There is no ; in font nullfont!
-) (TM/TM6.txt
+)
+(TM/TM6.txt
 Missing character: There is no ; in font nullfont!
 ) (TM/TM7.txt
 Missing character: There is no ; in font nullfont!
-) [38]
-(TM/TM8.txt
+) [38] (TM/TM8.txt
 Missing character: There is no ; in font nullfont!
 ) (TM/TM9.txt
 Missing character: There is no ; in font nullfont!
 ) (TM/TM10.txt
 Missing character: There is no ; in font nullfont!
-) (TM/TM11.txt
+)
+(TM/TM11.txt
 Missing character: There is no ; in font nullfont!
 ) (TM/TM12.txt
 Missing character: There is no ; in font nullfont!
-)) [39]
-("Computing Paper 1.aux") ) 
+)) [39] ("Computing Paper 1.aux")
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 20121 strings out of 493335
- 391215 string characters out of 3136671
- 836808 words of memory out of 3000000
- 23220 multiletter control sequences out of 15000+200000
+ 20368 strings out of 493698
+ 392524 string characters out of 3144400
+ 816391 words of memory out of 3000000
+ 23295 multiletter control sequences out of 15000+200000
  19508 words of font info for 53 fonts, out of 3000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 61i,18n,75p,1336b,1677s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\biddyboy\AppData\Local\MiKTeX\2.9\fonts\p
-k\ljfour\jknappen\ec\dpi600\ecrm0600.pk> <C:\Users\biddyboy\AppData\Local\MiKTe
-X\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0700.pk> <C:\Users\biddyboy\AppDat
-a\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk> <C:\Users\bi
-ddyboy\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1000.pk>
- <C:\Users\biddyboy\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
-\ectt1000.pk> <C:\Users\biddyboy\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknap
-pen\ec\dpi600\ecrm0800.pk> <C:\Users\biddyboy\AppData\Local\MiKTeX\2.9\fonts\pk
-\ljfour\jknappen\ec\dpi600\ecrm0500.pk> <C:\Users\biddyboy\AppData\Local\MiKTeX
-\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\biddyboy\AppData
-\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\bid
-dyboy\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk><
-C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:
-/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/P
-rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files 
-(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86
-)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9
-/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files (x86)/MiKTeX 
-2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "Computing Paper 1.pdf" (39 pages, 582314 bytes).
+ 1025 hyphenation exceptions out of 8191
+ 61i,18n,75p,1334b,1675s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/cm-super/sfbx1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/cm-super/sfbx1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-
+super/sfbx1440.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfr
+m0500.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0600.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0700.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0800.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1000.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/cm-super/sfti1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/cm-super/sftt1000.pfb>
+Output written on "Computing Paper 1.pdf" (39 pages, 658294 bytes).
 PDF statistics:
- 621 PDF objects out of 1000 (max. 8388607)
+ 238 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  43 words of extra memory for PDF output out of 10000 (max. 10000000)
 

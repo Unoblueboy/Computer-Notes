@@ -227,8 +227,94 @@
       1 & 1 & 1 & 1 & 1 \\ \hline
     \end{tabular}
   \end{table}
+  
+  Here is the circuit diagram for a half adder:
+  
+  \begin{tikzpicture}
+	  \node[xor gate US, draw, minimum size=1.5cm] (xor1) {};
+	  \node[and gate US, draw, minimum size=1.5cm] at ([xshift=30pt, yshift=-50pt]xor1.output) (and1) {};
+	  \node at ([xshift=-80pt]xor1.input 1) (A){$A$};
+	  \node at ([xshift=-80pt]xor1.input 2) (B){$B$};
+	  \node at ([xshift=60]and1.output) (Q) {$C=A \bullet B$};
+	  \node at ([xshift=60]xor1.output) (W) {$S=A \oplus B$};
+	  \draw (xor1.input 1) -- (A);    
+	  \draw (xor1.input 2) -- (B);
+	  \draw (and1.output) |- (Q);
+	  \draw (xor1.output) |- (W);
+	  \draw ([xshift=-30pt]xor1.input 1) |- (and1.input 1);
+	  \draw ([xshift=-40pt]xor1.input 2) |- (and1.input 2);
+	  \fill[black] ([xshift=-30pt]xor1.input 1) circle (2.5pt);
+	  \fill[black] ([xshift=-40pt]xor1.input 2) circle (2.5pt);
+  \end{tikzpicture}
+  
+  And here is a full adder:
+  
+  \begin{tikzpicture}
+  \node[xor gate US, draw, minimum size=1.5cm] (xor1) {};
+  \node[xor gate US, draw, minimum size=1.5cm] at ([xshift = 80pt, yshift=-20pt]xor1.output) (xor2) {};
+  \node[and gate US, draw, minimum size=1.5cm] at ([yshift=-60pt]xor2) (and1) {};
+  \node[and gate US, draw, minimum size=1.5cm] at ([yshift=-60pt]and1) (and2) {};
+  \node[or gate US, draw, minimum size=1.5cm] at ([xshift=80pt, yshift=-30pt]and1.output) (or1) {};
+  \node at ([xshift=-60pt]xor1.input 1) (A) {$A$};
+  \node at (A |- xor1.input 2) (B) {$B$};
+  \node at ([yshift=-40pt]B) (C) {$C_{in}$};
+  \node[circle, fill=black, inner sep=0pt,minimum size=5pt] at ([xshift=150pt]C) (P1) {};
+  \node[circle, fill=black, inner sep=0pt,minimum size=5pt] at ([xshift=-35pt]xor2.input 1) (P2) {};
+  \node[circle, fill=black, inner sep=0pt,minimum size=5pt] at ([xshift=20pt]A) (P3) {};
+  \node[circle, fill=black, inner sep=0pt,minimum size=5pt] at ([xshift=30pt]B) (P4) {};
+  \node at ([xshift=60]xor2.output) (Cout) {$S$};
+  \node at ([xshift=60]or1.output) (S) {$C_{out}$};
+  \draw (A)--(xor1.input 1);
+  \draw (B)--(xor1.input 2);
+  \draw (and1.output) -- ++(right:20pt) |- (or1.input 1);
+  \draw (and2.output) -- ++(right:20pt) |- (or1.input 2);
+  \draw (C) -- (P1);
+  \draw (P1) |- (xor2.input 2);
+  \draw (P1) |- (and1.input 1);
+  \draw (xor1.output) -| (P2);
+  \draw (P2) -- (xor2.input 1);
+  \draw (P2) |- (and1.input 2);
+  \draw (P3) |- (and2.input 2);
+  \draw (P4) |- (and2.input 1);
+  \draw (xor2.output) -- (Cout);
+  \draw (or1.output) -- (S);
+  \end{tikzpicture}
+  Where $S=(A \oplus B) \oplus C$ and $C_{out}=(A \bullet B) + ((A \oplus B) \bullet C)$. The purpose of the logic diagrams shown above are to add to binary numbers together, where a half adder can return the result of adding two bits together, and a full adder can add sequences of bits together, by feeding the carry bit $C_{out}$ back into itself as $C_{in}$ and then having the relevant bits inputted to $A$ and $B$, their respective logic gates look like as follows:
+  
+  Half Adder
+  
+  \begin{table}[H]
+  	\centering
+  	\begin{tabular}{|cc|c|c|} \hline
+  		$A$ & $B$ & $C$ & $S$ \\ \hline
+  		0 & 0 & 0 & 0 \\
+  		0 & 1 & 0 & 1 \\
+  		1 & 0 & 0 & 1 \\
+  		1 & 1 & 1 & 0 \\\hline
+  	\end{tabular}
+  \end{table}
+  
+  Full Adder
+  
+  \begin{table}[H]
+  	\centering
+  	\begin{tabular}{|ccc|c|c|} \hline
+  		$A$ & $B$ & $C_{in}$ & $C_{out}$ & $S$ \\ \hline
+  		0 & 0 & 0 & 0 & 0 \\
+  		0 & 0 & 1 & 0 & 1 \\
+  		0 & 1 & 0 & 0 & 1 \\
+  		0 & 1 & 1 & 1 & 0 \\
+  		1 & 0 & 0 & 0 & 1 \\
+  		1 & 0 & 1 & 1 & 0 \\
+  		1 & 1 & 0 & 1 & 0 \\
+  		1 & 1 & 1 & 1 & 1 \\ \hline
+  	\end{tabular}
+  \end{table}
+  
+  An edge triggered D-type flip-flop is a small memory unit that allows one bit of data to be stored, and is often used within the processor to store the results of previous calculations so that they can be used later. Due to the way in which they are designed, the state of the output can only be updated whenever clock signal changes (from low to high or high to low, depending on how it is designed). An input signal is needed to change the output of an edge-triggered d-type flip-flop, as well as the change in clock state.
+  
 \subsection{Boolean Algebra} \noindent
-  \marginnote{3.6.5.1}There are several boolean identities that can be used to simplify a boolean expression, these are as follows: { \setlength\extrarowheight{5pt}
+  \marginnote{4.6.5.1}There are several boolean identities that can be used to simplify a boolean expression, these are as follows: { \setlength\extrarowheight{5pt}
     \begin{longtable}{|l|l|l|}
       \hline
       \textbf{Identity Name} & \textbf{AND Form} & \textbf{OR Form} \\ \hline

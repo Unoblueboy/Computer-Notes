@@ -322,8 +322,7 @@ When talking about a set, it can be either finite or infinite. A finite set is a
 \subsection{Classification of Algorithms}
   
   \noindent
-  \marginnote{4.4.4.1}In computer science we often derive several algorithms in order to solve the same problem. It is useful to have a way for us to compare these algorithms either time-wise (how ling the algorithm takes) or space-wise (how much memory does the algorithm use).
-  
+  \marginnote{4.4.4.1}In computer science we often derive several algorithms in order to solve the same problem. It is useful to have a way for us to compare these algorithms either time-wise (how ling the algorithm takes) or space-wise (how much memory does the algorithm use).\\ \\
   \noindent
   \marginnote{4.4.4.2}In order to understand Big O-notation, you need to understand some basic functions (as well as some random related facts), the first thing is domain and co-domain. The domain is the set from which all the values that you can input into a function are taken and the co-domain is the set from which all of the output values can be taken. If you do A-level maths, it is similar to the concept of the range, however the co-domain can be larger than the range (the range is a subset of the co-domain). For example, take the function $f(x)=x^2$ (or $f: x \mapsto x^2$ written slightly differently) it has the domain $\mathbb{R}$ as you can put in any real number, and it can have co-domain $\mathbb{R}$ as all of its outputs are real numbers, you can see how this can be different to range, as the range would be $\{x \mid x \in \mathbb{R} \wedge x \geq 0\} = \mathbb{R}_0^+$. Often to fully define a function, they will state the domain and co-domain of a function in the following way, $f: \mathbb{R} \mapsto \mathbb{R}$, so if we wanted to define a new function $g(x)$ that produces the same output as $f(x)$ but has a different co-domain, we may say $g: \mathbb{R} \mapsto \mathbb{R}_0^+ \\ g: x \mapsto x^2$ and this has co-domain $\mathbb{R}_0^+$
   
@@ -428,19 +427,21 @@ When talking about a set, it can be either finite or infinite. A finite set is a
   
   \noindent
   \marginnote{4.4.4.4}In reality, we have limits to what we can do with an algorithm, such as the hardware (limits to RAM, and ROM), as well as the complexity of the algorithm, which limit what we can compute.\\ \\
-  \noindent
+  \noindent 
   \marginnote{4.4.4.5}There are two ways to classify a problem:
   \begin{itemize}
   	\item Tractable
 	  	\subitem Problems that have algorithmic solutions that are of polynomial time complexity or less
-  	\item intractable
+  	\item Intractable
 	  	\subitem Problems that do not have algorithmic solutions that are of polynomial time complexity or less. To solve these problems, often a heuristic is used, this is when you use some sort of measure to guess a solution, then use an algorithm to improve your initial guess. An example is the travelling salesman problem, which is to find the shortest route to visit all of the nodes in a weighted connected graph.
   \end{itemize}
   
   \noindent
-  \marginnote{4.4.4.6}There are problems that exist that cannot be solved algorithmically, meaning no matter how powerful your computer is, the problem has no algorithm solutions.\\  \\
+  \marginnote{4.4.4.6}There are problems that exist that cannot be solved algorithmically, meaning no matter how powerful your computer is, the problem has no algorithm solutions.
+  
   \noindent
-  \marginnote{4.4.4.7}The Halting Problem is an example of a problem that cannot be solved algorithmically, as it would create a paradox. The halting problem is about trying to find an algorithm that can determine for all other algorithms whether it will end by feeding in this other algorithm. We can show that such an algorithm doesn't exist via a proof by contradiction. Let's assume that such an algorithm does exist and returns \verb|True| if the algorithm terminate, \verb|false| otherwise, we are going to feed in the following algorithm (let's call it the Anti-Halting Algorithm)
+  \marginnote{4.4.4.7}The Halting Problem is an example of a problem that cannot be solved algorithmically, as it would create a paradox. The halting problem is about trying to find an algorithm that can determine for all other algorithms whether it will end by feeding in this other algorithm. We can show that such an algorithm doesn't exist via a proof by contradiction. Let's assume that such an algorithm does exist and returns \verb|True| if the algorithm terminates, \verb|false| otherwise, we are going to feed in the following algorithm (let's call it the Anti-Halting Algorithm)
+  
   \begin{verbatim}
 IF the output of the halting algorithm is True:
     WHILE True:
@@ -449,8 +450,7 @@ IF the output of the halting algorithm is True:
 ELSE
     HALT
 ENDIF
-  \end{verbatim}
-  Now we can look at the two cases that arise:
+  \end{verbatim}Now we can look at the two cases that arise:
   \begin{enumerate}
   	\item The halting algorithm evaluates \verb|True|, meaning the anti-halting algorithm will halt
 	  	\subitem Then the anti-halting algorithm will go into an infinite while loop, never halting

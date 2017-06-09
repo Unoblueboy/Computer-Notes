@@ -75,41 +75,230 @@
 
 \subsection{The Internet}
   \noindent
-  \marginnote{4.9.3.1}The internet and how it works
+  \marginnote{4.9.3.1}The internet is a global wide area network of networks. Packet switching is a method for transmitting packets of data via the quickest route on a network. Pieces of data are broken down into smaller packets, within these packages, as well as the original data, there is also information on the destination address. Using this information, the packet can be sent from the sender to the receiver. The router is a device that receives packets or from one host or router and uses the destination IP address that they contain to pass them correctly formatted, to another host or router. The router is responsible for carrying out the packet switching.
+  
+  The main contents of a package are as follows:
+  \begin{itemize}
+  	\item Header
+	  	\begin{itemize}
+	  		\item Source Address
+	  		\item Destination Address
+	  	\end{itemize}
+  	\item Body
+	  	\begin{itemize}
+	  		\item Data
+	  	\end{itemize}
+  	\item Footer
+	  	\begin{itemize}
+	  		\item Checksum
+	  	\end{itemize}
+  \end{itemize}
+  
+  A router ia a device that receives packets or from one host (computer) or router and uses the destination IP address that they contain to pass them correctly formatted, to another host (computer) or router. A gateway is A device used to connect networks using different protocols so that information can be successfully passed from one system to another. Thus routers can be used within a network that uses the same protocols within, and a gateway is used to connect networks that don't use the same protocol.
+  
+  Routing is the process of directing packets of data between or within a network. This is achieved via packet switching, The process of packet switching is done via routers and gateways.
+  
+  A Uniform Resource Locator (URL) is a method for identifying the location of resources on the website. The domain name is the part of a network address which identifies it as belonging to a particular domain. The IP address is a unique string of numbers separated by full stops that identifies each computer using the Internet Protocol to communicate over a network.
+  
+  Domain name is the part of a network address which identifies it belongs to a certain domain. For example bbc.co.uk. An IP address is a unique string of numbers that identifies each machine using IP to communicate over a network.
+  
+  Within a domain address, the different parts are separated by a full stop, the leftmost part tells us the organisation, e.g. in bbc.co.uk, bbc is the name of the organisation. We can then go from right to left, the rightmost part of the domain is the top level domain, then the next is 2nd level domain, then 3rd etc. so again using bbc.co.uk, uk is the top level domain and co is the second level domain. Common top level domains are com (for commercial), edu (for educational), sch (for school), gov (for government (US)), uk (registered in UK), fr (registered in France). Common second level domains are gov (for government (Non US)), co (for company).
+  
+  The domain name server (DNS) is used to convert a domain name to an IP address because the IP address is needed to send packets of data can be sent across the internet using the TCP/IP. The reason the IP address isn't used directly and we use a domain name to enter a web address is due to the fact that IP addresses aren't easily remembered.
   
   \noindent
-  \marginnote{4.9.3.2}Internet Security
+  \marginnote{4.9.3.2}A firewall is a piece of hardware or software for protecting against unauthorised access to a network. It does three different ways:
+  \begin{itemize}
+  	\item Packet Filtering
+	  	\subitem This examines the contents of packets on a network and rejecting them if they do not conform to certain rules (it checks the header of the packet to see if it is from a recognised source). This is done after the packet has been routed through the internet, but before the packet is routed through a LAN connected to a machine
+  	\item Proxy Server
+	  	\subitem In this case, all requests to the internet are done through a separate proxy server, which is itself connected to the internet, so the original device itself is not directly connected to the internet. This also means that all of the packets can be processed by the proxy server, and it can return only legitimate packages to the original machine
+  	\item Stateful Inspection
+	  	\subitem This is where the contents of a package are checked, and the package as a whole is rejected if it is either from an unauthorised source or it may be rejected if it is not part of a recognised on-going communication.
+  \end{itemize}
+  
+  There are two main types of encryption techniques that are used over a network:
+  \begin{itemize}
+  	\item Symmetric Encryption
+  	\begin{enumerate}
+  		\item Alice encrypts data use a key
+  		\item Alice sends the encrypted data to Bob
+  		\item Alice sends the key to Bob
+  		\item Bob decrypts the data using the Key
+  	\end{enumerate}
+  	\item Asymmetric Encryption
+  	\begin{enumerate}
+  		\item Alice and Bob both have a public key
+  		\item Alice has a private key A, and Bob has a private key B
+  		\item The public key, as well as Alice's and Bob's private key are combined to create a new key, which they both know (note, this new key is never sent across the server, neither are the private keys, if you want to understand how this works, look up Diffie-Hellman Key excange), this new key is called their common secret
+  		\item Alice encrypts the data using the common secret
+  		\item Alice sends the encrypted data to Bob
+  		\item Bob decrypts the data using the common secret
+  	\end{enumerate}
+  \end{itemize}
+  The power in asymmetric encryption is that because the private keys of the two people communicating is never explicitly sent along the network, the message is nigh on impossible to decrypt. I'm going to quickly go into the Diffie-Hellman key exchange, you don't need to understand the process, you just need to know that because of the way the keys are exchanged, it is nigh on impossible to find the private keys, and thus to find the common secret:
+  \begin{enumerate}
+  	\item Bob and Alice have a public key p (keep in mind all of the key are integers)
+  	\item Bob and Alice agree before hand to use base g (where g is a primitive root modulo p)
+  	\item Alice has a private key a
+  	\item Bob has a private key b
+  	\item Alice calculates $B=g^a \mod p$
+  	\item Bob calculates $A=g^b \mod p$
+  	\item Alice sends Bob $B$
+  	\item Bob sends Alice $A$
+  	\item Alice calculate $C = B^a \mod p$
+  	\item Bob calculate $C = A^b \mod p$
+  	\item The number Bob and Alice calculate at the end is the same, thus they have calculated the primary key
+  \end{enumerate}
+  You can now see that the private key is never sent, and both private keys are needed to calculate the common secret, so even if the transfer was intercepted, the user would need to have knowledge of the private keys, as well as g in order to decrypt any messages (p can be gotten as it is the public key)
+  
+  A Digital certificate is a way of ensuring that an encrypted message is from a trusted source, they are also known as Secure Socket Layer (SSL) certificates. They are obtained from a certification authority, who is a trusted organisation which is responsible for issuing digital certificates, as well as digital signatures. A digital signature is a method of ensuring that an encrypted message is from a trusted source, this is done as follows:
+  \begin{itemize}
+  	\item Alice has a message M, and also has her own private key, and a public key
+  	\item The message goes through a public hashing algorithm, we will call this message H(M)
+  	\item H(M) is encrypted using Alice's private key (This is the digital signature)
+  	\item The message M and digital signature are both sent to Bob
+  	\item M goes through the hashing algorithm, and digital signature is decrypted. If these two values are the same, then the message was not altered, and is thus safe.
+  \end{itemize}
+  
+  There are 3 types of malware you need to be aware of:
+  \begin{itemize}
+  	\item Worms
+	  	\subitem These are a type of virus that are able to replicate themselves and are able to propagate around a computer network. It doesn't need to be attached to a file to infect a machine. It's a small program that exploits a network security weakness (security hole) to replicate itself through computer networks.
+  	\item Trojans
+	  	\subitem This is a program that hides in or masquerades as desirable software, such as utility or a game, but attacks computers it infects.
+  	\item Viruses
+	  	\subitem this is a small program attached to another program or data file. It replicates itself by attaching itself to other programs.
+  \end{itemize}
+  
+  There are a few things that we can do to improve our security:
+  \begin{itemize}
+  	\item Improve the code quality of code, so it is harder, preferably impossible, to find exploits in code, so it is harder to infect a machine. An example of an exploit that may be used is buffer overflow.
+  	\item Monitoring of incoming and outgoing data, to make sure that it is all legitimate.
+  	\item Protection of the machine via a fire-wall and anti-virus software which is able to scan files on a machine whenever they are accessed to check if they are valid.
+  \end{itemize}
   
 \subsection{The Transmission Control Protocol/ Internet Protocol (TCP/IP) protocol}
   \noindent
-  \marginnote{4.9.4.1}TCP/IP
+  \marginnote{4.9.4.1}TCP/IP is made up of 4 layers
+  \begin{itemize}
+  	\item Application Layer
+	  	\subitem This layer is responsible for saying which protocols are being used within the current application (e.g. FTP, HTTP, HTTPS, POP3, SMTP, SSH, etc.)
+  	\item Transport Layer
+	  	\subitem This layer is responsible for setting up a two-way connection between the two hosts and implements the Transmission Control Protocol (TCP)
+  	\item Network Layer
+	  	\subitem This layer is responsible for defining the IP address of the devices involved in the communication, and handles creation and routing of packets.
+  	\item Link Layer
+	  	\subitem This layer is responsible for actually sending the data across the physical network.
+  \end{itemize}
+  
+  A socket is an endpoint of a communication flow across a computer network (it is software). The role of the socket within the TCP/IP stack is to say where all of the data should go once it has reached the machine, it tells the machine which application should deal with this data, this is done via the use of relevant ports. The Media Access Control (MAC) address is the unique address for all network adapter (it comprises of 6 numbers, 2 hex digits long each). It is used to identify which machine a packet should go to within a network. If the MAC address of a machine matches the MAC address of the destination of a packet, then the packet is sent to the machine's link layer.
+  
+  Here are a list of Common ports:
+  \begin{table}[H]
+  	\begin{tabular}{| l | l | l |}\hline
+  		Service Name & Port Number & Description \\\hline
+  		FTP-data & 20 & File Transfer Protocol (data) \\\hline
+  		FTP & 21 & File Transfer Protocol (control) \\\hline
+  		SSH & 22 & Secure Shell Protocol \\\hline
+	  	SMTP & 25 & Simple Mail Transfer Protocol \\\hline
+	  	HTTP & 80 & Hypertext Transfer Protocol \\\hline
+	  	POP3 & 110 & Post Office Protocol 3 \\\hline
+	  	HTTPS & 443 & Hypertext Transfer Protocol Secure \\\hline
+  	\end{tabular}
+  \end{table}
   
   \noindent
-  \marginnote{4.9.4.2}Standard application layer protocols
+  \marginnote{4.9.4.2}There are several standard application layer protocols you need to know:
+  \begin{itemize}
+  	\item FTP - File Transfer Protocol
+	  	\subitem This is a protocol for the transfer of a file across a network. The file transfer can be anonymous or non-anonymous (protected)
+  	\item HTTP - Hypertext Transfer Protocol
+	  	\subitem This is a protocol for the transmission and display of web pages.
+  	\item HTTPS - Hypertext Transfer Protocol Secure
+	  	\subitem This is a protocol for the transmission and display of web pages, using an encrypted form of transmission.
+  	\item POP3 - Post Office Protocol 3
+	  	\subitem This is a protocol for receiving mail. The webserver keeps your emails on an email server until you are ready to download all of the mail.
+  	\item SMTP - Simple Mail Transfer Protocol
+	  	\subitem This is a protocol for sending mail. This sends the mail to an online email server
+  	\item SSH - Secure Shell
+	  	\subitem This is a protocol for remote access to machines. An SSH client is used to make a TCP connection to a remote port for the purpose of sending commands (e.g. GET for HTTP, commands sending mail for SMTP, commands receiving mail for POP3), It can be used to access a computer remotely and execute commands.
+  \end{itemize}
   
   \noindent
-  \marginnote{4.9.4.3}IP address structure
+  \marginnote{4.9.4.3}An IP address is made up of 2 parts, a network identifier (to say what network a machine is on) and a host identifier (to say what machine in the network specifically requested the data).
   
   \noindent
-  \marginnote{4.9.4.4}Subnet masking
+  \marginnote{4.9.4.4}Subnet masking is a technique used to divide a network into smaller networks. To apply a subnet mask, we write it out in binary (using the bits required by the IP version you are using), then perform a bitwise AND with to IP address and subnet mask. To get the network identifier for an IPv4 address, we use the subnet mask 255.255.255.0, and can see that in IPv4, the network identifier is the first 3 numbers.
   
   \noindent
-  \marginnote{4.9.4.5}IP standards
+  \marginnote{4.9.4.5}There are 2 IP standards, IPv4 (which is 32 bits long, made up of 4 8 bit numbers) and IPv6 (which is 128 bits long, made up if 8 16 bit numbers). We introduced IPv6 to allow for more IP addresses as we are quickly running out of IPv4 addresses as more devices become network enabled.
   
   \noindent
-  \marginnote{4.9.4.6}Public and Private IP addresses
+  \marginnote{4.9.4.6}Non-routable IP addresses (which could be considered private) are IP addresses that cannot be routed to directly from the internet (these IP addresses are used in private Networks, such as if multiple devices are connected to the same router, this forms a private network). Routable IP addresses can be routed to directly to from the internet (e.g. a router).
   
   \noindent
-  \marginnote{4.9.3.1}Dynamic Host Configuration Protocol (DHCP)
+  \marginnote{4.9.3.1}Dynamic Host Configuration Protocol (DHCP) is a set of rules for allocating locally unique IP addresses to devices as they connect to a network.
   
   \noindent
-  \marginnote{4.9.3.1}Network Address Translation (NAT)
+  \marginnote{4.9.3.1}Network Address Translation (NAT) is used to match private IP addresses to a public one. This is useful as it means not every device on the network has to have a unique IP address, only the router they are attached to does. It also means that only the IP address of only the router has to be registered in the DNS.
   
   \noindent
-  \marginnote{4.9.3.1}Port Forwarding
+  \marginnote{4.9.3.1}Port Forwarding is a method for devices with non-routable IP addresses to route data that is received on specific port on a router.
   
   \noindent
-  \marginnote{4.9.3.1}Client Server Model
+  \marginnote{4.9.3.1}Client Server Model can be described as follows. Client sends a request to a server, server responds to a request by replying with a response message to client. Websocket protocol is a set of rules that creates a persistent connection between two computers on a network to enable real-time communication. To set it up, client sends server a handshake request to open up a socket, server sets up socket to allow for bidirectional communication between server and client, server sends back acknowledgement of request, client and server can now communicate with each other in real time.
+  
+  Now to deal with web applications that use databases. These are known as CRUD applications, because they allow to perform four main operations on data: create, retrieve, update, and delete. In order for the CRUD operations to be used, a REST (REpresentational State Transition) API must be run on the server hosting the database, it is used to map HTTP request methods to SQL commands. JavaScript allows the browser to call the REST API, and thus get data from the database through HTTP requests. Here is a table mapping equivalence of different operations.
+  
+  \begin{table}[H]
+  	\begin{tabular}{| l | l | l |}\hline
+  		CRUD Operations 	& HTTP Request methods 	& SQL Methods \\\hline
+  		Create				& POST					& INSERT \\\hline
+  		Retrieve			& GET					& SELECT \\\hline
+  		Update				& PUT					& UPDATE \\\hline
+  		Delete				& DELETE				& DELETE \\\hline
+  	\end{tabular}
+  \end{table}
+  
+  The data sent across the connection between the server and the client application may be transmitted as JavaScript Object Notation (JSON) or as eXtensible Markup Language (XML).
+  
+  JSON is in general more useful than XML as JSON is more easily readable, more compact, easier to create, and are faster to Parse than XML. However, XML allows complete freedom in the data types that can be used, whereas JSON has limited range of data types, thus XML is useful when dealing with data types not native to JSON.
   
   \noindent
-  \marginnote{4.9.3.1}Thin versus Thick-client computing
+  \marginnote{4.9.3.1}Thin-client computing is where all of the main resources, processing power, and storage capacity needed by the client machines are stored within one central machine in a network, and all of the client machines get the resources they need from this central machine. The client machines are called terminals in this case as they have little to no internal processing or local hard drive space.
+  \begin{itemize}
+  	\item Advantages
+  	\begin{itemize}
+  		\item Easy and Cheap to set up new clients, as few resources needed
+  		\item New software and hardware only has to be installed on the server
+  		\item Greater security as clients unable to install unauthorised software
+  		\item Thin clients don't use a large amount of power
+  	\end{itemize}
+  	\item disadvantages
+  	\begin{itemize}
+  		\item Clients dependant on server, if server goes down, clients are impacted
+  		\item Applications requiring a large amount of resources may not work well
+  		\item High specification servers are expensive
+  		\item A high bandwidth may be required to cope with client requests
+  	\end{itemize}
+  \end{itemize}
+  
+  
+  Thick-client computing is where all of the client machines contain the resources, processing power, and storage capacity needed to run their computers. Resources can be shared within the network.
+  \begin{itemize}
+  	\item Advantages
+  	\begin{itemize}
+  		\item Clients not completely dependant on server
+  		\item Are able to run programs that may require more processing without affecting others
+  		\item Server doesn't need to be high specification
+  		\item A lower bandwidth can be used for connection to the server
+  	\end{itemize}
+  	\item disadvantages
+  	\begin{itemize}
+  		\item Can be expensive to set up new clients
+  		\item New software must be installed on all of the new clients
+  		\item Less security as clients are able to install unauthorised software
+  		\item Thick clients require more power than thin clients
+  	\end{itemize}
+  \end{itemize}

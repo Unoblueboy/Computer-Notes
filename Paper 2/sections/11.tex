@@ -1,1 +1,59 @@
 \subsection{Big Data}
+
+Big data is a general name for extremely large quantities of data which are difficult to store and analyse. There are three ways in which big data can be described:
+\begin{itemize}
+	\item volume
+		\subitem To large to fit onto one server
+	\item velocity
+		\subitem Large amounts of incoming data
+	\item variety
+		\subitem Data in many different forms (structured, unstructured text, multimedia, etc.)
+\end{itemize}
+
+The main problem within big data is the lack of structure to the data that is received, being unable to structure the data, means that it becomes very difficult to try and spot trends within the data. This also means that relational databases are not very useful, as they require fixed rows and columns and (as stated above) this data is quite varied and would thus not fit into a relational database. To analyse this sort of data, machine learning is needed in order to spot trends and pick out interesting pieces of data. Another fact to consider is that even if we were able to model it into a relational database, the data is often larger than one server, so we have to consider scalability, and relational databases don't scale well across multiple machines.
+
+Example of sources of Big Data are:
+\begin{itemize}
+	\item Networked sensors
+	\item Smartphones
+	\item video surveillance
+	\item mouse clicks
+	\item real-time application
+	\item the internet
+\end{itemize}
+These are all sources of big data, which continuously stream data.
+
+To highlight the main issues that arise within big science:
+\begin{itemize}
+	\item Datasets are extremely large, leading to difficulties in storage and analysis of the data
+	\item Unstructured data can be very hard to analyse
+	\item Machine learning needed to require any useful information from the data set
+	\item Massive storage and processing power needed
+	\item Data is constantly being updated and added
+	\item Correlation does not equal causation
+	\item Concurrent access
+\end{itemize}
+
+Whenever the data that needs to be stored is too large to fit on a single server, a distributed system must be used in order to process the data. To perform this type of processing, functional programs are often used as they allow for easy to write code that is correct, and can also work efficiently on a distributed system. Functional programming languages has 3 main properties that make them useful for this: 
+\begin{itemize}
+	\item Immutable data structures
+		\subitem This means that once a variable is instantiated, it's value cannot be changed, for example, if you said \verb|x=5|, for the rest of the programs lifetime, \verb|x=5|
+		\subitem This makes it easier to write correct code as a function can't accidentally change the value of a variable
+	\item higher order functions
+		\subitem This means that one function takes another function as input, for example if you defined a function \verb|applyTwice| to apply a given function twice on a given parameter, you may use the following (written using haskell):
+		\begin{verbatim}
+applyTwice :: (a -> a) -> a -> a  
+applyTwice f x = f (f x)  
+		\end{verbatim}
+		\subitem This makes it easier to write correct code as you don't have to re-define certain functions to be used within another. This also allows it to bee run on multiple devices, as independent functions can be run on different devices, for example if you wanted to calculate $x^6$ by using the fact it equals $x^3 \times x^2 \times x$, you can have the three terms be calculated on different devices, then return the result to the original device to finally calculate $x^6$
+	\item statelessness
+		\subitem This means that within a functional program there is no idea of having a state. Within an imperative or an object oriented program, during the programs lifetime, the value of global variables will change due to work done by a function, thus the program changes state, the change caused to the variables due to the function, is called the side effect of the function. Whereas in pure functional programs, the variables cannot change value, therefore there is no change in state, the functions have no side effect and are thus said to be pure functions. Thus pure functional programming languages are stateless.
+		\subitem This is useful for running on a distributed system as it means that each of the separate machines don't need to worry about the state of the whole program, as the program has no inherent state, thus allowing different parts of the code to be easily run in parallel.
+\end{itemize}
+
+In order to represent a big data dataset, a fact based model may be used, within this conceptual model, the dataset is represented as a large amount of atomic facts (facts that cannot be broken down further). Within this model, facts are immutable, meaning they cannot be changed (only deleted if there was an error when the data was inputted), they can not be directly updated, to do this a new fact must be added which would be more up to date.
+
+To represent the relationship between different facts, a graph schema may be used, where the nodes represent entities such as student and teachers, and edges represent the relationship between two entities. Properties are also shown, which is simply information about an entity, e.g. age, height, etc.
+
+Fact-based model represents the data, graph schema represents the relationship between pieces of data.
+
